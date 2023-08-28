@@ -34,7 +34,7 @@ public class HelloApplicationTest {
     }
 
     @Test
-    void should_contain_button_with_text(FxRobot robot) {
+    void shouldContainButtonWithText(FxRobot robot) {
         // or (lookup by css id):
         Assertions.assertThat(robot.lookup("#myButton").queryAs(Button.class)).hasText("Hello");
         // or (lookup by css class):
