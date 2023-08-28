@@ -18,12 +18,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(ApplicationExtension.class)
 public class HelloApplicationTest {
 
-    private Scene scene;
-
     @Start
-    private void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
