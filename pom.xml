@@ -13,6 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javafx.controls.version>20</javafx.controls.version>
         <javafx.fxml.version>20</javafx.fxml.version>
+        <javafx.graphics.version>20</javafx.graphics.version>
         <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
         <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
         <junit.version>5.9.2</junit.version>
@@ -28,6 +29,13 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.fxml.version}</version>
+        </dependency>
+        <!--Cross-platform graphics libraries -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>${javafx.graphics.version}</version>
+            <classifier>win</classifier><!-- linux/mac -->
         </dependency>
         <!-- Unit testing -->
         <dependency>
