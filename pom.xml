@@ -18,6 +18,7 @@
         <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
         <junit.version>5.9.2</junit.version>
         <testfx.junit5.version>4.0.16-alpha</testfx.junit5.version>
+        <testfx.core.version>4.0.16-alpha</testfx.core.version>
         <hamcrest.version>2.1</hamcrest.version>
     </properties>
 
@@ -56,6 +57,12 @@
             <groupId>org.testfx</groupId>
             <artifactId>testfx-junit5</artifactId>
             <version>${testfx.junit5.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>testfx-core</artifactId>
+            <version>${testfx.core.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
