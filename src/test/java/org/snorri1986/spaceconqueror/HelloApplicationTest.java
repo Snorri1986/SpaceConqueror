@@ -1,11 +1,10 @@
 package org.snorri1986.spaceconqueror;
 
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.testfx.api.FxRobot;
-import org.testfx.assertions.api.Assertions;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.ApplicationTest;
 import org.testfx.framework.junit5.Start;
@@ -39,12 +38,9 @@ public class HelloApplicationTest extends ApplicationTest {
     }
 
     @Test
-    void shouldContainButtonWithText(FxRobot robot) {
-        // or (lookup by css id):
-        Assertions.assertThat(robot.lookup("#myButton").queryAs(Button.class)).hasText("Hello");
-        // or (lookup by css class):
-        Assertions.assertThat(robot.lookup(".button").queryAs(Button.class)).hasText("Hello");
-        // or (query specific type):
-        Assertions.assertThat(robot.lookup(".button").queryButton()).hasText("Hello");
+    void checkTextOnButton() throws IOException {
+        Scene originalScene = hello.setScene();
+        Button btn = (Button)originalScene.lookup("#welcome");
+        assertEquals("Hello!", btn.getText());
     }
 }
