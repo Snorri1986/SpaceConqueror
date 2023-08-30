@@ -15,9 +15,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(ApplicationExtension.class)
-public class HelloApplicationTest extends ApplicationTest {
+public class AppLauncherTest extends ApplicationTest {
 
-    private final HelloApplication hello = new HelloApplication();
+    private final AppLauncher hello = new AppLauncher();
     private Stage stageInternalTest;
 
     @Start

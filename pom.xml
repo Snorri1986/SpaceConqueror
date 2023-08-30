@@ -94,7 +94,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>org.snorri1986.spaceconqueror/org.snorri1986.spaceconqueror.HelloApplication
+                            <mainClass>org.snorri1986.spaceconqueror/org.snorri1986.spaceconqueror.AppLauncher
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

@@ -3,7 +3,7 @@ package org.snorri1986.spaceconqueror;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class AppLauncherController {
     @FXML
     private Label welcomeText;
 
