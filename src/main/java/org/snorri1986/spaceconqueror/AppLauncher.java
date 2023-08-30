@@ -16,7 +16,7 @@ public class AppLauncher extends Application {
     }
 
     Scene setScene() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("launcher-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         return scene;
     }
