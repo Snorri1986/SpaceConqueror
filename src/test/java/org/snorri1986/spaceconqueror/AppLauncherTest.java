@@ -32,7 +32,7 @@ public class AppLauncherTest extends ApplicationTest {
     }
 
     @Test
-    void testCheckTitle() {
+    void checkTextOnTitle() {
         String title = stageInternalTest.getTitle();
         assertEquals("Hello!", title);
     }
