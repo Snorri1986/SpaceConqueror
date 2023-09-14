@@ -1,14 +1,40 @@
 package org.snorri1986.spaceconqueror;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class AppLauncherController {
     @FXML
-    private Label welcomeText;
+    protected void onBtnSolarSystemClick() {
+        //TODO: add unit test
+        try {
+            Scene sceneSolarSys = setSolarSystemScene();
+            Stage stageSolarSys = setSolarSystemStage(sceneSolarSys);
+            stageSolarSys.show();
+        } catch (IOException e) {
+            //TODO: add logging
+//            Logger logger = Logger.getLogger(getClass().getName());
+//            logger.log(Level.SEVERE, "Failed to create new Window.", e);
+            e.printStackTrace();
+        }
+    }
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+
+    Scene setSolarSystemScene() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("SolarSystem.fxml"));
+        Scene solarSystem = new Scene(fxmlLoader.load(), 600, 400);
+        return solarSystem;
+    }
+
+
+    Stage setSolarSystemStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("About Solar System");
+        stage.setScene(scene);
+        return stage;
     }
 }
