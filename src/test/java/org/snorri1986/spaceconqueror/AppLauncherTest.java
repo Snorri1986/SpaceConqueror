@@ -34,13 +34,42 @@ public class AppLauncherTest extends ApplicationTest {
     @Test
     void checkTextOnTitle() {
         String title = stageInternalTest.getTitle();
-        assertEquals("Hello!", title);
+        assertEquals("Content!", title);
     }
-
     @Test
-    void checkTextOnButton() throws IOException {
+    void checkTextOnButtonSolarSystem() throws IOException {
         Scene originalScene = hello.setScene();
-        Button btn = (Button)originalScene.lookup("#welcome");
-        assertEquals("Hello!", btn.getText());
+        Button btn = (Button)originalScene.lookup("#btn_s_system");
+        assertEquals("Solar System", btn.getText());
+    }
+    @Test
+    void checkTextOnButtonSovietUnion() throws IOException {
+        Scene originalScene = hello.setScene();
+        Button btn = (Button)originalScene.lookup("#btn_s_union");
+        assertEquals("Soviet Union", btn.getText());
+    }
+    @Test
+    void checkTextOnButtonChina() throws IOException {
+        Scene originalScene = hello.setScene();
+        Button btn = (Button)originalScene.lookup("#btn_china");
+        assertEquals("China", btn.getText());
+    }
+    @Test
+    void checkTextOnButtonUSA() throws IOException {
+        Scene originalScene = hello.setScene();
+        Button btn = (Button)originalScene.lookup("#btn_usa");
+        assertEquals("USA", btn.getText());
+    }
+    @Test
+    void checkTextOnButtonIndia() throws IOException {
+        Scene originalScene = hello.setScene();
+        Button btn = (Button)originalScene.lookup("#btn_ind_bharat");
+        assertEquals("India(Bharat)", btn.getText());
+    }
+    @Test
+    void checkTextOnButtonSpaceX() throws IOException {
+        Scene originalScene = hello.setScene();
+        Button btn = (Button)originalScene.lookup("#btn_space_x");
+        assertEquals("Space X", btn.getText());
     }
 }

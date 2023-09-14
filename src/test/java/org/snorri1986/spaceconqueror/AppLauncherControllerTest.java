@@ -2,6 +2,7 @@ package org.snorri1986.spaceconqueror;
 
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
@@ -23,6 +24,7 @@ public class AppLauncherControllerTest extends ApplicationTest {
         hello.start(stageOriginal);
     }
     @Test
+    @Disabled // body will be used in future
     void checkTextBeforeClicked() {
         clickOn("#welcome");
         Label myLabel = lookup("#welcomeText").query();
