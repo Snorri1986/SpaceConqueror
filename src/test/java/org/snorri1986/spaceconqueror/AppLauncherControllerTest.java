@@ -2,7 +2,7 @@ package org.snorri1986.spaceconqueror;
 
 import javafx.application.Platform;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -11,10 +11,8 @@ import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.ApplicationTest;
 import org.testfx.framework.junit5.Start;
 
+
 import java.io.IOException;
-
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(ApplicationExtension.class)
@@ -29,10 +27,11 @@ public class AppLauncherControllerTest extends ApplicationTest {
     }
     @Test
     @Disabled // body will be used in future
-    void checkTextBeforeClicked() {
-        clickOn("#welcome");
-        Label myLabel = lookup("#welcomeText").query();
-        assertEquals("Welcome to JavaFX Application!", myLabel.getText());
+    void checkBtnSolarSystem() {
+        Button btnSolarSystem = lookup("#btn_s_system").queryButton();
+        clickOn(btnSolarSystem);
+//        Label labSolarSystem = lookup("#SolarSystem").query();
+//        assertEquals("SolarSystem",labSolarSystem.getText());
     }
 
     @Test
