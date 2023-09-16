@@ -34,5 +34,27 @@ public class AppLauncherController {
         return stage;
     }
 
+    @FXML
+    protected void onBtnSovietUnionClick() {
+        try {
+            Scene sceneSovietUnion = setSovietUnionScene();
+            Stage stageSovietUnion = setSovietUnionStage(sceneSovietUnion);
+            stageSovietUnion.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+    Scene setSovietUnionScene() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("soviet-union.fxml"));
+        Scene sovietUnion = new Scene(fxmlLoader.load(), 600, 400);
+        return sovietUnion;
+    }
+
+    Stage setSovietUnionStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("About Soviet Union");
+        stage.setScene(scene);
+        return stage;
+    }
 }
