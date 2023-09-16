@@ -56,4 +56,33 @@ public class AppLauncherControllerTest extends ApplicationTest {
             }
         });
     }
+    @Test
+    void checkBtnSovietUnion() {
+        Button btnSovietUnion = lookup("#btn_s_union").queryButton();
+        clickOn(btnSovietUnion);
+        FxAssert.verifyThat(window("About Soviet Union"), WindowMatchers.isShowing());
+    }
+
+    @Test
+    void testSetSovietUnionScene() throws IOException {
+        Scene sceneSovietUnion = appController.setSovietUnionScene();
+        assertNotNull(sceneSovietUnion);
+    }
+
+    @Test
+    void testSetSovietUnionStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testSovietUnionScene = null;
+                try {
+                    testSovietUnionScene = appController.setSovietUnionScene();
+                    Stage testSovietUnionStage = appController.setSovietUnionStage(testSovietUnionScene);
+                    assertNotNull(testSovietUnionStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
