@@ -1,23 +1,20 @@
 package org.snorri1986.spaceconqueror;
 
 import javafx.application.Platform;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.testfx.api.FxRobot;
-import org.testfx.api.FxToolkit;
+import org.testfx.api.FxAssert;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.ApplicationTest;
 import org.testfx.framework.junit5.Start;
+import org.testfx.matcher.base.WindowMatchers;
 
 
 import java.io.IOException;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(ApplicationExtension.class)
@@ -31,15 +28,10 @@ public class AppLauncherControllerTest extends ApplicationTest {
         hello.start(stageOriginal);
     }
     @Test
-    @Disabled // body will be used in future
-    //TODO: method is not finished
     void checkBtnSolarSystem() {
         Button btnSolarSystem = lookup("#btn_s_system").queryButton();
         clickOn(btnSolarSystem);
-//        Stage stageSolarSystem = (Stage) btnSolarSystem.getScene().getWindow();
-//        String titleWindowSolarSystem = stageSolarSystem.getTitle();
-//        Label labSolarSystem = lookup("#SolarSystem").query();
-//        assertEquals("SolarSystem",titleWindowSolarSystem);
+        FxAssert.verifyThat(window("About Solar System"), WindowMatchers.isShowing());
     }
 
     @Test

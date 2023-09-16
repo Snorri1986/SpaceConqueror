@@ -10,15 +10,11 @@ import java.io.IOException;
 public class AppLauncherController {
     @FXML
     protected void onBtnSolarSystemClick() {
-        //TODO: add unit test
         try {
             Scene sceneSolarSys = setSolarSystemScene();
             Stage stageSolarSys = setSolarSystemStage(sceneSolarSys);
             stageSolarSys.show();
         } catch (IOException e) {
-            //TODO: add logging
-//            Logger logger = Logger.getLogger(getClass().getName());
-//            logger.log(Level.SEVERE, "Failed to create new Window.", e);
             e.printStackTrace();
         }
     }
