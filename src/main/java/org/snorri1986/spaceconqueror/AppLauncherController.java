@@ -21,7 +21,7 @@ public class AppLauncherController {
 
 
     Scene setSolarSystemScene() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("SolarSystem.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("solar-system.fxml"));
         Scene solarSystem = new Scene(fxmlLoader.load(), 600, 400);
         return solarSystem;
     }
@@ -33,4 +33,6 @@ public class AppLauncherController {
         stage.setScene(scene);
         return stage;
     }
+
+
 }
