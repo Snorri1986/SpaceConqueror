@@ -57,4 +57,28 @@ public class AppLauncherController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnChinaClick() {
+        try {
+            Scene sceneChina = setChinaScene();
+            Stage stageChina = setChinaStage(sceneChina);
+            stageChina.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    Scene setChinaScene() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("china.fxml"));
+        Scene china = new Scene(fxmlLoader.load(), 600, 400);
+        return china;
+    }
+
+    Stage setChinaStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("About China");
+        stage.setScene(scene);
+        return stage;
+    }
 }
