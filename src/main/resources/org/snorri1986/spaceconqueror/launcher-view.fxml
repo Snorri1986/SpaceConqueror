@@ -12,7 +12,7 @@
     <Button fx:id="btn_s_system" alignment="TOP_CENTER" onAction="#onBtnSolarSystemClick" prefHeight="26.0" prefWidth="323.0" text="Solar System" />
     <Button fx:id="btn_s_union" alignment="TOP_CENTER" contentDisplay="CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnSovietUnionClick" prefHeight="26.0" prefWidth="320.0" text="Soviet Union" />
     <Button fx:id="btn_china" alignment="TOP_CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnChinaClick" prefHeight="26.0" prefWidth="317.0" text="China" />
-    <Button fx:id="btn_usa" alignment="TOP_CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="315.0" text="USA" />
+    <Button fx:id="btn_usa" alignment="TOP_CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnUsaClick" prefHeight="26.0" prefWidth="315.0" text="USA" />
     <Button fx:id="btn_ind_bharat" alignment="TOP_CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="315.0" text="India(Bharat)" />
     <Button fx:id="btn_space_x" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="322.0" text="Space X" />
 
