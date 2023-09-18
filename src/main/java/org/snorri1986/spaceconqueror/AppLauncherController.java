@@ -130,4 +130,28 @@ public class AppLauncherController {
         return stage;
     }
 
+    @FXML
+    protected void onBtnSpaceXClick() {
+        try {
+            Scene sceneSpaceX = setSpaceXScene();
+            Stage stageSpaceX = setSpaceXStage(sceneSpaceX);
+            stageSpaceX.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    Scene setSpaceXScene() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("spacex.fxml"));
+        Scene spaceX = new Scene(fxmlLoader.load(), 600, 400);
+        return spaceX;
+    }
+
+    Stage setSpaceXStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("About SpaceX");
+        stage.setScene(scene);
+        return stage;
+    }
+
 }
