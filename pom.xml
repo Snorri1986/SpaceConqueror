@@ -15,6 +15,8 @@
         <javafx.fxml.version>20</javafx.fxml.version>
         <javafx.graphics.version>20</javafx.graphics.version>
         <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
+        <slf4j-api.version>2.0.5</slf4j-api.version>
+        <log4j.version>1.2.17</log4j.version>
         <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
         <maven.surefire.plugin.version>3.1.2</maven.surefire.plugin.version>
         <junit.version>5.10.0</junit.version>
@@ -40,6 +42,22 @@
             <artifactId>javafx-graphics</artifactId>
             <version>${javafx.graphics.version}</version>
             <classifier>win</classifier><!-- linux/mac -->
+        </dependency>
+        <!-- Logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
         </dependency>
         <!-- Unit testing -->
         <dependency>

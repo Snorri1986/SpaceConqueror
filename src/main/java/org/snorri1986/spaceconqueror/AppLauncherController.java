@@ -5,9 +5,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 import java.io.IOException;
 
 public class AppLauncherController {
+
+    private static final Logger LOG = LoggerFactory.getLogger(AppLauncherController.class);
     @FXML
     protected void onBtnSolarSystemClick() {
         try {
@@ -15,7 +21,7 @@ public class AppLauncherController {
             Stage stageSolarSys = setSolarSystemStage(sceneSolarSys);
             stageSolarSys.show();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error("The button SolarSystem does not work",e);
         }
     }
 
@@ -41,7 +47,7 @@ public class AppLauncherController {
             Stage stageSovietUnion = setSovietUnionStage(sceneSovietUnion);
             stageSovietUnion.show();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error("The button Soviet Union does not work",e);
         }
     }
 
@@ -65,7 +71,7 @@ public class AppLauncherController {
             Stage stageChina = setChinaStage(sceneChina);
             stageChina.show();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error("The button China does not work",e);
         }
     }
 
@@ -89,7 +95,7 @@ public class AppLauncherController {
             Stage stageUsa = setUsaStage(sceneUsa);
             stageUsa.show();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error("The button USA does not work",e);
         }
     }
 
@@ -113,7 +119,7 @@ public class AppLauncherController {
             Stage stageIndia = setIndiaStage(sceneIndia);
             stageIndia.show();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error("The button India does not work",e);
         }
     }
 
@@ -137,7 +143,7 @@ public class AppLauncherController {
             Stage stageSpaceX = setSpaceXStage(sceneSpaceX);
             stageSpaceX.show();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error("The button SpaceX does not work",e);
         }
     }
 
