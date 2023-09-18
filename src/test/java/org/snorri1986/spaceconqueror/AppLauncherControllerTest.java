@@ -115,4 +115,34 @@ public class AppLauncherControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void checkBtnUsa() {
+        Button btnUsa = lookup("#btn_usa").queryButton();
+        clickOn(btnUsa);
+        FxAssert.verifyThat(window("About USA"), WindowMatchers.isShowing());
+    }
+
+    @Test
+    void testSetUsaScene() throws IOException {
+        Scene sceneUsa = appController.setUsaScene();
+        assertNotNull(sceneUsa);
+    }
+
+    @Test
+    void testSetUsaStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testUsaScene = null;
+                try {
+                    testUsaScene = appController.setUsaScene();
+                    Stage testUsaStage = appController.setUsaStage(testUsaScene);
+                    assertNotNull(testUsaStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
