@@ -105,4 +105,29 @@ public class AppLauncherController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnIndiaClick() {
+        try {
+            Scene sceneIndia = setIndiaScene();
+            Stage stageIndia = setIndiaStage(sceneIndia);
+            stageIndia.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    Scene setIndiaScene() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("india.fxml"));
+        Scene india = new Scene(fxmlLoader.load(), 600, 400);
+        return india;
+    }
+
+    Stage setIndiaStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("About India");
+        stage.setScene(scene);
+        return stage;
+    }
+
 }
