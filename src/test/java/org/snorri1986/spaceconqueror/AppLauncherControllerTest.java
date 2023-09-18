@@ -175,4 +175,34 @@ public class AppLauncherControllerTest extends ApplicationTest {
         });
     }
 
+    @Test
+    void checkBtnSpaceX() {
+        Button btnSpaceX = lookup("#btn_space_x").queryButton();
+        clickOn(btnSpaceX);
+        FxAssert.verifyThat(window("About SpaceX"), WindowMatchers.isShowing());
+    }
+
+    @Test
+    void testSetSpaceXScene() throws IOException {
+        Scene sceneSpaceX = appController.setSpaceXScene();
+        assertNotNull(sceneSpaceX);
+    }
+
+    @Test
+    void testSetSpaceXStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testSpaceXScene = null;
+                try {
+                    testSpaceXScene = appController.setSpaceXScene();
+                    Stage testSpaceXStage = appController.setSpaceXStage(testSpaceXScene);
+                    assertNotNull(testSpaceXStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
+
 }
