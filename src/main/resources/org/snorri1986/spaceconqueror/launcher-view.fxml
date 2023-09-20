@@ -37,7 +37,15 @@
             </ImageView>
         </graphic>
     </Button>
-    <Button fx:id="btn_usa" alignment="TOP_CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnUsaClick" prefHeight="26.0" prefWidth="315.0" text="USA" />
+    <Button fx:id="btn_usa" alignment="TOP_CENTER" contentDisplay="TOP" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnUsaClick" prefHeight="26.0" prefWidth="315.0" text="USA">
+        <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="https://icons.iconarchive.com/icons/icons-land/vista-flags/48/United-States-Flag-1-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
     <Button fx:id="btn_ind_bharat" alignment="TOP_CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnIndiaClick" prefHeight="26.0" prefWidth="315.0" text="India(Bharat)" />
     <Button fx:id="btn_space_x" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onBtnSpaceXClick" prefHeight="26.0" prefWidth="322.0" text="Space X" />
 
