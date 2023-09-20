@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 
 public class AppLauncher extends Application {
     @Override
@@ -16,8 +17,8 @@ public class AppLauncher extends Application {
     }
 
     Scene setScene() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("launcher-view.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load(), 320, 620);
+        URL fxmlLocationMain = getClass().getResource("fxml/launcher-view.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationMain);
         Scene scene = new Scene(fxmlLoader.load(), getOptimalWidth(), getOptimalHeight());
         return scene;
     }
