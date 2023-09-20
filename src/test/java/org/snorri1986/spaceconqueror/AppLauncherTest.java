@@ -31,6 +31,24 @@ public class AppLauncherTest extends ApplicationTest {
     void checkSceneExists() throws IOException {
         assertNotNull(hello.setScene());
     }
+    @Test
+    void checkOptimalSizeMainScene() throws IOException {
+        final double normalHeight = 620;
+        final double normalWidth = 320;
+        Scene testScene = hello.setScene();
+        assertEquals(testScene.getHeight(),normalHeight);
+        assertEquals(testScene.getWidth(),normalWidth);
+    }
+
+    @Test
+    void checkSetOptimalValueSizeMainScene() {
+        final double normalHeight = 620;
+        final double normalWidth = 320;
+        double actualHeight = hello.getOptimalHeight();
+        double actualWidth = hello.getOptimalWidth();
+        assertEquals(actualHeight,normalHeight);
+        assertEquals(actualWidth,normalWidth);
+    }
 
     @Test
     void checkTextOnTitle() {
