@@ -55,8 +55,15 @@
             </ImageView>
         </graphic>
     </Button>
-    <Button fx:id="btn_space_x" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onBtnSpaceXClick" prefHeight="26.0" prefWidth="322.0" text="Space X" />
-
+    <Button fx:id="btn_space_x" alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#onBtnSpaceXClick" prefHeight="26.0" prefWidth="322.0" text="Space X">
+        <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="https://icons.iconarchive.com/icons/simpleicons-team/simple/48/spacex-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
     <Label fx:id="welcomeText" />
    <cursor>
       <Cursor fx:constant="DEFAULT" />
