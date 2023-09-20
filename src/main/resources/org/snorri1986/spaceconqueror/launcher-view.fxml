@@ -46,7 +46,15 @@
             </ImageView>
         </graphic>
     </Button>
-    <Button fx:id="btn_ind_bharat" alignment="TOP_CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnIndiaClick" prefHeight="26.0" prefWidth="315.0" text="India(Bharat)" />
+    <Button fx:id="btn_ind_bharat" alignment="TOP_CENTER" contentDisplay="TOP" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnIndiaClick" prefHeight="26.0" prefWidth="315.0" text="India(Bharat)">
+        <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="https://icons.iconarchive.com/icons/wikipedia/flags/48/IN-India-Flag-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
     <Button fx:id="btn_space_x" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onBtnSpaceXClick" prefHeight="26.0" prefWidth="322.0" text="Space X" />
 
     <Label fx:id="welcomeText" />
