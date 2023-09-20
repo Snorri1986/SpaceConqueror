@@ -4,18 +4,66 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
 
 <VBox alignment="TOP_CENTER" cacheShape="false" centerShape="false" depthTest="DISABLE" nodeOrientation="LEFT_TO_RIGHT" prefHeight="314.0" prefWidth="364.0" scaleShape="false" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.snorri1986.spaceconqueror.AppLauncherController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <Button fx:id="btn_s_system" alignment="TOP_CENTER" onAction="#onBtnSolarSystemClick" prefHeight="26.0" prefWidth="323.0" text="Solar System" />
-    <Button fx:id="btn_s_union" alignment="TOP_CENTER" contentDisplay="CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnSovietUnionClick" prefHeight="26.0" prefWidth="320.0" text="Soviet Union" />
-    <Button fx:id="btn_china" alignment="TOP_CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnChinaClick" prefHeight="26.0" prefWidth="317.0" text="China" />
-    <Button fx:id="btn_usa" alignment="TOP_CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnUsaClick" prefHeight="26.0" prefWidth="315.0" text="USA" />
-    <Button fx:id="btn_ind_bharat" alignment="TOP_CENTER" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnIndiaClick" prefHeight="26.0" prefWidth="315.0" text="India(Bharat)" />
-    <Button fx:id="btn_space_x" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onBtnSpaceXClick" prefHeight="26.0" prefWidth="322.0" text="Space X" />
-
+    <Button fx:id="btn_s_system" alignment="TOP_CENTER" contentDisplay="TOP" onAction="#onBtnSolarSystemClick" prefHeight="26.0" prefWidth="323.0" text="Solar System">
+    <graphic>
+        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="https://icons.iconarchive.com/icons/dapino/summer-holiday/48/sun-icon.png" />
+            </image>
+        </ImageView>
+    </graphic>
+    </Button>
+    <Button fx:id="btn_s_union" alignment="TOP_CENTER" contentDisplay="TOP" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnSovietUnionClick" prefHeight="26.0" prefWidth="320.0" text="Soviet Union">
+        <graphic>
+            <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="https://icons.iconarchive.com/icons/iconcubic/soviet/48/General-Application-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button fx:id="btn_china" alignment="TOP_CENTER" contentDisplay="TOP" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnChinaClick" prefHeight="26.0" prefWidth="317.0" text="China">
+        <graphic>
+            <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/48/China-Flag-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button fx:id="btn_usa" alignment="TOP_CENTER" contentDisplay="TOP" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnUsaClick" prefHeight="26.0" prefWidth="315.0" text="USA">
+        <graphic>
+            <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="https://icons.iconarchive.com/icons/icons-land/vista-flags/48/United-States-Flag-1-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button fx:id="btn_ind_bharat" alignment="TOP_CENTER" contentDisplay="TOP" depthTest="DISABLE" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#onBtnIndiaClick" prefHeight="26.0" prefWidth="315.0" text="India(Bharat)">
+        <graphic>
+            <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="https://icons.iconarchive.com/icons/wikipedia/flags/48/IN-India-Flag-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button fx:id="btn_space_x" alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#onBtnSpaceXClick" prefHeight="26.0" prefWidth="322.0" text="Space X">
+        <graphic>
+            <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="https://icons.iconarchive.com/icons/simpleicons-team/simple/48/spacex-icon.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
     <Label fx:id="welcomeText" />
    <cursor>
       <Cursor fx:constant="DEFAULT" />
