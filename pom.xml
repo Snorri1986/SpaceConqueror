@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javafx.controls.version>21</javafx.controls.version>
         <javafx.fxml.version>21</javafx.fxml.version>
-        <javafx.graphics.version>20</javafx.graphics.version>
+        <javafx.graphics.version>21</javafx.graphics.version>
         <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
         <slf4j-api.version>2.0.9</slf4j-api.version>
         <log4j.version>1.2.17</log4j.version>
