@@ -34,7 +34,7 @@ public class AppLauncher extends Application {
     }
 
     Stage initStage(Stage stage,Scene scene) {
-        stage.setTitle("Content!");
+        stage.setTitle("SpaceConqueror");
         stage.setScene(scene);
         return stage;
     }

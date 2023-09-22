@@ -53,7 +53,7 @@ public class AppLauncherTest extends ApplicationTest {
     @Test
     void checkTextOnTitle() {
         String title = stageInternalTest.getTitle();
-        assertEquals("Content!", title);
+        assertEquals("SpaceConqueror", title);
     }
     @Test
     void checkTextOnButtonSolarSystem() throws IOException {
