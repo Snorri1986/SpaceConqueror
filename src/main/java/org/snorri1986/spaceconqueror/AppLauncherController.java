@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 
 
 import java.io.IOException;
+import java.net.URL;
 
 public class AppLauncherController {
 
@@ -27,7 +28,8 @@ public class AppLauncherController {
 
 
     Scene setSolarSystemScene() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("solar-system.fxml"));
+        URL fxmlLocationSolarSystem = getClass().getResource("fxml/solar-system.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationSolarSystem);
         Scene solarSystem = new Scene(fxmlLoader.load(), 600, 400);
         return solarSystem;
     }
@@ -52,7 +54,8 @@ public class AppLauncherController {
     }
 
     Scene setSovietUnionScene() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("soviet-union.fxml"));
+        URL fxmlLocationSovietUnion = getClass().getResource("fxml/soviet-union.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationSovietUnion);
         Scene sovietUnion = new Scene(fxmlLoader.load(), 600, 400);
         return sovietUnion;
     }
@@ -76,7 +79,8 @@ public class AppLauncherController {
     }
 
     Scene setChinaScene() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("china.fxml"));
+        URL fxmlLocationChina = getClass().getResource("fxml/china.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationChina);
         Scene china = new Scene(fxmlLoader.load(), 600, 400);
         return china;
     }
@@ -100,7 +104,8 @@ public class AppLauncherController {
     }
 
     Scene setUsaScene() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("usa.fxml"));
+        URL fxmlLocationUSA = getClass().getResource("fxml/usa.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationUSA);
         Scene usa = new Scene(fxmlLoader.load(), 600, 400);
         return usa;
     }
@@ -124,7 +129,8 @@ public class AppLauncherController {
     }
 
     Scene setIndiaScene() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("india.fxml"));
+        URL fxmlLocationIndia = getClass().getResource("fxml/india.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationIndia);
         Scene india = new Scene(fxmlLoader.load(), 600, 400);
         return india;
     }
@@ -148,7 +154,8 @@ public class AppLauncherController {
     }
 
     Scene setSpaceXScene() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AppLauncher.class.getResource("spacex.fxml"));
+        URL fxmlLocationSpaceX = getClass().getResource("fxml/spacex.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationSpaceX);
         Scene spaceX = new Scene(fxmlLoader.load(), 600, 400);
         return spaceX;
     }
