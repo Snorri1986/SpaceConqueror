@@ -6,4 +6,5 @@ module org.snorri1986.spaceconqueror {
 
     opens org.snorri1986.spaceconqueror to javafx.fxml;
     exports org.snorri1986.spaceconqueror;
+    exports org.snorri1986.spaceconqueror.buttons;
 }
