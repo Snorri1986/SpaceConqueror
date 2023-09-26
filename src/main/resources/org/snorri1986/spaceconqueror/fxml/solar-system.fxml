@@ -8,14 +8,14 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <Button id="mercury" alignment="TOP_LEFT" mnemonicParsing="false" text="Mercury" VBox.vgrow="SOMETIMES" />
-   <Button id="venus" mnemonicParsing="false" text="Venus" />
-   <Button id="earth" mnemonicParsing="false" text="Earth" />
-   <Button id="mars" mnemonicParsing="false" text="Mars" />
-   <Button id="jupiter" mnemonicParsing="false" text="Jupiter" />
+   <Button id="mercury" fx:id="mercury" alignment="TOP_LEFT" mnemonicParsing="false" text="Mercury" VBox.vgrow="SOMETIMES" />
+   <Button id="venus" fx:id="venus" mnemonicParsing="false" text="Venus" />
+   <Button id="earth" fx:id="earth" mnemonicParsing="false" text="Earth" />
+   <Button id="mars" fx:id="mars" mnemonicParsing="false" text="Mars" />
+   <Button id="jupiter" fx:id="jupiter" mnemonicParsing="false" text="Jupiter" />
+    <Button id="saturn" fx:id="saturn" mnemonicParsing="false" text="Saturn" />
+    <Button id="uranus" fx:id="uranus" mnemonicParsing="false" text="Uranus" />
+   <Button id="neptune" fx:id="neptune" mnemonicParsing="false" text="Neptune" />
+   <Button id="pluto" fx:id="pluto" mnemonicParsing="false" text="Pluto" />
     <Label fx:id="SolarSystem" />
-   <Button id="saturn" mnemonicParsing="false" text="Saturn" />
-   <Button id="uranus" mnemonicParsing="false" text="Uranus" />
-   <Button id="neptune" mnemonicParsing="false" text="Neptune" />
-   <Button id="pluto" mnemonicParsing="false" text="Pluto" />
 </VBox>
