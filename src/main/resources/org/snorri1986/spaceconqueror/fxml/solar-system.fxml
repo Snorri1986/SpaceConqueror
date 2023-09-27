@@ -1,21 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" cacheShape="false" centerShape="false" depthTest="DISABLE" nodeOrientation="LEFT_TO_RIGHT" prefHeight="314.0" prefWidth="364.0" scaleShape="false" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.snorri1986.spaceconqueror.buttons.SolarSystemBtnController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-   <Button id="mercury" fx:id="mercury" alignment="TOP_LEFT" mnemonicParsing="false" text="Mercury" VBox.vgrow="SOMETIMES" />
-   <Button id="venus" fx:id="venus" mnemonicParsing="false" text="Venus" />
-   <Button id="earth" fx:id="earth" mnemonicParsing="false" text="Earth" />
-   <Button id="mars" fx:id="mars" mnemonicParsing="false" text="Mars" />
-   <Button id="jupiter" fx:id="jupiter" mnemonicParsing="false" text="Jupiter" />
-    <Button id="saturn" fx:id="saturn" mnemonicParsing="false" text="Saturn" />
-    <Button id="uranus" fx:id="uranus" mnemonicParsing="false" text="Uranus" />
-   <Button id="neptune" fx:id="neptune" mnemonicParsing="false" text="Neptune" />
-   <Button id="pluto" fx:id="pluto" mnemonicParsing="false" text="Pluto" />
-    <Label fx:id="SolarSystem" />
-</VBox>
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.snorri1986.spaceconqueror.buttons.SolarSystemBtnController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" text="Mercury" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <Button mnemonicParsing="false" text="Venus" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <children>
+            <Button mnemonicParsing="false" text="Earth" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Button mnemonicParsing="false" text="Mars" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button mnemonicParsing="false" text="Jupiter" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Button mnemonicParsing="false" text="Saturn" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <Button mnemonicParsing="false" text="Uranus" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button mnemonicParsing="false" text="Neptun" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <Button mnemonicParsing="false" text="Pluto" />
+         </children>
+      </HBox>
+   </children>
+</GridPane>

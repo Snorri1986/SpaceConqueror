@@ -3,7 +3,7 @@ package org.snorri1986.spaceconqueror.buttons;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class SolarSystemBtnController  {
+public class SolarSystemBtnController {
     @FXML
     public Button mercury;
     @FXML
