@@ -19,7 +19,7 @@
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button fx:id="mercury" mnemonicParsing="false" text="Mercury">
+            <Button fx:id="mercury" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Mercury">
              <graphic>
                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -32,7 +32,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
          <children>
-            <Button fx:id="venus" mnemonicParsing="false" text="Venus">
+            <Button fx:id="venus" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Venus">
              <graphic>
                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -45,7 +45,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
          <children>
-            <Button fx:id="earth" mnemonicParsing="false" text="Earth">
+            <Button fx:id="earth" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Earth">
              <graphic>
                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -58,7 +58,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
          <children>
-            <Button fx:id="mars" mnemonicParsing="false" text="Mars">
+            <Button fx:id="mars" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Mars">
              <graphic>
                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -71,7 +71,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
-            <Button fx:id="jupiter" mnemonicParsing="false" text="Jupiter">
+            <Button fx:id="jupiter" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Jupiter">
              <graphic>
                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -84,7 +84,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
          <children>
-            <Button fx:id="saturn" mnemonicParsing="false" text="Saturn">
+            <Button fx:id="saturn" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Saturn">
              <graphic>
                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -97,7 +97,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
          <children>
-            <Button fx:id="uranus" mnemonicParsing="false" text="Uranus">
+            <Button fx:id="uranus" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Uranus">
              <graphic>
                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -110,7 +110,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <children>
-            <Button fx:id="neptune" mnemonicParsing="false" text="Neptune">
+            <Button fx:id="neptune" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Neptune">
              <graphic>
                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -123,7 +123,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <children>
-            <Button fx:id="pluto" mnemonicParsing="false" text="Pluto">
+            <Button fx:id="pluto" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Pluto">
              <graphic>
                  <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
