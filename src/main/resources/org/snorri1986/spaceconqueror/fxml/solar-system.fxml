@@ -17,47 +17,47 @@
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" text="Mercury" />
+            <Button fx:id="mercury" mnemonicParsing="false" text="Mercury" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
          <children>
-            <Button mnemonicParsing="false" text="Venus" />
+            <Button fx:id="venus" mnemonicParsing="false" text="Venus" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
          <children>
-            <Button mnemonicParsing="false" text="Earth" />
+            <Button fx:id="earth" mnemonicParsing="false" text="Earth" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
          <children>
-            <Button mnemonicParsing="false" text="Mars" />
+            <Button fx:id="mars" mnemonicParsing="false" text="Mars" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
-            <Button mnemonicParsing="false" text="Jupiter" />
+            <Button fx:id="jupiter" mnemonicParsing="false" text="Jupiter" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
          <children>
-            <Button mnemonicParsing="false" text="Saturn" />
+            <Button fx:id="saturn" mnemonicParsing="false" text="Saturn" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
          <children>
-            <Button mnemonicParsing="false" text="Uranus" />
+            <Button fx:id="uranus" mnemonicParsing="false" text="Uranus" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <children>
-            <Button mnemonicParsing="false" text="Neptun" />
+            <Button fx:id="neptune" mnemonicParsing="false" text="Neptune" />
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <children>
-            <Button mnemonicParsing="false" text="Pluto" />
+            <Button fx:id="pluto" mnemonicParsing="false" text="Pluto" />
          </children>
       </HBox>
    </children>
