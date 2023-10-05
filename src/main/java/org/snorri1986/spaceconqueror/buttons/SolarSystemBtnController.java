@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.snorri1986.spaceconqueror.AppLauncherController;
+
 
 import java.io.IOException;
 import java.net.URL;
@@ -44,7 +44,6 @@ public class SolarSystemBtnController {
             LOG.error("The button Mercury does not work",e);
         }
     }
-
 
     Scene setMercuryScene() throws IOException {
         URL fxmlLocationMercury = getClass().getResource("mercury.fxml");
