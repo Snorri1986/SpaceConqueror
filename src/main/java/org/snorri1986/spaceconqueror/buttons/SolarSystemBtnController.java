@@ -19,8 +19,8 @@ public class SolarSystemBtnController {
     public Button mercury;
     @FXML
     public Button venus;
-//    @FXML
-//    public Button earth;
+    @FXML
+    public Button earth;
 //    @FXML
 //    public Button mars;
 //    @FXML
@@ -81,6 +81,31 @@ public class SolarSystemBtnController {
     Stage setVenusStage(Scene scene) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("Venus");
+        stage.setScene(scene);
+        return stage;
+    }
+
+    @FXML
+    protected void onBtnEarthClick() {
+        try {
+            Scene sceneEarth = setEarthScene();
+            Stage stageEarth = setEarthStage(sceneEarth);
+            stageEarth.show();
+        } catch (IOException e) {
+            LOG.error("The button Earth does not work",e);
+        }
+    }
+
+    Scene setEarthScene() throws IOException {
+        URL fxmlLocationEarth = getClass().getResource("earth.fxml");
+        FXMLLoader fxmlEarthLoader = new FXMLLoader(fxmlLocationEarth);
+        Scene earth = new Scene(fxmlEarthLoader.load(), 600, 400);
+        return earth;
+    }
+
+    Stage setEarthStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Earth");
         stage.setScene(scene);
         return stage;
     }
