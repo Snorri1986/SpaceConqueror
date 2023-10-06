@@ -45,5 +45,22 @@ public class SolarSystemBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testVenusStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testVenusScene = null;
+                try {
+                    testVenusScene = solarSystemBtnController.setVenusScene();
+                    Stage testVenusStage = solarSystemBtnController.setVenusStage(testVenusScene);
+                    assertNotNull(testVenusStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
 
