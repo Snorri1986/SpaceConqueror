@@ -17,8 +17,8 @@ public class SolarSystemBtnController {
     private static final Logger LOG = LoggerFactory.getLogger(SolarSystemBtnController.class);
     @FXML
     public Button mercury;
-//    @FXML
-//    public Button venus;
+    @FXML
+    public Button venus;
 //    @FXML
 //    public Button earth;
 //    @FXML
@@ -56,6 +56,31 @@ public class SolarSystemBtnController {
     Stage setMercuryStage(Scene scene) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("Mercury");
+        stage.setScene(scene);
+        return stage;
+    }
+
+    @FXML
+    protected void onBtnVenusClick() {
+        try {
+            Scene sceneVenus = setVenusScene();
+            Stage stageVenus = setVenusStage(sceneVenus);
+            stageVenus.show();
+        } catch (IOException e) {
+            LOG.error("The button Venus does not work",e);
+        }
+    }
+
+    Scene setVenusScene() throws IOException {
+        URL fxmlLocationVenus = getClass().getResource("venus.fxml");
+        FXMLLoader fxmlVenusLoader = new FXMLLoader(fxmlLocationVenus);
+        Scene venus = new Scene(fxmlVenusLoader.load(), 600, 400);
+        return venus;
+    }
+
+    Stage setVenusStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Venus");
         stage.setScene(scene);
         return stage;
     }
