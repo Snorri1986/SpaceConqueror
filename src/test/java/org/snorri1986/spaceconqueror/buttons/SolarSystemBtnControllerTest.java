@@ -62,5 +62,22 @@ public class SolarSystemBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testEarthStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testEarthScene = null;
+                try {
+                    testEarthScene = solarSystemBtnController.setEarthScene();
+                    Stage testEarthStage = solarSystemBtnController.setEarthStage(testEarthScene);
+                    assertNotNull(testEarthStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
 
