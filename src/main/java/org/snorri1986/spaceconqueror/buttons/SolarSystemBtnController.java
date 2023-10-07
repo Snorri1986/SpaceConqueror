@@ -23,8 +23,8 @@ public class SolarSystemBtnController {
     public Button earth;
     @FXML
     public Button mars;
-//    @FXML
-//    public Button jupiter;
+    @FXML
+    public Button jupiter;
 //    @FXML
 //    public Button saturn;
 //    @FXML
