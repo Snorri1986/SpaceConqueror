@@ -79,5 +79,22 @@ public class SolarSystemBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testMarsStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testMarsScene = null;
+                try {
+                    testMarsScene = solarSystemBtnController.setMarsScene();
+                    Stage testMarsStage = solarSystemBtnController.setMarsStage(testMarsScene);
+                    assertNotNull(testMarsStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
 
