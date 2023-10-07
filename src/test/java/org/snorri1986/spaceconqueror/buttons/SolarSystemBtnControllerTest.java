@@ -113,5 +113,22 @@ public class SolarSystemBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testSaturnStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testSaturnScene = null;
+                try {
+                    testSaturnScene = solarSystemBtnController.setSaturnScene();
+                    Stage testSaturnStage = solarSystemBtnController.setSaturnStage(testSaturnScene);
+                    assertNotNull(testSaturnStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
 
