@@ -96,5 +96,22 @@ public class SolarSystemBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testJupiterStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testJupiterScene = null;
+                try {
+                    testJupiterScene = solarSystemBtnController.setJupiterScene();
+                    Stage testJupiterStage = solarSystemBtnController.setJupiterStage(testJupiterScene);
+                    assertNotNull(testJupiterStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
 
