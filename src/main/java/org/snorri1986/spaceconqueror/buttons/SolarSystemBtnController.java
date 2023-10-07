@@ -134,4 +134,29 @@ public class SolarSystemBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnJupiterClick() {
+        try {
+            Scene sceneJupiter = setJupiterScene();
+            Stage stageJupiter = setJupiterStage(sceneJupiter);
+            stageJupiter.show();
+        } catch (IOException e) {
+            LOG.error("The button Jupiter does not work",e);
+        }
+    }
+
+    Scene setJupiterScene() throws IOException {
+        URL fxmlLocationJupiter = getClass().getResource("jupiter.fxml");
+        FXMLLoader fxmlJupiterLoader = new FXMLLoader(fxmlLocationJupiter);
+        Scene jupiter = new Scene(fxmlJupiterLoader.load(), 600, 400);
+        return jupiter;
+    }
+
+    Stage setJupiterStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Jupiter");
+        stage.setScene(scene);
+        return stage;
+    }
 }
