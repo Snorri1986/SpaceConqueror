@@ -184,4 +184,29 @@ public class SolarSystemBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnUranusClick() {
+        try {
+            Scene sceneUranus = setUranusScene();
+            Stage stageUranus = setUranusStage(sceneUranus);
+            stageUranus.show();
+        } catch (IOException e) {
+            LOG.error("The button Uranus does not work",e);
+        }
+    }
+
+    Scene setUranusScene() throws IOException {
+        URL fxmlLocationUranus = getClass().getResource("uranus.fxml");
+        FXMLLoader fxmlUranusLoader = new FXMLLoader(fxmlLocationUranus);
+        Scene uranus = new Scene(fxmlUranusLoader.load(), 600, 400);
+        return uranus;
+    }
+
+    Stage setUranusStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Uranus");
+        stage.setScene(scene);
+        return stage;
+    }
 }
