@@ -234,4 +234,29 @@ public class SolarSystemBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnPlutoClick() {
+        try {
+            Scene scenePluto = setPlutoScene();
+            Stage stagePluto = setPlutoStage(scenePluto);
+            stagePluto.show();
+        } catch (IOException e) {
+            LOG.error("The button Pluto does not work",e);
+        }
+    }
+
+    Scene setPlutoScene() throws IOException {
+        URL fxmlLocationPluto = getClass().getResource("pluto.fxml");
+        FXMLLoader fxmlPlutoLoader = new FXMLLoader(fxmlLocationPluto);
+        Scene pluto = new Scene(fxmlPlutoLoader.load(), 600, 400);
+        return pluto;
+    }
+
+    Stage setPlutoStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Pluto");
+        stage.setScene(scene);
+        return stage;
+    }
 }
