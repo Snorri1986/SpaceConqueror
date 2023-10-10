@@ -147,5 +147,22 @@ public class SolarSystemBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testNeptuneStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testNeptuneScene = null;
+                try {
+                    testNeptuneScene = solarSystemBtnController.setNeptuneScene();
+                    Stage testNeptuneStage = solarSystemBtnController.setNeptuneStage(testNeptuneScene);
+                    assertNotNull(testNeptuneStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
 
