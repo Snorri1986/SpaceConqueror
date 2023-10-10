@@ -19,8 +19,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ExtendWith(ApplicationExtension.class)
 public class SolarSystemBtnControllerTest extends ApplicationTest {
 
-    //TODO: add test for another buttons
-
     public final AppLauncherController appLauncherController = new AppLauncherController();
     public final SolarSystemBtnController solarSystemBtnController = new SolarSystemBtnController();
 
@@ -158,6 +156,23 @@ public class SolarSystemBtnControllerTest extends ApplicationTest {
                     testNeptuneScene = solarSystemBtnController.setNeptuneScene();
                     Stage testNeptuneStage = solarSystemBtnController.setNeptuneStage(testNeptuneScene);
                     assertNotNull(testNeptuneStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
+
+    @Test
+    void testPlutoStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testPlutoScene = null;
+                try {
+                    testPlutoScene = solarSystemBtnController.setPlutoScene();
+                    Stage testPlutoStage = solarSystemBtnController.setPlutoStage(testPlutoScene);
+                    assertNotNull(testPlutoStage);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

@@ -27,12 +27,12 @@ public class SolarSystemBtnController {
     public Button jupiter;
     @FXML
     public Button saturn;
-//    @FXML
-//    public Button uranus;
-//    @FXML
-//    public Button neptune;
-//    @FXML
-//    public Button pluto;
+    @FXML
+    public Button uranus;
+    @FXML
+    public Button neptune;
+    @FXML
+    public Button pluto;
 
     @FXML
     protected void onBtnMercuryClick() {
