@@ -209,4 +209,29 @@ public class SolarSystemBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnNeptuneClick() {
+        try {
+            Scene sceneNeptune = setNeptuneScene();
+            Stage stageNeptune = setNeptuneStage(sceneNeptune);
+            stageNeptune.show();
+        } catch (IOException e) {
+            LOG.error("The button Neptune does not work",e);
+        }
+    }
+
+    Scene setNeptuneScene() throws IOException {
+        URL fxmlLocationNeptune = getClass().getResource("neptune.fxml");
+        FXMLLoader fxmlNeptuneLoader = new FXMLLoader(fxmlLocationNeptune);
+        Scene neptune = new Scene(fxmlNeptuneLoader.load(), 600, 400);
+        return neptune;
+    }
+
+    Stage setNeptuneStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Neptune");
+        stage.setScene(scene);
+        return stage;
+    }
 }
