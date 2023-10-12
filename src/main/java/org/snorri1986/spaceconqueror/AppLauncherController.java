@@ -26,8 +26,7 @@ public class AppLauncherController {
         }
     }
 
-
-    Scene setSolarSystemScene() throws IOException {
+    public Scene setSolarSystemScene() throws IOException {
         URL fxmlLocationSolarSystem = getClass().getResource("fxml/solar-system.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationSolarSystem);
         Scene solarSystem = new Scene(fxmlLoader.load(), 600, 400);
@@ -35,7 +34,7 @@ public class AppLauncherController {
     }
 
 
-    Stage setSolarSystemStage(Scene scene) throws IOException {
+    public Stage setSolarSystemStage(Scene scene) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("About Solar System");
         stage.setScene(scene);

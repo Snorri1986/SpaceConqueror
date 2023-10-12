@@ -122,6 +122,12 @@
                             <noHeaderFiles>true</noHeaderFiles>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>debug</id>
+                        <configuration>
+                            <mainClass>org.snorri1986.spaceconqueror/org.snorri1986.spaceconqueror.AppLauncher</mainClass>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>

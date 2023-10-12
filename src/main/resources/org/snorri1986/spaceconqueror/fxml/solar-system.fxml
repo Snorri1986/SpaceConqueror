@@ -1,13 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Label?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.snorri1986.spaceconqueror.AppLauncherController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-    <Label fx:id="SolarSystem" />
-</VBox>
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.snorri1986.spaceconqueror.buttons.SolarSystemBtnController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="mercury" mnemonicParsing="false" onAction="#onBtnMercuryClick" prefHeight="100.0" prefWidth="150.0" text="Mercury">
+             <graphic>
+                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />
+                     </image>
+                 </ImageView>
+             </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <Button fx:id="venus" mnemonicParsing="false" onAction="#onBtnVenusClick" prefHeight="100.0" prefWidth="150.0" text="Venus">
+             <graphic>
+                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />
+                     </image>
+                 </ImageView>
+             </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <children>
+            <Button fx:id="earth" mnemonicParsing="false" onAction="#onBtnEarthClick" prefHeight="100.0" prefWidth="150.0" text="Earth">
+             <graphic>
+                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />
+                     </image>
+                 </ImageView>
+             </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="mars" mnemonicParsing="false" onAction="#onBtnMarsClick" prefHeight="100.0" prefWidth="150.0" text="Mars">
+             <graphic>
+                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />
+                     </image>
+                 </ImageView>
+             </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="jupiter" mnemonicParsing="false" onAction="#onBtnJupiterClick" prefHeight="100.0" prefWidth="150.0" text="Jupiter">
+             <graphic>
+                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />
+                     </image>
+                 </ImageView>
+             </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="saturn" mnemonicParsing="false" onAction="#onBtnSaturnClick" prefHeight="100.0" prefWidth="150.0" text="Saturn">
+             <graphic>
+                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />
+                     </image>
+                 </ImageView>
+             </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="uranus" mnemonicParsing="false" onAction="#onBtnUranusClick"  prefHeight="100.0" prefWidth="150.0" text="Uranus">
+             <graphic>
+                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />
+                     </image>
+                 </ImageView>
+             </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="neptune" mnemonicParsing="false" onAction="#onBtnNeptuneClick" prefHeight="100.0" prefWidth="150.0" text="Neptune">
+             <graphic>
+                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />
+                     </image>
+                 </ImageView>
+             </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="pluto" mnemonicParsing="false" onAction="#onBtnPlutoClick" prefHeight="100.0" prefWidth="150.0" text="Pluto">
+             <graphic>
+                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />
+                     </image>
+                 </ImageView>
+             </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
