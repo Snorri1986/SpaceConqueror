@@ -19,117 +19,117 @@
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
             <children>
                 <Button fx:id="vostok" mnemonicParsing="false"  prefHeight="100.0" prefWidth="150.0" text="Vostok">
-<!--                    <graphic>-->
-<!--                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">-->
-<!--                            <image>-->
-<!--                                <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />-->
-<!--                            </image>-->
-<!--                        </ImageView>-->
-<!--                    </graphic>-->
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="https://icons.iconarchive.com/icons/iconshock/stroke-networking/48/satellite-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
                 </Button>
             </children>
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
             <children>
                 <Button fx:id="voshod" mnemonicParsing="false"  prefHeight="100.0" prefWidth="150.0" text="Voshod">
-<!--                    <graphic>-->
-<!--                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">-->
-<!--                            <image>-->
-<!--                                <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />-->
-<!--                            </image>-->
-<!--                        </ImageView>-->
-<!--                    </graphic>-->
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="https://icons.iconarchive.com/icons/iconshock/stroke-networking/48/satellite-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
                 </Button>
             </children>
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
             <children>
                 <Button fx:id="soyuz" mnemonicParsing="false"  prefHeight="100.0" prefWidth="150.0" text="Soyuz">
-<!--                    <graphic>-->
-<!--                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">-->
-<!--                            <image>-->
-<!--                                <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />-->
-<!--                            </image>-->
-<!--                        </ImageView>-->
-<!--                    </graphic>-->
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="https://icons.iconarchive.com/icons/iconshock/stroke-networking/48/satellite-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
                 </Button>
             </children>
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
             <children>
                 <Button fx:id="mir" mnemonicParsing="false"  prefHeight="100.0" prefWidth="150.0" text="Mir">
-<!--                    <graphic>-->
-<!--                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">-->
-<!--                            <image>-->
-<!--                                <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />-->
-<!--                            </image>-->
-<!--                        </ImageView>-->
-<!--                    </graphic>-->
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="https://icons.iconarchive.com/icons/iconshock/stroke-networking/48/satellite-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
                 </Button>
             </children>
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <children>
                 <Button fx:id="buran" mnemonicParsing="false"  prefHeight="100.0" prefWidth="150.0" text="Buran">
-<!--                    <graphic>-->
-<!--                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">-->
-<!--                            <image>-->
-<!--                                <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />-->
-<!--                            </image>-->
-<!--                        </ImageView>-->
-<!--                    </graphic>-->
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="https://icons.iconarchive.com/icons/iconshock/stroke-networking/48/satellite-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
                 </Button>
             </children>
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
             <children>
                 <Button fx:id="luna" mnemonicParsing="false"  prefHeight="100.0" prefWidth="150.0" text="Luna">
-<!--                    <graphic>-->
-<!--                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">-->
-<!--                            <image>-->
-<!--                                <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />-->
-<!--                            </image>-->
-<!--                        </ImageView>-->
-<!--                    </graphic>-->
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="https://icons.iconarchive.com/icons/iconshock/stroke-networking/48/satellite-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
                 </Button>
             </children>
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
             <children>
                 <Button fx:id="venera" mnemonicParsing="false"  prefHeight="100.0" prefWidth="150.0" text="Venera">
-<!--                    <graphic>-->
-<!--                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">-->
-<!--                            <image>-->
-<!--                                <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />-->
-<!--                            </image>-->
-<!--                        </ImageView>-->
-<!--                    </graphic>-->
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="https://icons.iconarchive.com/icons/iconshock/stroke-networking/48/satellite-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
                 </Button>
             </children>
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
             <children>
                 <Button fx:id="vega" mnemonicParsing="false"  prefHeight="100.0" prefWidth="150.0" text="Vega">
-<!--                    <graphic>-->
-<!--                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">-->
-<!--                            <image>-->
-<!--                                <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />-->
-<!--                            </image>-->
-<!--                        </ImageView>-->
-<!--                    </graphic>-->
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="https://icons.iconarchive.com/icons/iconshock/stroke-networking/48/satellite-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
                 </Button>
             </children>
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
             <children>
                 <Button fx:id="mars" mnemonicParsing="false"  prefHeight="100.0" prefWidth="150.0" text="Mars">
-<!--                    <graphic>-->
-<!--                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">-->
-<!--                            <image>-->
-<!--                                <Image url="https://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png" />-->
-<!--                            </image>-->
-<!--                        </ImageView>-->
-<!--                    </graphic>-->
+                    <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="https://icons.iconarchive.com/icons/iconshock/stroke-networking/48/satellite-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
                 </Button>
             </children>
         </HBox>
