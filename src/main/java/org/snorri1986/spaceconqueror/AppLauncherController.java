@@ -52,14 +52,14 @@ public class AppLauncherController {
         }
     }
 
-    Scene setSovietUnionScene() throws IOException {
+    public Scene setSovietUnionScene() throws IOException {
         URL fxmlLocationSovietUnion = getClass().getResource("fxml/soviet-union.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationSovietUnion);
         Scene sovietUnion = new Scene(fxmlLoader.load(), 600, 400);
         return sovietUnion;
     }
 
-    Stage setSovietUnionStage(Scene scene) throws IOException {
+    public Stage setSovietUnionStage(Scene scene) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("About Soviet Union");
         stage.setScene(scene);
