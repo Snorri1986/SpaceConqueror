@@ -83,4 +83,29 @@ public class SovietUnionBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnSoyuzClick() {
+        try {
+            Scene sceneSoyuz = setSoyuzScene();
+            Stage stageSoyuz = setSoyuzStage(sceneSoyuz);
+            stageSoyuz.show();
+        } catch (IOException e) {
+            LOG.error("The button Soyuz does not work",e);
+        }
+    }
+
+    Scene setSoyuzScene() throws IOException {
+        URL fxmlLocationSoyuz = getClass().getResource("soyuz.fxml");
+        FXMLLoader fxmlSoyuzLoader = new FXMLLoader(fxmlLocationSoyuz);
+        Scene soyuz = new Scene(fxmlSoyuzLoader.load(), 600, 400);
+        return soyuz;
+    }
+
+    Stage setSoyuzStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Soyuz");
+        stage.setScene(scene);
+        return stage;
+    }
 }
