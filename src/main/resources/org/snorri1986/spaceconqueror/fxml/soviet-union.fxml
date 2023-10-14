@@ -57,7 +57,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
             <children>
-                <Button fx:id="mir" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Mir">
+                <Button fx:id="mir" mnemonicParsing="false" onAction="#onBtnMirClick" prefHeight="100.0" prefWidth="150.0" text="Mir">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>

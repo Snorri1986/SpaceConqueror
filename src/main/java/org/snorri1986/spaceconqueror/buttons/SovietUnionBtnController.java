@@ -108,4 +108,29 @@ public class SovietUnionBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnMirClick() {
+        try {
+            Scene sceneMir = setMirScene();
+            Stage stageMir = setMirStage(sceneMir);
+            stageMir.show();
+        } catch (IOException e) {
+            LOG.error("The button Mir does not work",e);
+        }
+    }
+
+    Scene setMirScene() throws IOException {
+        URL fxmlLocationMir = getClass().getResource("mir.fxml");
+        FXMLLoader fxmlSoyuzMir = new FXMLLoader(fxmlLocationMir);
+        Scene mir = new Scene(fxmlSoyuzMir.load(), 600, 400);
+        return mir;
+    }
+
+    Stage setMirStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Mir");
+        stage.setScene(scene);
+        return stage;
+    }
 }
