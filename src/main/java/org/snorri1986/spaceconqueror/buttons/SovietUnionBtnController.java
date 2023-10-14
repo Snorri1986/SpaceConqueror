@@ -58,4 +58,29 @@ public class SovietUnionBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnVoshodClick() {
+        try {
+            Scene sceneVoshod = setVoshodScene();
+            Stage stageVoshod = setVoshodStage(sceneVoshod);
+            stageVoshod.show();
+        } catch (IOException e) {
+            LOG.error("The button Voshod does not work",e);
+        }
+    }
+
+    Scene setVoshodScene() throws IOException {
+        URL fxmlLocationVoshod = getClass().getResource("voshod.fxml");
+        FXMLLoader fxmlVoshodLoader = new FXMLLoader(fxmlLocationVoshod);
+        Scene voshod = new Scene(fxmlVoshodLoader.load(), 600, 400);
+        return voshod;
+    }
+
+    Stage setVoshodStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Voshod");
+        stage.setScene(scene);
+        return stage;
+    }
 }
