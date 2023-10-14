@@ -110,4 +110,21 @@ public class SovietUnionBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testLunaStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testLunaScene = null;
+                try {
+                    testLunaScene = sovietUnionBtnController.setLunaScene();
+                    Stage testLunaStage = sovietUnionBtnController.setLunaStage(testLunaScene);
+                    assertNotNull(testLunaStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
