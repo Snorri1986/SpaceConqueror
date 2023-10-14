@@ -158,4 +158,29 @@ public class SovietUnionBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnLunaClick() {
+        try {
+            Scene sceneLuna = setLunaScene();
+            Stage stageLuna = setLunaStage(sceneLuna);
+            stageLuna.show();
+        } catch (IOException e) {
+            LOG.error("The button Luna does not work",e);
+        }
+    }
+
+    Scene setLunaScene() throws IOException {
+        URL fxmlLocationLuna = getClass().getResource("luna.fxml");
+        FXMLLoader fxmlLunaLoader = new FXMLLoader(fxmlLocationLuna);
+        Scene luna = new Scene(fxmlLunaLoader.load(), 600, 400);
+        return luna;
+    }
+
+    Stage setLunaStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Luna");
+        stage.setScene(scene);
+        return stage;
+    }
 }
