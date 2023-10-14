@@ -42,4 +42,21 @@ public class SovietUnionBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testVoshodStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testVoshodScene = null;
+                try {
+                    testVoshodScene = sovietUnionBtnController.setVoshodScene();
+                    Stage testVoshodStage = sovietUnionBtnController.setVoshodStage(testVoshodScene);
+                    assertNotNull(testVoshodStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
