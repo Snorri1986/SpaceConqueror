@@ -93,4 +93,21 @@ public class SovietUnionBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testBuranStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testBuranScene = null;
+                try {
+                    testBuranScene = sovietUnionBtnController.setBuranScene();
+                    Stage testBuranStage = sovietUnionBtnController.setBuranStage(testBuranScene);
+                    assertNotNull(testBuranStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
