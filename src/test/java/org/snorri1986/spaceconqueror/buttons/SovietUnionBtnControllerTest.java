@@ -76,4 +76,21 @@ public class SovietUnionBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testMirStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testMirScene = null;
+                try {
+                    testMirScene = sovietUnionBtnController.setMirScene();
+                    Stage testMirStage = sovietUnionBtnController.setMirStage(testMirScene);
+                    assertNotNull(testMirStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
