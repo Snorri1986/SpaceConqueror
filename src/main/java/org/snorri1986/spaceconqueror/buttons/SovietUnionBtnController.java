@@ -122,14 +122,39 @@ public class SovietUnionBtnController {
 
     Scene setMirScene() throws IOException {
         URL fxmlLocationMir = getClass().getResource("mir.fxml");
-        FXMLLoader fxmlSoyuzMir = new FXMLLoader(fxmlLocationMir);
-        Scene mir = new Scene(fxmlSoyuzMir.load(), 600, 400);
+        FXMLLoader fxmlMirLoader = new FXMLLoader(fxmlLocationMir);
+        Scene mir = new Scene(fxmlMirLoader.load(), 600, 400);
         return mir;
     }
 
     Stage setMirStage(Scene scene) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("Mir");
+        stage.setScene(scene);
+        return stage;
+    }
+
+    @FXML
+    protected void onBtnBuranClick() {
+        try {
+            Scene sceneBuran = setBuranScene();
+            Stage stageBuran = setBuranStage(sceneBuran);
+            stageBuran.show();
+        } catch (IOException e) {
+            LOG.error("The button Buran does not work",e);
+        }
+    }
+
+    Scene setBuranScene() throws IOException {
+        URL fxmlLocationBuran = getClass().getResource("buran.fxml");
+        FXMLLoader fxmlBuranLoader = new FXMLLoader(fxmlLocationBuran);
+        Scene buran = new Scene(fxmlBuranLoader.load(), 600, 400);
+        return buran;
+    }
+
+    Stage setBuranStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Buran");
         stage.setScene(scene);
         return stage;
     }
