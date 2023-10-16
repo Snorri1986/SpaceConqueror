@@ -161,4 +161,21 @@ public class SovietUnionBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testMarsStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testMarsScene = null;
+                try {
+                    testMarsScene = sovietUnionBtnController.setMarsScene();
+                    Stage testMarsStage = sovietUnionBtnController.setMarsStage(testMarsScene);
+                    assertNotNull(testMarsStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
