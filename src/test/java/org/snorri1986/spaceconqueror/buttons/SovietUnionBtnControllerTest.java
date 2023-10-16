@@ -144,4 +144,21 @@ public class SovietUnionBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testVegaStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testVegaScene = null;
+                try {
+                    testVegaScene = sovietUnionBtnController.setVegaScene();
+                    Stage testVegaStage = sovietUnionBtnController.setVegaStage(testVegaScene);
+                    assertNotNull(testVegaStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
