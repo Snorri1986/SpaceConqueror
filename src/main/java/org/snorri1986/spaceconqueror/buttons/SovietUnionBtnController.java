@@ -183,4 +183,29 @@ public class SovietUnionBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnVeneraClick() {
+        try {
+            Scene sceneVenera = setVeneraScene();
+            Stage stageVenera = setVeneraStage(sceneVenera);
+            stageVenera.show();
+        } catch (IOException e) {
+            LOG.error("The button Venera does not work",e);
+        }
+    }
+
+    Scene setVeneraScene() throws IOException {
+        URL fxmlLocationVenera = getClass().getResource("venera.fxml");
+        FXMLLoader fxmlVeneraLoader = new FXMLLoader(fxmlLocationVenera);
+        Scene venera = new Scene(fxmlVeneraLoader.load(), 600, 400);
+        return venera;
+    }
+
+    Stage setVeneraStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Venera");
+        stage.setScene(scene);
+        return stage;
+    }
 }
