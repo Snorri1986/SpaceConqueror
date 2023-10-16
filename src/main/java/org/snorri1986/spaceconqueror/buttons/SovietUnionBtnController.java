@@ -208,4 +208,29 @@ public class SovietUnionBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnVegaClick() {
+        try {
+            Scene sceneVega = setVegaScene();
+            Stage stageVega = setVegaStage(sceneVega);
+            stageVega.show();
+        } catch (IOException e) {
+            LOG.error("The button Vega does not work",e);
+        }
+    }
+
+    Scene setVegaScene() throws IOException {
+        URL fxmlLocationVega = getClass().getResource("vega.fxml");
+        FXMLLoader fxmlVegaLoader = new FXMLLoader(fxmlLocationVega);
+        Scene vega = new Scene(fxmlVegaLoader.load(), 600, 400);
+        return vega;
+    }
+
+    Stage setVegaStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Vega");
+        stage.setScene(scene);
+        return stage;
+    }
 }
