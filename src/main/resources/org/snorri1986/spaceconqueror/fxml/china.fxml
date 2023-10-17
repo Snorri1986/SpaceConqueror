@@ -44,7 +44,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
             <children>
-                <Button fx:id="prj9213" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Project 921-3">
+                <Button fx:id="prj9213" mnemonicParsing="false" onAction="#onBtnProject9213Click" prefHeight="100.0" prefWidth="150.0" text="Project 921-3">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>
