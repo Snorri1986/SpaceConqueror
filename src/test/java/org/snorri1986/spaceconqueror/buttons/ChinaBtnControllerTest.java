@@ -60,4 +60,21 @@ public class ChinaBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testPrj9213Stage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testPrj9213Scene = null;
+                try {
+                    testPrj9213Scene = chinaBtnController.setPrj9213Scene();
+                    Stage testPrj9213Stage = chinaBtnController.setPrj9213Stage(testPrj9213Scene);
+                    assertNotNull(testPrj9213Stage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
