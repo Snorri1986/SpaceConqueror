@@ -67,4 +67,29 @@ public class ChinaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnProject9212Click() {
+        try {
+            Scene scenePrj9212 = setPrj9212Scene();
+            Stage stagePrj9212 = setPrj9212Stage(scenePrj9212);
+            stagePrj9212.show();
+        } catch (IOException e) {
+            LOG.error("The button Project9212 does not work",e);
+        }
+    }
+
+    Scene setPrj9212Scene() throws IOException {
+        URL fxmlLocationPrj9212 = getClass().getResource("prj9212.fxml");
+        FXMLLoader fxmlPrj9212Loader = new FXMLLoader(fxmlLocationPrj9212);
+        Scene prj9212 = new Scene(fxmlPrj9212Loader.load(), 600, 400);
+        return prj9212;
+    }
+
+    Stage setPrj9212Stage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("PRJ9212");
+        stage.setScene(scene);
+        return stage;
+    }
 }
