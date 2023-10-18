@@ -142,4 +142,29 @@ public class ChinaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnInterplanetsClick() {
+        try {
+            Scene sceneInterplanets = setInterplanetsScene();
+            Stage stageInterplanets = setInterplanetsStage(sceneInterplanets);
+            stageInterplanets.show();
+        } catch (IOException e) {
+            LOG.error("The button Interplanets does not work",e);
+        }
+    }
+
+    Scene setInterplanetsScene() throws IOException {
+        URL fxmlLocationInterplanets = getClass().getResource("interplanets.fxml");
+        FXMLLoader fxmlInterplanetsLoader = new FXMLLoader(fxmlLocationInterplanets);
+        Scene interplanets = new Scene(fxmlInterplanetsLoader.load(), 600, 400);
+        return interplanets;
+    }
+
+    Stage setInterplanetsStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Interplanets");
+        stage.setScene(scene);
+        return stage;
+    }
 }
