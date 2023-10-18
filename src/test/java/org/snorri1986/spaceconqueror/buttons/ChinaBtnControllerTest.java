@@ -94,4 +94,21 @@ public class ChinaBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testInterplanetStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testInterplanetScene = null;
+                try {
+                    testInterplanetScene = chinaBtnController.setInterplanetsScene();
+                    Stage testInterplanetStage = chinaBtnController.setInterplanetsStage(testInterplanetScene);
+                    assertNotNull(testInterplanetStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
