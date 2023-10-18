@@ -77,14 +77,14 @@ public class AppLauncherController {
         }
     }
 
-    Scene setChinaScene() throws IOException {
+    public Scene setChinaScene() throws IOException {
         URL fxmlLocationChina = getClass().getResource("fxml/china.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationChina);
         Scene china = new Scene(fxmlLoader.load(), 600, 400);
         return china;
     }
 
-    Stage setChinaStage(Scene scene) throws IOException {
+    public Stage setChinaStage(Scene scene) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("About China");
         stage.setScene(scene);
