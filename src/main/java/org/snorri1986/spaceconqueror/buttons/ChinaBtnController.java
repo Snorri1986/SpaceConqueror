@@ -192,4 +192,29 @@ public class ChinaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnMarsClick() {
+        try {
+            Scene sceneMars = setMarsScene();
+            Stage stageMars = setMarsStage(sceneMars);
+            stageMars.show();
+        } catch (IOException e) {
+            LOG.error("The button Mars does not work",e);
+        }
+    }
+
+    Scene setMarsScene() throws IOException {
+        URL fxmlLocationMars = getClass().getResource("mars_china_program.fxml");
+        FXMLLoader fxmlMarsLoader = new FXMLLoader(fxmlLocationMars);
+        Scene mars = new Scene(fxmlMarsLoader.load(), 600, 400);
+        return mars;
+    }
+
+    Stage setMarsStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Mars");
+        stage.setScene(scene);
+        return stage;
+    }
 }
