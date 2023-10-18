@@ -117,4 +117,29 @@ public class ChinaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnLunarClick() {
+        try {
+            Scene sceneLunar = setLunarScene();
+            Stage stageLunar = setLunarStage(sceneLunar);
+            stageLunar.show();
+        } catch (IOException e) {
+            LOG.error("The button Lunar does not work",e);
+        }
+    }
+
+    Scene setLunarScene() throws IOException {
+        URL fxmlLocationLunar = getClass().getResource("lunar.fxml");
+        FXMLLoader fxmlLunarLoader = new FXMLLoader(fxmlLocationLunar);
+        Scene lunar = new Scene(fxmlLunarLoader.load(), 600, 400);
+        return lunar;
+    }
+
+    Stage setLunarStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Lunar");
+        stage.setScene(scene);
+        return stage;
+    }
 }

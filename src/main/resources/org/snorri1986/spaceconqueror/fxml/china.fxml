@@ -57,7 +57,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
             <children>
-                <Button fx:id="lunar" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Lunar program">
+                <Button fx:id="lunar" mnemonicParsing="false" onAction="#onBtnLunarClick" prefHeight="100.0" prefWidth="150.0" text="Lunar program">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>
