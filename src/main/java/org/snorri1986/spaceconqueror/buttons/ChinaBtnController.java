@@ -242,4 +242,29 @@ public class ChinaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnPeoplesClick() {
+        try {
+            Scene scenePeoples = setPeoplesScene();
+            Stage stagePeoples = setPeoplesStage(scenePeoples);
+            stagePeoples.show();
+        } catch (IOException e) {
+            LOG.error("The button Peoples does not work",e);
+        }
+    }
+
+    Scene setPeoplesScene() throws IOException {
+        URL fxmlLocationPeoples = getClass().getResource("china_peoples.fxml");
+        FXMLLoader fxmlPeoplesLoader = new FXMLLoader(fxmlLocationPeoples);
+        Scene peoples = new Scene(fxmlPeoplesLoader.load(), 600, 400);
+        return peoples;
+    }
+
+    Stage setPeoplesStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Peoples");
+        stage.setScene(scene);
+        return stage;
+    }
 }
