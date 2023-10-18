@@ -77,4 +77,21 @@ public class ChinaBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testLunarStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testLunarScene = null;
+                try {
+                    testLunarScene = chinaBtnController.setLunarScene();
+                    Stage testLunarStage = chinaBtnController.setLunarStage(testLunarScene);
+                    assertNotNull(testLunarStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
