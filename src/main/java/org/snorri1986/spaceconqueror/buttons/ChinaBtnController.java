@@ -217,4 +217,29 @@ public class ChinaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnCosmodromsClick() {
+        try {
+            Scene sceneCosmodroms = setCosmodromsScene();
+            Stage stageCosmodroms = setCosmodromsStage(sceneCosmodroms);
+            stageCosmodroms.show();
+        } catch (IOException e) {
+            LOG.error("The button Cosmodroms does not work",e);
+        }
+    }
+
+    Scene setCosmodromsScene() throws IOException {
+        URL fxmlLocationCosmodroms = getClass().getResource("china_cosmodroms.fxml");
+        FXMLLoader fxmlCosmodromsLoader = new FXMLLoader(fxmlLocationCosmodroms);
+        Scene cosmodroms = new Scene(fxmlCosmodromsLoader.load(), 600, 400);
+        return cosmodroms;
+    }
+
+    Stage setCosmodromsStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Cosmodroms");
+        stage.setScene(scene);
+        return stage;
+    }
 }

@@ -109,7 +109,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
             <children>
-                <Button fx:id="cosmodroms" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Cosmodroms">
+                <Button fx:id="cosmodroms" mnemonicParsing="false" onAction="#onBtnCosmodromsClick" prefHeight="100.0" prefWidth="150.0" text="Cosmodroms">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>
