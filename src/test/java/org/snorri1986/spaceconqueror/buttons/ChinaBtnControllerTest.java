@@ -145,4 +145,21 @@ public class ChinaBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testCosmodromsStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testCosmodromsScene = null;
+                try {
+                    testCosmodromsScene = chinaBtnController.setCosmodromsScene();
+                    Stage testCosmodromsStage = chinaBtnController.setCosmodromsStage(testCosmodromsScene);
+                    assertNotNull(testCosmodromsStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
