@@ -111,4 +111,21 @@ public class ChinaBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testOrbitalsStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testOrbitalsScene = null;
+                try {
+                    testOrbitalsScene = chinaBtnController.setOrbitalsScene();
+                    Stage testOrbitalsStage = chinaBtnController.setOrbitalsStage(testOrbitalsScene);
+                    assertNotNull(testOrbitalsStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
