@@ -83,7 +83,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
             <children>
-                <Button fx:id="orbital" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" text="Orbitals">
+                <Button fx:id="orbital" mnemonicParsing="false" onAction="#onBtnOrbitalsClick" prefHeight="100.0" prefWidth="150.0" text="Orbitals">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>

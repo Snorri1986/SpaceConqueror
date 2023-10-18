@@ -167,4 +167,29 @@ public class ChinaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnOrbitalsClick() {
+        try {
+            Scene sceneOrbitals = setOrbitalsScene();
+            Stage stageOrbitals = setOrbitalsStage(sceneOrbitals);
+            stageOrbitals.show();
+        } catch (IOException e) {
+            LOG.error("The button Orbitals does not work",e);
+        }
+    }
+
+    Scene setOrbitalsScene() throws IOException {
+        URL fxmlLocationOrbitals = getClass().getResource("orbitals_china.fxml");
+        FXMLLoader fxmlOrbitalsLoader = new FXMLLoader(fxmlLocationOrbitals);
+        Scene orbitals = new Scene(fxmlOrbitalsLoader.load(), 600, 400);
+        return orbitals;
+    }
+
+    Stage setOrbitalsStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Orbitals");
+        stage.setScene(scene);
+        return stage;
+    }
 }
