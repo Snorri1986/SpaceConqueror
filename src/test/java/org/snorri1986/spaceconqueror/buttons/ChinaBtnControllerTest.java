@@ -128,4 +128,21 @@ public class ChinaBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testMarsStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testMarsScene = null;
+                try {
+                    testMarsScene = chinaBtnController.setMarsScene();
+                    Stage testMarsStage = chinaBtnController.setMarsStage(testMarsScene);
+                    assertNotNull(testMarsStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
