@@ -43,4 +43,21 @@ public class UsaBtnControllerTest extends ApplicationTest  {
             }
         });
     }
+
+    @Test
+    void testGeminiProgramStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testGeminiProgramScene = null;
+                try {
+                    testGeminiProgramScene = usaBtnController.setGeminiProgramScene();
+                    Stage testGeminiProgramStage = usaBtnController.setGeminiProgramStage(testGeminiProgramScene);
+                    assertNotNull(testGeminiProgramStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
