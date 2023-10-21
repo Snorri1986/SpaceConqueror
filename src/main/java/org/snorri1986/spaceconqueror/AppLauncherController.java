@@ -102,14 +102,14 @@ public class AppLauncherController {
         }
     }
 
-    Scene setUsaScene() throws IOException {
+    public Scene setUsaScene() throws IOException {
         URL fxmlLocationUSA = getClass().getResource("fxml/usa.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationUSA);
         Scene usa = new Scene(fxmlLoader.load(), 600, 400);
         return usa;
     }
 
-    Stage setUsaStage(Scene scene) throws IOException {
+    public Stage setUsaStage(Scene scene) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("About USA");
         stage.setScene(scene);
