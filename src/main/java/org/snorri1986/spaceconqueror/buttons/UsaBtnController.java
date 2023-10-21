@@ -67,4 +67,29 @@ public class UsaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnGeminiProgramClick() throws IOException {
+        try {
+            Scene sceneGeminiProgram = setGeminiProgramScene();
+            Stage stageGeminiProgram = setGeminiProgramStage(sceneGeminiProgram);
+            stageGeminiProgram.show();
+        } catch (IOException e) {
+            LOG.error("The button Gemini Program does not work",e);
+        }
+    }
+
+    Scene setGeminiProgramScene() throws IOException {
+        URL fxmlLocationGeminiProgram = getClass().getResource("gemini_program.fxml");
+        FXMLLoader fxmlGeminiProgramLoader = new FXMLLoader(fxmlLocationGeminiProgram);
+        Scene geminiProgram = new Scene(fxmlGeminiProgramLoader.load(), 600, 400);
+        return geminiProgram;
+    }
+
+    Stage setGeminiProgramStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Gemini Program");
+        stage.setScene(scene);
+        return stage;
+    }
 }

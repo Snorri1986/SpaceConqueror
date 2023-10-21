@@ -31,7 +31,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
             <children>
-                <Button fx:id="geminiProgram" mnemonicParsing="false" prefHeight="100.0" prefWidth="180.0" text="Gemini Program">
+                <Button fx:id="geminiProgram" mnemonicParsing="false" onAction="#onBtnGeminiProgramClick" prefHeight="100.0" prefWidth="180.0" text="Gemini Program">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>
