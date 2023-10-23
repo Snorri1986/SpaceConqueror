@@ -92,4 +92,29 @@ public class UsaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnApolloProgramClick() throws IOException {
+        try {
+            Scene sceneApolloProgram = setApolloProgramScene();
+            Stage stageApolloProgram = setApolloProgramStage(sceneApolloProgram);
+            stageApolloProgram.show();
+        } catch (IOException e) {
+            LOG.error("The button Apollo Program does not work",e);
+        }
+    }
+
+    Scene setApolloProgramScene() throws IOException {
+        URL fxmlLocationApolloProgram = getClass().getResource("apollo_program.fxml");
+        FXMLLoader fxmlApolloProgramLoader = new FXMLLoader(fxmlLocationApolloProgram);
+        Scene apolloProgram = new Scene(fxmlApolloProgramLoader.load(), 600, 400);
+        return apolloProgram;
+    }
+
+    Stage setApolloProgramStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Apollo Program");
+        stage.setScene(scene);
+        return stage;
+    }
 }
