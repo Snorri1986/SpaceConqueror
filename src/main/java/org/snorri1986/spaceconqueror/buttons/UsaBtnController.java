@@ -142,4 +142,29 @@ public class UsaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onIssProgramClick() throws IOException {
+        try {
+            Scene sceneIssProgram = setIssScene();
+            Stage stageIssProgram = setIssStage(sceneIssProgram);
+            stageIssProgram.show();
+        } catch (IOException e) {
+            LOG.error("The button ISS Program does not work",e);
+        }
+    }
+
+    Scene setIssScene() throws IOException {
+        URL fxmlIss= getClass().getResource("iss.fxml");
+        FXMLLoader fxmlIssLoader = new FXMLLoader(fxmlIss);
+        Scene iSS = new Scene(fxmlIssLoader.load(), 600, 400);
+        return iSS;
+    }
+
+    Stage setIssStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("ISS");
+        stage.setScene(scene);
+        return stage;
+    }
 }
