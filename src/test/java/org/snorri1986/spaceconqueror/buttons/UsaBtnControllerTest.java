@@ -77,4 +77,21 @@ public class UsaBtnControllerTest extends ApplicationTest  {
             }
         });
     }
+
+    @Test
+    void testSoyuzApolloProgramStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testSoyuzApolloProgramScene = null;
+                try {
+                    testSoyuzApolloProgramScene = usaBtnController.setSoyuzApolloProgramScene();
+                    Stage testSoyuzApolloProgramStage = usaBtnController.setSoyuzApolloProgramStage(testSoyuzApolloProgramScene);
+                    assertNotNull(testSoyuzApolloProgramStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
