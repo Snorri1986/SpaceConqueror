@@ -111,4 +111,21 @@ public class UsaBtnControllerTest extends ApplicationTest  {
             }
         });
     }
+
+    @Test
+    void testSpaceShuttleProgramStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testSpaceShuttleProgramScene = null;
+                try {
+                    testSpaceShuttleProgramScene = usaBtnController.setSpaceShuttleProgramScene();
+                    Stage testSpaceShuttleProgramStage = usaBtnController.setSpaceShuttleProgramStage(testSpaceShuttleProgramScene);
+                    assertNotNull(testSpaceShuttleProgramStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
