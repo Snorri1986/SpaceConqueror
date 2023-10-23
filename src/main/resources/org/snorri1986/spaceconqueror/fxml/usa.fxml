@@ -83,7 +83,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
             <children>
-                <Button fx:id="spaceShuttle" mnemonicParsing="false" prefHeight="100.0" prefWidth="180.0" text="Space Shuttle">
+                <Button fx:id="spaceShuttle" mnemonicParsing="false" onAction="#onSpaceShuttleProgramClick" prefHeight="100.0" prefWidth="180.0" text="Space Shuttle">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>

@@ -167,4 +167,29 @@ public class UsaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onSpaceShuttleProgramClick() throws IOException {
+        try {
+            Scene sceneSpaceShuttleProgram = setSpaceShuttleProgramScene();
+            Stage stageSpaceShuttleProgram = setSpaceShuttleProgramStage(sceneSpaceShuttleProgram);
+            stageSpaceShuttleProgram.show();
+        } catch (IOException e) {
+            LOG.error("The button SpaceShuttle Program does not work",e);
+        }
+    }
+
+    Scene setSpaceShuttleProgramScene() throws IOException {
+        URL fxmlSpaceShuttleProgram= getClass().getResource("space_shuttle.fxml");
+        FXMLLoader fxmlSpaceShuttleProgramLoader = new FXMLLoader(fxmlSpaceShuttleProgram);
+        Scene spaceShuttleProgram = new Scene(fxmlSpaceShuttleProgramLoader.load(), 600, 400);
+        return spaceShuttleProgram;
+    }
+
+    Stage setSpaceShuttleProgramStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Space Shuttle Program");
+        stage.setScene(scene);
+        return stage;
+    }
 }
