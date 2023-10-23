@@ -117,4 +117,29 @@ public class UsaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnSoyuzApolloProgramClick() throws IOException {
+        try {
+            Scene sceneSoyuzApolloProgram = setSoyuzApolloProgramScene();
+            Stage stageSoyuzApolloProgram = setSoyuzApolloProgramStage(sceneSoyuzApolloProgram);
+            stageSoyuzApolloProgram.show();
+        } catch (IOException e) {
+            LOG.error("The button Soyuz-Apollo Program does not work",e);
+        }
+    }
+
+    Scene setSoyuzApolloProgramScene() throws IOException {
+        URL fxmlLocationSoyuzApolloProgram = getClass().getResource("soyuz_apollo_program.fxml");
+        FXMLLoader fxmlSoyuzApolloProgramLoader = new FXMLLoader(fxmlLocationSoyuzApolloProgram);
+        Scene soyuzApolloProgram = new Scene(fxmlSoyuzApolloProgramLoader.load(), 600, 400);
+        return soyuzApolloProgram;
+    }
+
+    Stage setSoyuzApolloProgramStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Soyuz Apollo Program");
+        stage.setScene(scene);
+        return stage;
+    }
 }

@@ -57,7 +57,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
             <children>
-                <Button fx:id="soyuzApollo" mnemonicParsing="false" prefHeight="100.0" prefWidth="180.0" text="Soyuz-Apollo">
+                <Button fx:id="soyuzApollo" mnemonicParsing="false" onAction="#onBtnSoyuzApolloProgramClick" prefHeight="100.0" prefWidth="180.0" text="Soyuz-Apollo">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>
