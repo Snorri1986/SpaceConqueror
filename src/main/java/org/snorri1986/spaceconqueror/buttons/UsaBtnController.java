@@ -242,4 +242,29 @@ public class UsaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onNasaClick() throws IOException {
+        try {
+            Scene sceneNasa = setNasaScene();
+            Stage stageNasa = setNasaStage(sceneNasa);
+            stageNasa.show();
+        } catch (IOException e) {
+            LOG.error("The button NASA does not work",e);
+        }
+    }
+
+    Scene setNasaScene() throws IOException {
+        URL fxmlNasa = getClass().getResource("nasa.fxml");
+        FXMLLoader fxmlNasaLoader = new FXMLLoader(fxmlNasa);
+        Scene nasa = new Scene(fxmlNasaLoader.load(), 600, 400);
+        return nasa;
+    }
+
+    Stage setNasaStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("NASA");
+        stage.setScene(scene);
+        return stage;
+    }
 }
