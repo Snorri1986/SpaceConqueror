@@ -238,7 +238,7 @@ public class ChinaBtnController {
 
     Stage setCosmodromsStage(Scene scene) throws IOException {
         Stage stage = new Stage();
-        stage.setTitle("Cosmodroms");
+        stage.setTitle("China Cosmodroms");
         stage.setScene(scene);
         return stage;
     }
