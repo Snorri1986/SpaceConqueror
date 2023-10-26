@@ -162,4 +162,21 @@ public class UsaBtnControllerTest extends ApplicationTest  {
             }
         });
     }
+
+    @Test
+    void testNasaStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testNasaScene = null;
+                try {
+                    testNasaScene = usaBtnController.setNasaScene();
+                    Stage testNasaStage = usaBtnController.setNasaStage(testNasaScene);
+                    assertNotNull(testNasaStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
