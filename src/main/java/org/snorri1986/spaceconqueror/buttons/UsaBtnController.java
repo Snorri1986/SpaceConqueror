@@ -192,4 +192,29 @@ public class UsaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onCosmodromsClick() throws IOException {
+        try {
+            Scene sceneCosmodroms = setCosmodromsScene();
+            Stage stageCosmodroms = setCosmodromsStage(sceneCosmodroms);
+            stageCosmodroms.show();
+        } catch (IOException e) {
+            LOG.error("The button Cosmodroms does not work",e);
+        }
+    }
+
+    Scene setCosmodromsScene() throws IOException {
+        URL fxmlCosmodroms = getClass().getResource("usa_cosmodroms.fxml");
+        FXMLLoader fxmlCosmodromsLoader = new FXMLLoader(fxmlCosmodroms);
+        Scene cosmodroms = new Scene(fxmlCosmodromsLoader.load(), 600, 400);
+        return cosmodroms;
+    }
+
+    Stage setCosmodromsStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("USA Cosmodroms");
+        stage.setScene(scene);
+        return stage;
+    }
 }
