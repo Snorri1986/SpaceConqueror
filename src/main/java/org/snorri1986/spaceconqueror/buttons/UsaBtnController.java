@@ -217,4 +217,29 @@ public class UsaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onPeoplesClick() throws IOException {
+        try {
+            Scene scenePeoples = setPeoplesScene();
+            Stage stagePeoples = setPeoplesStage(scenePeoples);
+            stagePeoples.show();
+        } catch (IOException e) {
+            LOG.error("The button Peoples does not work",e);
+        }
+    }
+
+    Scene setPeoplesScene() throws IOException {
+        URL fxmlPeoples = getClass().getResource("usa_peoples.fxml");
+        FXMLLoader fxmlPeoplesLoader = new FXMLLoader(fxmlPeoples);
+        Scene peoples = new Scene(fxmlPeoplesLoader.load(), 600, 400);
+        return peoples;
+    }
+
+    Stage setPeoplesStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("USA Peoples");
+        stage.setScene(scene);
+        return stage;
+    }
 }
