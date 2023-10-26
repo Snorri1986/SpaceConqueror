@@ -145,4 +145,21 @@ public class UsaBtnControllerTest extends ApplicationTest  {
             }
         });
     }
+
+    @Test
+    void testUsaPeoplesStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testUsaPeoplesScene = null;
+                try {
+                    testUsaPeoplesScene = usaBtnController.setPeoplesScene();
+                    Stage testUsaPeoplesStage = usaBtnController.setPeoplesStage(testUsaPeoplesScene);
+                    assertNotNull(testUsaPeoplesStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
