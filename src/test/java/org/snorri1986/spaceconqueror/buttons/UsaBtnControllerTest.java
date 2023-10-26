@@ -128,4 +128,21 @@ public class UsaBtnControllerTest extends ApplicationTest  {
             }
         });
     }
+
+    @Test
+    void testUsaCosmodromsStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testUsaCosmodromsScene = null;
+                try {
+                    testUsaCosmodromsScene = usaBtnController.setCosmodromsScene();
+                    Stage testUsaCosmodromsStage = usaBtnController.setCosmodromsStage(testUsaCosmodromsScene);
+                    assertNotNull(testUsaCosmodromsStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
