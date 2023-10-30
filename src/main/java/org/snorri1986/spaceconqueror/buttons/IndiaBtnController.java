@@ -67,4 +67,29 @@ public class IndiaBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnGaganClick() {
+        try {
+            Scene sceneGagan = setGaganScene();
+            Stage stageGagan = setGaganStage(sceneGagan);
+            stageGagan.show();
+        } catch (IOException e) {
+            LOG.error("The button GAGAN does not work",e);
+        }
+    }
+
+    Scene setGaganScene() throws IOException {
+        URL fxmlLocationGagan = getClass().getResource("gagan.fxml");
+        FXMLLoader fxmlGaganLoader = new FXMLLoader(fxmlLocationGagan);
+        Scene gagan = new Scene(fxmlGaganLoader.load(), 600, 400);
+        return gagan;
+    }
+    Stage setGaganStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Gagan");
+        stage.setScene(scene);
+        return stage;
+    }
+
 }

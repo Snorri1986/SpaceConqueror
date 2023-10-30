@@ -31,7 +31,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
             <children>
-                <Button fx:id="gagan" mnemonicParsing="false" prefHeight="100.0" prefWidth="160.0" text="GAGAN">
+                <Button fx:id="gagan" mnemonicParsing="false" onAction="#onBtnGaganClick" prefHeight="100.0" prefWidth="160.0" text="GAGAN">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>
