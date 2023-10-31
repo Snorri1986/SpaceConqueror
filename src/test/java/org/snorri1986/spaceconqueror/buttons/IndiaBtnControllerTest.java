@@ -93,4 +93,21 @@ public class IndiaBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testMarsOrbiterStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testMarsOrbiterScene = null;
+                try {
+                    testMarsOrbiterScene = indiaBtnController.setMarsOrbiterScene();
+                    Stage testMarsOrbiterStage = indiaBtnController.setMarsOrbiterStage(testMarsOrbiterScene);
+                    assertNotNull(testMarsOrbiterStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
