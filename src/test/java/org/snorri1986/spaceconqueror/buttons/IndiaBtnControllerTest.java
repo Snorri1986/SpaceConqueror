@@ -110,4 +110,21 @@ public class IndiaBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testChandrayaanThreeStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testChandrayaanThreeScene = null;
+                try {
+                    testChandrayaanThreeScene = indiaBtnController.setChandrayaanThreeScene();
+                    Stage testChandrayaanThreeStage = indiaBtnController.setChandrayaanThreeStage(testChandrayaanThreeScene);
+                    assertNotNull(testChandrayaanThreeStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
