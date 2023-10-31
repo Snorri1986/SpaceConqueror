@@ -191,4 +191,29 @@ public class IndiaBtnController {
         return stage;
     }
 
+    @FXML
+    protected void onBtnAdityaLoneClick() {
+        try {
+            Scene sceneAdityaLone = setAdityaLoneScene();
+            Stage stageAdityaLone = setAdityaLoneStage(sceneAdityaLone);
+            stageAdityaLone.show();
+        } catch (IOException e) {
+            LOG.error("The button Aditya-L1 does not work",e);
+        }
+    }
+
+    Scene setAdityaLoneScene() throws IOException {
+        URL fxmlLocationAdityaLone = getClass().getResource("adityalone.fxml");
+        FXMLLoader fxmlAdityaLoneLoader = new FXMLLoader(fxmlLocationAdityaLone);
+        Scene adityaLone = new Scene(fxmlAdityaLoneLoader.load(), 600, 400);
+        return adityaLone;
+    }
+
+    Stage setAdityaLoneStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Aditya-L1");
+        stage.setScene(scene);
+        return stage;
+    }
+
 }

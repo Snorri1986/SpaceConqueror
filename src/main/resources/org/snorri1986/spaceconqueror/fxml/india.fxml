@@ -96,7 +96,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
             <children>
-                <Button fx:id="adityaL1" mnemonicParsing="false" prefHeight="100.0" prefWidth="160.0" text="Aditya-L1">
+                <Button fx:id="adityaL1" mnemonicParsing="false" onAction="#onBtnAdityaLoneClick" prefHeight="100.0" prefWidth="160.0" text="Aditya-L1">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>
