@@ -83,7 +83,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
             <children>
-                <Button fx:id="chandrayaanThree" mnemonicParsing="false" prefHeight="100.0" prefWidth="160.0" text="Chandrayaan-3">
+                <Button fx:id="chandrayaanThree" mnemonicParsing="false" onAction="#onBtnChandrayaanThreeClick" prefHeight="100.0" prefWidth="160.0" text="Chandrayaan-3">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>

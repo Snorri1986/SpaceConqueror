@@ -166,4 +166,29 @@ public class IndiaBtnController {
         return stage;
     }
 
+    @FXML
+    protected void onBtnChandrayaanThreeClick() {
+        try {
+            Scene sceneChandrayaanThree = setChandrayaanThreeScene();
+            Stage stageChandrayaanThree = setChandrayaanThreeStage(sceneChandrayaanThree);
+            stageChandrayaanThree.show();
+        } catch (IOException e) {
+            LOG.error("The button Chandrayaan-3 does not work",e);
+        }
+    }
+
+    Scene setChandrayaanThreeScene() throws IOException {
+        URL fxmlLocationChandrayaanThree = getClass().getResource("chandrayaan3.fxml");
+        FXMLLoader fxmlChandrayaanThreeLoader = new FXMLLoader(fxmlLocationChandrayaanThree);
+        Scene chandrayaanThree = new Scene(fxmlChandrayaanThreeLoader.load(), 600, 400);
+        return chandrayaanThree;
+    }
+
+    Stage setChandrayaanThreeStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Chandrayaan-3");
+        stage.setScene(scene);
+        return stage;
+    }
+
 }
