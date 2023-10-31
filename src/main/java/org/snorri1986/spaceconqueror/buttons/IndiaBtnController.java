@@ -141,4 +141,29 @@ public class IndiaBtnController {
         return stage;
     }
 
+    @FXML
+    protected void onBtnMarsOrbiterClick() {
+        try {
+            Scene sceneMarsOrbiter = setMarsOrbiterScene();
+            Stage stageMarsOrbiter = setMarsOrbiterStage(sceneMarsOrbiter);
+            stageMarsOrbiter.show();
+        } catch (IOException e) {
+            LOG.error("The button MarsOrbiter does not work",e);
+        }
+    }
+
+    Scene setMarsOrbiterScene() throws IOException {
+        URL fxmlLocationMarsOrbiter = getClass().getResource("marsorbiter.fxml");
+        FXMLLoader fxmlMarsOrbiterLoader = new FXMLLoader(fxmlLocationMarsOrbiter);
+        Scene marsOrbiter = new Scene(fxmlMarsOrbiterLoader.load(), 600, 400);
+        return marsOrbiter;
+    }
+
+    Stage setMarsOrbiterStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Mars Orbiter");
+        stage.setScene(scene);
+        return stage;
+    }
+
 }

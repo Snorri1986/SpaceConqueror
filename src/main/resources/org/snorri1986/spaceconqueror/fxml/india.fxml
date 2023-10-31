@@ -70,7 +70,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <children>
-                <Button fx:id="marsOrbiter" mnemonicParsing="false" prefHeight="100.0" prefWidth="160.0" text="MarsOrbiter">
+                <Button fx:id="marsOrbiter" mnemonicParsing="false" onAction="#onBtnMarsOrbiterClick" prefHeight="100.0" prefWidth="160.0" text="MarsOrbiter">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>
