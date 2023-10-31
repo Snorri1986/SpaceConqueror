@@ -87,7 +87,31 @@ public class IndiaBtnController {
     }
     Stage setGaganStage(Scene scene) throws IOException {
         Stage stage = new Stage();
-        stage.setTitle("Gagan");
+        stage.setTitle("GAGAN");
+        stage.setScene(scene);
+        return stage;
+    }
+    @FXML
+    protected void onBtnIrnssClick() {
+        try {
+            Scene sceneIrnss = setIrnssScene();
+            Stage stageIrnss = setIrnssStage(sceneIrnss);
+            stageIrnss.show();
+        } catch (IOException e) {
+            LOG.error("The button IRNSS does not work",e);
+        }
+    }
+
+    Scene setIrnssScene() throws IOException {
+        URL fxmlLocationIrnss = getClass().getResource("irnss.fxml");
+        FXMLLoader fxmlIrnssLoader = new FXMLLoader(fxmlLocationIrnss);
+        Scene irnss = new Scene(fxmlIrnssLoader.load(), 600, 400);
+        return irnss;
+    }
+
+    Stage setIrnssStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("IRNSS");
         stage.setScene(scene);
         return stage;
     }
