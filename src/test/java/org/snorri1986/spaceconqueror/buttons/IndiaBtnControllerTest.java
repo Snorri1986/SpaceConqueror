@@ -127,4 +127,21 @@ public class IndiaBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testAdityaLoneStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testAdityaLoneScene = null;
+                try {
+                    testAdityaLoneScene = indiaBtnController.setAdityaLoneScene();
+                    Stage testAdityaLoneStage = indiaBtnController.setAdityaLoneStage(testAdityaLoneScene);
+                    assertNotNull(testAdityaLoneStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
