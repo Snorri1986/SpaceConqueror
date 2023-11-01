@@ -144,4 +144,21 @@ public class IndiaBtnControllerTest extends ApplicationTest {
             }
         });
     }
+
+    @Test
+    void testCosmodromsStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testCosmodromsScene = null;
+                try {
+                    testCosmodromsScene = indiaBtnController.setCosmodromsScene();
+                    Stage testCosmodromsStage = indiaBtnController.setCosmodromsStage(testCosmodromsScene);
+                    assertNotNull(testCosmodromsStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
