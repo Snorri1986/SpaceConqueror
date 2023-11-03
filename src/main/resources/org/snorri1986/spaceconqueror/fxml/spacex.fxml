@@ -44,7 +44,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
             <children>
-                <Button fx:id="dragon" mnemonicParsing="false" prefHeight="100.0" prefWidth="160.0" text="Dragon">
+                <Button fx:id="dragon" mnemonicParsing="false" onAction="#onBtnDragonClick" prefHeight="100.0" prefWidth="160.0" text="Dragon">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>

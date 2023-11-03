@@ -92,4 +92,29 @@ public class SpacexBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnDragonClick() {
+        try {
+            Scene sceneDragon = setDragonScene();
+            Stage stageDragon = setDragonStage(sceneDragon);
+            stageDragon.show();
+        } catch (IOException e) {
+            LOG.error("The button Dragon does not work",e);
+        }
+    }
+
+    Scene setDragonScene() throws IOException {
+        URL fxmlLocationDragon = getClass().getResource("dragon.fxml");
+        FXMLLoader fxmlDragonLoader = new FXMLLoader(fxmlLocationDragon);
+        Scene dragon = new Scene(fxmlDragonLoader.load(), 600, 400);
+        return dragon;
+    }
+
+    Stage setDragonStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Dragon");
+        stage.setScene(scene);
+        return stage;
+    }
 }
