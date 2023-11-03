@@ -117,4 +117,29 @@ public class SpacexBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnFalconHeavyClick() {
+        try {
+            Scene sceneFalconHeavy = setFalconHeavyScene();
+            Stage stageFalconHeavy = setFalconHeavyStage(sceneFalconHeavy );
+            stageFalconHeavy.show();
+        } catch (IOException e) {
+            LOG.error("The button Falcon Heavy does not work",e);
+        }
+    }
+
+    Scene setFalconHeavyScene() throws IOException {
+        URL fxmlLocationFalconHeavy = getClass().getResource("falconheavy.fxml");
+        FXMLLoader fxmlFalconHeavyLoader = new FXMLLoader(fxmlLocationFalconHeavy);
+        Scene falconHeavy = new Scene(fxmlFalconHeavyLoader.load(), 600, 400);
+        return falconHeavy;
+    }
+
+    Stage setFalconHeavyStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Falcon Heavy");
+        stage.setScene(scene);
+        return stage;
+    }
 }
