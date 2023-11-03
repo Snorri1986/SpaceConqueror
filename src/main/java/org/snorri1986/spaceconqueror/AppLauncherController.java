@@ -152,14 +152,14 @@ public class AppLauncherController {
         }
     }
 
-    Scene setSpaceXScene() throws IOException {
+    public Scene setSpaceXScene() throws IOException {
         URL fxmlLocationSpaceX = getClass().getResource("fxml/spacex.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocationSpaceX);
         Scene spaceX = new Scene(fxmlLoader.load(), 600, 400);
         return spaceX;
     }
 
-    Stage setSpaceXStage(Scene scene) throws IOException {
+    public Stage setSpaceXStage(Scene scene) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("About SpaceX");
         stage.setScene(scene);
