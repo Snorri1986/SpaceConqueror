@@ -127,7 +127,8 @@ public class SpacexBtnControllerTest extends ApplicationTest  {
                 }
             }
         });
-    }@Test
+    }
+    @Test
     void testElonMaskStage() throws IOException {
         Platform.runLater(new Runnable() {
             @Override
@@ -144,5 +145,20 @@ public class SpacexBtnControllerTest extends ApplicationTest  {
         });
     }
 
-
+    @Test
+    void testCosmodromsStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testCosmodromsScene = null;
+                try {
+                    testCosmodromsScene = spacexBtnController.setCosmodromsScene();
+                    Stage testCosmodromsStage = spacexBtnController.setCosmodromsStage(testCosmodromsScene);
+                    assertNotNull(testCosmodromsStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
