@@ -111,4 +111,21 @@ public class SpacexBtnControllerTest extends ApplicationTest  {
             }
         });
     }
+
+    @Test
+    void testStarLinkStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testStarLinkScene = null;
+                try {
+                    testStarLinkScene = spacexBtnController.setStarLinkScene();
+                    Stage testStarLinkStage = spacexBtnController.setStarLinkStage(testStarLinkScene);
+                    assertNotNull(testStarLinkStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
