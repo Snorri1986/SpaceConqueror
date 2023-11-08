@@ -163,7 +163,32 @@ public class SpacexBtnController {
 
     Stage setStarshipStage(Scene scene) throws IOException {
         Stage stage = new Stage();
-        stage.setTitle("StarShip");
+        stage.setTitle("Starship");
+        stage.setScene(scene);
+        return stage;
+    }
+
+    @FXML
+    protected void onBtnStarLinkClick() {
+        try {
+            Scene sceneStarLink = setStarLinkScene();
+            Stage stageStarLink = setStarLinkStage(sceneStarLink);
+            stageStarLink.show();
+        } catch (IOException e) {
+            LOG.error("The button Starlink does not work",e);
+        }
+    }
+
+    Scene setStarLinkScene() throws IOException {
+        URL fxmlLocationStarLink = getClass().getResource("starlink.fxml");
+        FXMLLoader fxmlStarLinkLoader = new FXMLLoader(fxmlLocationStarLink);
+        Scene starLink = new Scene(fxmlStarLinkLoader.load(), 600, 400);
+        return starLink;
+    }
+
+    Stage setStarLinkStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("Starlink");
         stage.setScene(scene);
         return stage;
     }
