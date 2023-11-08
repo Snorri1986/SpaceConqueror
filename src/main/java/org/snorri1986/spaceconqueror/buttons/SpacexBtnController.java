@@ -192,4 +192,29 @@ public class SpacexBtnController {
         stage.setScene(scene);
         return stage;
     }
+
+    @FXML
+    protected void onBtnElonMaskClick() {
+        try {
+            Scene sceneElonMask = setElonMaskScene();
+            Stage stageElonMask = setElonMaskStage(sceneElonMask);
+            stageElonMask.show();
+        } catch (IOException e) {
+            LOG.error("The button ElonMask does not work",e);
+        }
+    }
+
+    Scene setElonMaskScene() throws IOException {
+        URL fxmlLocationElonMask = getClass().getResource("elonmask.fxml");
+        FXMLLoader fxmlElonMaskLoader = new FXMLLoader(fxmlLocationElonMask);
+        Scene elonMask = new Scene(fxmlElonMaskLoader.load(), 600, 400);
+        return elonMask;
+    }
+
+    Stage setElonMaskStage(Scene scene) throws IOException {
+        Stage stage = new Stage();
+        stage.setTitle("ElonMask");
+        stage.setScene(scene);
+        return stage;
+    }
 }
