@@ -94,4 +94,21 @@ public class SpacexBtnControllerTest extends ApplicationTest  {
             }
         });
     }
+
+    @Test
+    void testStarShipStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testStarShipScene = null;
+                try {
+                    testStarShipScene = spacexBtnController.setStarshipScene();
+                    Stage testStarShipStage = spacexBtnController.setStarshipStage(testStarShipScene);
+                    assertNotNull(testStarShipStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
 }
