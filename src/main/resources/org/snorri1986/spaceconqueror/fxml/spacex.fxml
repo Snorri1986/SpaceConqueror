@@ -70,7 +70,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <children>
-                <Button fx:id="starship" mnemonicParsing="false" prefHeight="100.0" prefWidth="160.0" text="StarShip">
+                <Button fx:id="starship" mnemonicParsing="false" onAction="#onBtnStarshipClick" prefHeight="100.0" prefWidth="160.0" text="StarShip">
                     <graphic>
                         <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                             <image>
