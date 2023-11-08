@@ -127,5 +127,22 @@ public class SpacexBtnControllerTest extends ApplicationTest  {
                 }
             }
         });
+    }@Test
+    void testElonMaskStage() throws IOException {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                Scene testElonMaskScene = null;
+                try {
+                    testElonMaskScene = spacexBtnController.setElonMaskScene();
+                    Stage testElonMaskStage = spacexBtnController.setElonMaskStage(testElonMaskScene);
+                    assertNotNull(testElonMaskStage);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
     }
+
+
 }
