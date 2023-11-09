@@ -5,15 +5,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.net.URL;
 
 public class SpacexBtnController {
 
-    private static final Logger LOG = LoggerFactory.getLogger(SpacexBtnController.class);
+    private static final Logger LOG = Logger.getLogger(SpacexBtnController.class.getName());
 
     @FXML
     public Button falconone;

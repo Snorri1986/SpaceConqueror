@@ -4,9 +4,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.apache.log4j.Logger;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 import java.io.IOException;
@@ -14,7 +13,7 @@ import java.net.URL;
 
 public class AppLauncherController {
 
-    private static final Logger LOG = LoggerFactory.getLogger(AppLauncherController.class);
+    private static final Logger LOG = Logger.getLogger(AppLauncherController.class.getName());
     @FXML
     protected void onBtnSolarSystemClick() {
         try {

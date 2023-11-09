@@ -5,14 +5,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.net.URL;
 
 public class SovietUnionBtnController {
-    private static final Logger LOG = LoggerFactory.getLogger(SovietUnionBtnController.class);
+    private static final Logger LOG = Logger.getLogger(SovietUnionBtnController.class.getName());
 
     @FXML
     public Button vostok;
