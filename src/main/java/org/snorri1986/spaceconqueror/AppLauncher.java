@@ -4,13 +4,20 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import java.io.IOException;
 import java.net.URL;
 
+import static org.apache.log4j.helpers.Loader.getResource;
+
 public class AppLauncher extends Application {
+
+    static final Logger logger = Logger.getLogger(AppLauncher.class.getName());
     @Override
     public void start(Stage stage) throws IOException {
+        PropertyConfigurator.configure(getResource("log4j.properties"));
         Scene scene = setScene();
         initStage(stage, scene);
         stage.show();
