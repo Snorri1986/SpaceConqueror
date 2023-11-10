@@ -47,7 +47,7 @@ public class SolarSystemBtnController {
     Scene setMercuryScene() throws IOException {
         URL fxmlLocationMercury = getClass().getResource("mercury.fxml");
         FXMLLoader fxmlMercuryLoader = new FXMLLoader(fxmlLocationMercury);
-        Scene mercury = new Scene(fxmlMercuryLoader.load(), 600, 400);
+        Scene mercury = new Scene(fxmlMercuryLoader.load(), 1000, 700);
         return mercury;
     }
 
