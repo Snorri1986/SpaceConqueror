@@ -23,6 +23,15 @@ public class MercuryLectionController implements Initializable {
     TextArea lessonTxt;
 
     @FXML
+    protected void onBtnLocalUaClick() throws FileNotFoundException {
+        File file = fileChooserUA.showOpenDialog(new Stage());
+        Scanner scanner = new Scanner(file);
+        while(scanner.hasNextLine()) {
+            lessonTxt.appendText(scanner.nextLine() + "\n");
+        }
+    }
+
+    @FXML
     protected void onBtnLocalEnClick() throws FileNotFoundException {
         File file = fileChooserEN.showOpenDialog(new Stage());
         Scanner scanner = new Scanner(file);
@@ -33,7 +42,6 @@ public class MercuryLectionController implements Initializable {
 
     // TODO: onBtnLocalUaClick()
     // TODO: onBtnLocalDkClick()
-    // TODO: initialize to Ua and Dk
     // TODO: close button
     public void initialize(URL url, ResourceBundle resourceBundle) {
         fileChooserEN.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
