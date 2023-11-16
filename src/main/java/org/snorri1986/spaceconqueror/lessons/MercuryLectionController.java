@@ -23,7 +23,7 @@ public class MercuryLectionController implements Initializable {
 
     @FXML
     //TODO: add unit test
-    protected void onBtnLocalEnClick(MouseEvent event) throws FileNotFoundException {
+    protected void onBtnLocalEnClick() throws FileNotFoundException {
         File file = fileChooserEN.showOpenDialog(new Stage());
         Scanner scanner = new Scanner(file);
         while(scanner.hasNextLine()) {
