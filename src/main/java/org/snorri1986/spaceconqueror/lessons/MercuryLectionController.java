@@ -15,7 +15,9 @@ import java.util.Scanner;
 
 public class MercuryLectionController implements Initializable {
 
+    FileChooser fileChooserUA = new FileChooser();
     FileChooser fileChooserEN = new FileChooser();
+    FileChooser fileChooserDK = new FileChooser();
 
     @FXML
     TextArea lessonTxt;
@@ -35,5 +37,7 @@ public class MercuryLectionController implements Initializable {
     // TODO: close button
     public void initialize(URL url, ResourceBundle resourceBundle) {
         fileChooserEN.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
+        fileChooserUA.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\ua"));
+        fileChooserDK.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\dk"));
     }
 }
