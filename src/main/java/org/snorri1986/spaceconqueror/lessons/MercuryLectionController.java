@@ -40,8 +40,15 @@ public class MercuryLectionController implements Initializable {
         }
     }
 
-    // TODO: onBtnLocalUaClick()
-    // TODO: onBtnLocalDkClick()
+    @FXML
+    protected void onBtnLocalDkClick() throws FileNotFoundException {
+        File file = fileChooserDK.showOpenDialog(new Stage());
+        Scanner scanner = new Scanner(file);
+        while(scanner.hasNextLine()) {
+            lessonTxt.appendText(scanner.nextLine() + "\n");
+        }
+    }
+
     // TODO: close button
     public void initialize(URL url, ResourceBundle resourceBundle) {
         fileChooserEN.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
