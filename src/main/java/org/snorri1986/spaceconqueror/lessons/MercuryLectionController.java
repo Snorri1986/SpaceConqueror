@@ -3,7 +3,6 @@ package org.snorri1986.spaceconqueror.lessons;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -22,7 +21,6 @@ public class MercuryLectionController implements Initializable {
     TextArea lessonTxt;
 
     @FXML
-    //TODO: add unit test
     protected void onBtnLocalEnClick() throws FileNotFoundException {
         File file = fileChooserEN.showOpenDialog(new Stage());
         Scanner scanner = new Scanner(file);
@@ -31,7 +29,10 @@ public class MercuryLectionController implements Initializable {
         }
     }
 
-    @Override
+    // TODO: onBtnLocalUaClick()
+    // TODO: onBtnLocalDkClick()
+    // TODO: initialize to Ua and Dk
+    // TODO: close button
     public void initialize(URL url, ResourceBundle resourceBundle) {
         fileChooserEN.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
     }
