@@ -21,7 +21,9 @@ public class MercuryLectionControllerTest extends ApplicationTest {
     public final AppLauncherController appLauncherController = new AppLauncherController();
     public final MercuryLectionController mercuryLectionController = new MercuryLectionController();
 
+    FileChooser fileChooserUAtest = new FileChooser();
     FileChooser fileChooserENtest = new FileChooser();
+
 
     @Start
     public void start(Stage stageOriginal) throws IOException {
@@ -30,9 +32,14 @@ public class MercuryLectionControllerTest extends ApplicationTest {
     }
 
     @Test
-    public void checkInitialDirectory() {
-        fileChooserENtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
+    public void checkInitialDirectoryUA() {
+        fileChooserENtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\ua"));
         assertNotNull(fileChooserENtest.getInitialDirectory());
     }
 
+    @Test
+    public void checkInitialDirectoryEN() {
+        fileChooserENtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
+        assertNotNull(fileChooserENtest.getInitialDirectory());
+    }
 }
