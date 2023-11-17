@@ -24,6 +24,7 @@ public class MercuryLectionController implements Initializable {
 
     @FXML
     protected void onBtnLocalUaClick() throws FileNotFoundException {
+        lessonTxt.clear();
         File file = fileChooserUA.showOpenDialog(new Stage());
         Scanner scanner = new Scanner(file);
         while(scanner.hasNextLine()) {
@@ -33,6 +34,7 @@ public class MercuryLectionController implements Initializable {
 
     @FXML
     protected void onBtnLocalEnClick() throws FileNotFoundException {
+        lessonTxt.clear();
         File file = fileChooserEN.showOpenDialog(new Stage());
         Scanner scanner = new Scanner(file);
         while(scanner.hasNextLine()) {
@@ -42,6 +44,7 @@ public class MercuryLectionController implements Initializable {
 
     @FXML
     protected void onBtnLocalDkClick() throws FileNotFoundException {
+        lessonTxt.clear();
         File file = fileChooserDK.showOpenDialog(new Stage());
         Scanner scanner = new Scanner(file);
         while(scanner.hasNextLine()) {
