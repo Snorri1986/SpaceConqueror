@@ -35,19 +35,19 @@ public class MercuryLectionControllerTest extends ApplicationTest {
 
     @Test
     public void checkInitialDirectoryUA() {
-        fileChooserUAtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\ua"));
+        fileChooserUAtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\ua"));
         assertNotNull(fileChooserUAtest.getInitialDirectory());
     }
 
     @Test
     public void checkInitialDirectoryEN() {
-        fileChooserENtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
+        fileChooserENtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
         assertNotNull(fileChooserENtest.getInitialDirectory());
     }
 
     @Test
     public void checkInitialDirectoryDK() {
-        fileChooserDKtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\java\\org\\snorri1986\\spaceconqueror\\content\\text\\dk"));
+        fileChooserDKtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\dk"));
         assertNotNull(fileChooserDKtest.getInitialDirectory());
     }
 }
