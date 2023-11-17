@@ -33,15 +33,21 @@ public class SolarSystemBtnController {
     @FXML
     public Button pluto;
 
+    static Stage mercuryStage;
+
     @FXML
     protected void onBtnMercuryClick() {
         try {
             Scene sceneMercury = setMercuryScene();
-            Stage stageSolarSys = setMercuryStage(sceneMercury);
-            stageSolarSys.show();
+            mercuryStage = setMercuryStage(sceneMercury);
+            mercuryStage.show();
         } catch (IOException e) {
             LOG.error("The button Mercury does not work",e);
         }
+    }
+    @FXML
+    public static void closeMercuryStage() {
+        mercuryStage.close();
     }
 
     Scene setMercuryScene() throws IOException {

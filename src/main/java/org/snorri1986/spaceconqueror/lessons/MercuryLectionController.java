@@ -2,9 +2,11 @@ package org.snorri1986.spaceconqueror.lessons;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import org.snorri1986.spaceconqueror.buttons.SolarSystemBtnController;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,6 +23,9 @@ public class MercuryLectionController implements Initializable {
 
     @FXML
     TextArea lessonTxt;
+
+    @FXML
+    Button btnCloseMercuryStage;
 
     @FXML
     protected void onBtnLocalUaClick() throws FileNotFoundException {
@@ -52,7 +57,13 @@ public class MercuryLectionController implements Initializable {
         }
     }
 
-    // TODO: close button
+    // TODO: unit test
+    @FXML
+    protected void closeMercuryStageMercuryCtrl() {
+        SolarSystemBtnController.closeMercuryStage();
+    }
+
+
     public void initialize(URL url, ResourceBundle resourceBundle) {
         fileChooserEN.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
         fileChooserUA.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\ua"));
