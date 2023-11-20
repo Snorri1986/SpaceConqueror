@@ -45,7 +45,7 @@ public class SolarSystemBtnController {
         }
     }
 
-    Scene setMercuryScene() throws IOException {
+    public Scene setMercuryScene() throws IOException {
         URL fxmlLocationMercury = getClass().getResource("mercury.fxml");
         FXMLLoader fxmlMercuryLoader = new FXMLLoader(fxmlLocationMercury);
         Scene mercury = new Scene(fxmlMercuryLoader.load(), 1000, 700);
@@ -53,7 +53,7 @@ public class SolarSystemBtnController {
     }
 
 
-    Stage setMercuryStage(Scene scene) throws IOException {
+    public Stage setMercuryStage(Scene scene) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("Mercury");
         stage.setScene(scene);
