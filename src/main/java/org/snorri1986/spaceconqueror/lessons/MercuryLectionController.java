@@ -57,7 +57,7 @@ public class MercuryLectionController implements Initializable {
         }
     }
 
-
+    //TODO: add unit test
     @FXML
     protected void closeMercuryStageMercuryCtrl() {
         SolarSystemBtnController.closeMercuryStage();

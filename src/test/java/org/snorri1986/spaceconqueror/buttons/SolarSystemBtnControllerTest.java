@@ -13,8 +13,6 @@ import org.testfx.framework.junit5.Start;
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.snorri1986.spaceconqueror.buttons.SolarSystemBtnController.mercuryStage;
 
 
 @ExtendWith(ApplicationExtension.class)
@@ -46,18 +44,6 @@ public class SolarSystemBtnControllerTest extends ApplicationTest {
             }
         });
     }
-
-//    @Test
-//    void testCloseMercuryStage() throws IOException {
-//        Scene testMercuryScene = solarSystemBtnController.setMercuryScene();
-//        testMercuryStage = solarSystemBtnController.setMercuryStage(testMercuryScene);
-//        closeMercuryStage();
-//        assertNull(testMercuryStage);
-//    }
-//
-//    public static void closeMercuryStage() {
-//        mercuryStage.close();
-//    }
 
     @Test
     void testVenusStage() throws IOException {

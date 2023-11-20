@@ -46,7 +46,7 @@ public class SolarSystemBtnController {
         }
     }
     @FXML
-    public static void closeMercuryStage() { // TODO: unit test
+    public static void closeMercuryStage() {
         mercuryStage.close();
     }
 
