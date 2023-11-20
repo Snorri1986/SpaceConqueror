@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import org.snorri1986.spaceconqueror.buttons.SolarSystemBtnController;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -60,7 +60,8 @@ public class MercuryLectionController implements Initializable {
     //TODO: add unit test
     @FXML
     protected void closeMercuryStageMercuryCtrl() {
-        SolarSystemBtnController.closeMercuryStage();
+        Stage stage = (Stage) btnCloseMercuryStage.getScene().getWindow();
+        stage.close();
     }
 
 
