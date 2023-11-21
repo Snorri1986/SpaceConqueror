@@ -13,14 +13,13 @@ import java.io.File;
 import java.io.IOException;
 
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 @ExtendWith(ApplicationExtension.class)
 public class MercuryLectionControllerTest extends ApplicationTest {
 
     public final AppLauncherController appLauncherController = new AppLauncherController();
-
     FileChooser fileChooserUAtest = new FileChooser();
     FileChooser fileChooserENtest = new FileChooser();
 

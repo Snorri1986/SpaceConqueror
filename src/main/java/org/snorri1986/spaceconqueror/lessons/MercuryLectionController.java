@@ -64,7 +64,6 @@ public class MercuryLectionController implements Initializable {
         stage.close();
     }
 
-
     public void initialize(URL url, ResourceBundle resourceBundle) {
         fileChooserEN.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
         fileChooserUA.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\ua"));
