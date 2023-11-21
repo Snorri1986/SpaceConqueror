@@ -15,13 +15,13 @@ import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
+
 @ExtendWith(ApplicationExtension.class)
 public class SolarSystemBtnControllerTest extends ApplicationTest {
 
     public final AppLauncherController appLauncherController = new AppLauncherController();
     public final SolarSystemBtnController solarSystemBtnController = new SolarSystemBtnController();
 
-    Stage testMercuryStage;
 
     @Start
     public void start(Stage stageOriginal) throws IOException {
