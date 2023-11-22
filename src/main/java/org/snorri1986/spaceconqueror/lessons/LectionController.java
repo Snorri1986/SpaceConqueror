@@ -15,7 +15,7 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 
 
-public class MercuryLectionController implements Initializable {
+public class LectionController implements Initializable {
 
     FileChooser fileChooserUA = new FileChooser();
     FileChooser fileChooserEN = new FileChooser();
@@ -25,7 +25,7 @@ public class MercuryLectionController implements Initializable {
     TextArea lessonTxt;
 
     @FXML
-    Button btnCloseMercuryStage;
+    Button btnClose;
 
     @FXML
     protected void onBtnLocalUaClick() throws FileNotFoundException {
@@ -59,8 +59,8 @@ public class MercuryLectionController implements Initializable {
 
     //TODO: add unit test
     @FXML
-    protected void closeMercuryStageMercuryCtrl() {
-        Stage stage = (Stage) btnCloseMercuryStage.getScene().getWindow();
+    protected void closeStage() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
         stage.close();
     }
 
