@@ -15,7 +15,7 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 
 
-public class LectionController implements Initializable {
+public class LessonController implements Initializable {
 
     FileChooser fileChooserUA = new FileChooser();
     FileChooser fileChooserEN = new FileChooser();
