@@ -44,9 +44,9 @@ public class SovietUnionBtnController {
     }
 
     Scene setVostokScene() throws IOException {
-        URL fxmlLocationVostok = getClass().getResource("vostok.fxml");
+        URL fxmlLocationVostok = getClass().getResource("sovietunion.fxml");
         FXMLLoader fxmlVostokLoader = new FXMLLoader(fxmlLocationVostok);
-        Scene vostok = new Scene(fxmlVostokLoader.load(), 600, 400);
+        Scene vostok = new Scene(fxmlVostokLoader.load(), 1000, 700);
         return vostok;
     }
 
@@ -70,9 +70,9 @@ public class SovietUnionBtnController {
     }
 
     Scene setVoshodScene() throws IOException {
-        URL fxmlLocationVoshod = getClass().getResource("voshod.fxml");
+        URL fxmlLocationVoshod = getClass().getResource("sovietunion.fxml");
         FXMLLoader fxmlVoshodLoader = new FXMLLoader(fxmlLocationVoshod);
-        Scene voshod = new Scene(fxmlVoshodLoader.load(), 600, 400);
+        Scene voshod = new Scene(fxmlVoshodLoader.load(), 1000, 700);
         return voshod;
     }
 
@@ -95,9 +95,9 @@ public class SovietUnionBtnController {
     }
 
     Scene setSoyuzScene() throws IOException {
-        URL fxmlLocationSoyuz = getClass().getResource("soyuz.fxml");
+        URL fxmlLocationSoyuz = getClass().getResource("sovietunion.fxml");
         FXMLLoader fxmlSoyuzLoader = new FXMLLoader(fxmlLocationSoyuz);
-        Scene soyuz = new Scene(fxmlSoyuzLoader.load(), 600, 400);
+        Scene soyuz = new Scene(fxmlSoyuzLoader.load(), 1000, 700);
         return soyuz;
     }
 
@@ -120,9 +120,9 @@ public class SovietUnionBtnController {
     }
 
     Scene setMirScene() throws IOException {
-        URL fxmlLocationMir = getClass().getResource("mir.fxml");
+        URL fxmlLocationMir = getClass().getResource("sovietunion.fxml");
         FXMLLoader fxmlMirLoader = new FXMLLoader(fxmlLocationMir);
-        Scene mir = new Scene(fxmlMirLoader.load(), 600, 400);
+        Scene mir = new Scene(fxmlMirLoader.load(), 1000, 700);
         return mir;
     }
 
@@ -145,9 +145,9 @@ public class SovietUnionBtnController {
     }
 
     Scene setBuranScene() throws IOException {
-        URL fxmlLocationBuran = getClass().getResource("buran.fxml");
+        URL fxmlLocationBuran = getClass().getResource("sovietunion.fxml");
         FXMLLoader fxmlBuranLoader = new FXMLLoader(fxmlLocationBuran);
-        Scene buran = new Scene(fxmlBuranLoader.load(), 600, 400);
+        Scene buran = new Scene(fxmlBuranLoader.load(), 1000, 700);
         return buran;
     }
 
@@ -170,9 +170,9 @@ public class SovietUnionBtnController {
     }
 
     Scene setLunaScene() throws IOException {
-        URL fxmlLocationLuna = getClass().getResource("luna.fxml");
+        URL fxmlLocationLuna = getClass().getResource("sovietunion.fxml");
         FXMLLoader fxmlLunaLoader = new FXMLLoader(fxmlLocationLuna);
-        Scene luna = new Scene(fxmlLunaLoader.load(), 600, 400);
+        Scene luna = new Scene(fxmlLunaLoader.load(), 1000, 700);
         return luna;
     }
 
@@ -195,9 +195,9 @@ public class SovietUnionBtnController {
     }
 
     Scene setVeneraScene() throws IOException {
-        URL fxmlLocationVenera = getClass().getResource("venera.fxml");
+        URL fxmlLocationVenera = getClass().getResource("sovietunion.fxml");
         FXMLLoader fxmlVeneraLoader = new FXMLLoader(fxmlLocationVenera);
-        Scene venera = new Scene(fxmlVeneraLoader.load(), 600, 400);
+        Scene venera = new Scene(fxmlVeneraLoader.load(), 1000, 700);
         return venera;
     }
 
@@ -220,9 +220,9 @@ public class SovietUnionBtnController {
     }
 
     Scene setVegaScene() throws IOException {
-        URL fxmlLocationVega = getClass().getResource("vega.fxml");
+        URL fxmlLocationVega = getClass().getResource("sovietunion.fxml");
         FXMLLoader fxmlVegaLoader = new FXMLLoader(fxmlLocationVega);
-        Scene vega = new Scene(fxmlVegaLoader.load(), 600, 400);
+        Scene vega = new Scene(fxmlVegaLoader.load(), 1000, 700);
         return vega;
     }
 
@@ -245,9 +245,9 @@ public class SovietUnionBtnController {
     }
 
     Scene setMarsScene() throws IOException {
-        URL fxmlLocationMars = getClass().getResource("mars_soviet_program.fxml");
+        URL fxmlLocationMars = getClass().getResource("sovietunion.fxml");
         FXMLLoader fxmlMarsLoader = new FXMLLoader(fxmlLocationMars);
-        Scene vega = new Scene(fxmlMarsLoader.load(), 600, 400);
+        Scene vega = new Scene(fxmlMarsLoader.load(), 1000, 700);
         return vega;
     }
 
