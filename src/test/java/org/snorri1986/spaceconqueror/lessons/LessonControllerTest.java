@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 @ExtendWith(ApplicationExtension.class)
-public class MercuryLectionControllerTest extends ApplicationTest {
+public class LessonControllerTest extends ApplicationTest {
 
     public final AppLauncherController appLauncherController = new AppLauncherController();
     FileChooser fileChooserUAtest = new FileChooser();
