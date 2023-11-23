@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 @ExtendWith(ApplicationExtension.class)
-public class LessonControllerTest extends ApplicationTest {
+public class SolarSystemLessonControllerTest extends ApplicationTest {
 
     public final AppLauncherController appLauncherController = new AppLauncherController();
     FileChooser fileChooserUAtest = new FileChooser();
@@ -34,19 +34,19 @@ public class LessonControllerTest extends ApplicationTest {
 
     @Test
     public void checkInitialDirectoryUA() {
-        fileChooserUAtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\ua"));
+        fileChooserUAtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\solarsystem\\ua"));
         assertNotNull(fileChooserUAtest.getInitialDirectory());
     }
 
     @Test
     public void checkInitialDirectoryEN() {
-        fileChooserENtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\en"));
+        fileChooserENtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\solarsystem\\en"));
         assertNotNull(fileChooserENtest.getInitialDirectory());
     }
 
     @Test
     public void checkInitialDirectoryDK() {
-        fileChooserDKtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\dk"));
+        fileChooserDKtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\solarsystem\\dk"));
         assertNotNull(fileChooserDKtest.getInitialDirectory());
     }
 }

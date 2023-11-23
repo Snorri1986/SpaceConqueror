@@ -46,7 +46,7 @@ public class SolarSystemBtnController {
     }
 
     public Scene setMercuryScene() throws IOException {
-        URL fxmlLocationMercury = getClass().getResource("solarsystemlection.fxml");
+        URL fxmlLocationMercury = getClass().getResource("solarsystem.fxml");
         FXMLLoader fxmlMercuryLoader = new FXMLLoader(fxmlLocationMercury);
         Scene mercury = new Scene(fxmlMercuryLoader.load(), 1000, 700);
         return mercury;
@@ -72,7 +72,7 @@ public class SolarSystemBtnController {
     }
 
     Scene setVenusScene() throws IOException {
-        URL fxmlLocationVenus = getClass().getResource("solarsystemlection.fxml");
+        URL fxmlLocationVenus = getClass().getResource("solarsystem.fxml");
         FXMLLoader fxmlVenusLoader = new FXMLLoader(fxmlLocationVenus);
         Scene venus = new Scene(fxmlVenusLoader.load(), 1000, 700);
         return venus;
@@ -97,7 +97,7 @@ public class SolarSystemBtnController {
     }
 
     Scene setEarthScene() throws IOException {
-        URL fxmlLocationEarth = getClass().getResource("solarsystemlection.fxml");
+        URL fxmlLocationEarth = getClass().getResource("solarsystem.fxml");
         FXMLLoader fxmlEarthLoader = new FXMLLoader(fxmlLocationEarth);
         Scene earth = new Scene(fxmlEarthLoader.load(), 1000, 700);
         return earth;
@@ -122,7 +122,7 @@ public class SolarSystemBtnController {
     }
 
     Scene setMarsScene() throws IOException {
-        URL fxmlLocationMars = getClass().getResource("solarsystemlection.fxml");
+        URL fxmlLocationMars = getClass().getResource("solarsystem.fxml");
         FXMLLoader fxmlMarsLoader = new FXMLLoader(fxmlLocationMars);
         Scene mars = new Scene(fxmlMarsLoader.load(), 1000, 700);
         return mars;
@@ -147,7 +147,7 @@ public class SolarSystemBtnController {
     }
 
     Scene setJupiterScene() throws IOException {
-        URL fxmlLocationJupiter = getClass().getResource("solarsystemlection.fxml");
+        URL fxmlLocationJupiter = getClass().getResource("solarsystem.fxml");
         FXMLLoader fxmlJupiterLoader = new FXMLLoader(fxmlLocationJupiter);
         Scene jupiter = new Scene(fxmlJupiterLoader.load(), 1000, 700);
         return jupiter;
@@ -172,7 +172,7 @@ public class SolarSystemBtnController {
     }
 
     Scene setSaturnScene() throws IOException {
-        URL fxmlLocationSaturn = getClass().getResource("solarsystemlection.fxml");
+        URL fxmlLocationSaturn = getClass().getResource("solarsystem.fxml");
         FXMLLoader fxmlSaturnLoader = new FXMLLoader(fxmlLocationSaturn);
         Scene saturn = new Scene(fxmlSaturnLoader.load(), 1000, 700);
         return saturn;
@@ -197,7 +197,7 @@ public class SolarSystemBtnController {
     }
 
     Scene setUranusScene() throws IOException {
-        URL fxmlLocationUranus = getClass().getResource("solarsystemlection.fxml");
+        URL fxmlLocationUranus = getClass().getResource("solarsystem.fxml");
         FXMLLoader fxmlUranusLoader = new FXMLLoader(fxmlLocationUranus);
         Scene uranus = new Scene(fxmlUranusLoader.load(), 1000, 700);
         return uranus;
@@ -222,7 +222,7 @@ public class SolarSystemBtnController {
     }
 
     Scene setNeptuneScene() throws IOException {
-        URL fxmlLocationNeptune = getClass().getResource("solarsystemlection.fxml");
+        URL fxmlLocationNeptune = getClass().getResource("solarsystem.fxml");
         FXMLLoader fxmlNeptuneLoader = new FXMLLoader(fxmlLocationNeptune);
         Scene neptune = new Scene(fxmlNeptuneLoader.load(), 1000, 700);
         return neptune;
@@ -247,7 +247,7 @@ public class SolarSystemBtnController {
     }
 
     Scene setPlutoScene() throws IOException {
-        URL fxmlLocationPluto = getClass().getResource("solarsystemlection.fxml");
+        URL fxmlLocationPluto = getClass().getResource("solarsystem.fxml");
         FXMLLoader fxmlPlutoLoader = new FXMLLoader(fxmlLocationPluto);
         Scene pluto = new Scene(fxmlPlutoLoader.load(), 1000, 700);
         return pluto;

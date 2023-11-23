@@ -70,7 +70,7 @@ javafx.fxml.LoadException:
 	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
-Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueElement (in module javafx.fxml) cannot access class org.snorri1986.spaceconqueror.lessons.LessonController (in module org.snorri1986.spaceconqueror) because module org.snorri1986.spaceconqueror does not export org.snorri1986.spaceconqueror.lessons to module javafx.fxml
+Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueElement (in module javafx.fxml) cannot access class org.snorri1986.spaceconqueror.lessons.SolarSystemLessonController (in module org.snorri1986.spaceconqueror) because module org.snorri1986.spaceconqueror does not export org.snorri1986.spaceconqueror.lessons to module javafx.fxml
 	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:394)
 	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:709)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:493)
