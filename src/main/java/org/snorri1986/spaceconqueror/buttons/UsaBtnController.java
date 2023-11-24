@@ -53,9 +53,9 @@ public class UsaBtnController {
     }
 
     Scene setMercuryProjectScene() throws IOException {
-        URL fxmlLocationMercuryProject = getClass().getResource("mercury_project.fxml");
+        URL fxmlLocationMercuryProject = getClass().getResource("usa_space_program.fxml");
         FXMLLoader fxmlMercuryProjectLoader = new FXMLLoader(fxmlLocationMercuryProject);
-        Scene mercuryProject = new Scene(fxmlMercuryProjectLoader.load(), 600, 400);
+        Scene mercuryProject = new Scene(fxmlMercuryProjectLoader.load(), 1000, 700);
         return mercuryProject;
     }
 
@@ -79,9 +79,9 @@ public class UsaBtnController {
     }
 
     Scene setGeminiProgramScene() throws IOException {
-        URL fxmlLocationGeminiProgram = getClass().getResource("gemini_program.fxml");
+        URL fxmlLocationGeminiProgram = getClass().getResource("usa_space_program.fxml");
         FXMLLoader fxmlGeminiProgramLoader = new FXMLLoader(fxmlLocationGeminiProgram);
-        Scene geminiProgram = new Scene(fxmlGeminiProgramLoader.load(), 600, 400);
+        Scene geminiProgram = new Scene(fxmlGeminiProgramLoader.load(), 1000, 700);
         return geminiProgram;
     }
 
@@ -104,9 +104,9 @@ public class UsaBtnController {
     }
 
     Scene setApolloProgramScene() throws IOException {
-        URL fxmlLocationApolloProgram = getClass().getResource("apollo_program.fxml");
+        URL fxmlLocationApolloProgram = getClass().getResource("usa_space_program.fxml");
         FXMLLoader fxmlApolloProgramLoader = new FXMLLoader(fxmlLocationApolloProgram);
-        Scene apolloProgram = new Scene(fxmlApolloProgramLoader.load(), 600, 400);
+        Scene apolloProgram = new Scene(fxmlApolloProgramLoader.load(), 1000, 700);
         return apolloProgram;
     }
 
@@ -129,9 +129,9 @@ public class UsaBtnController {
     }
 
     Scene setSoyuzApolloProgramScene() throws IOException {
-        URL fxmlLocationSoyuzApolloProgram = getClass().getResource("soyuz_apollo_program.fxml");
+        URL fxmlLocationSoyuzApolloProgram = getClass().getResource("usa_space_program.fxml");
         FXMLLoader fxmlSoyuzApolloProgramLoader = new FXMLLoader(fxmlLocationSoyuzApolloProgram);
-        Scene soyuzApolloProgram = new Scene(fxmlSoyuzApolloProgramLoader.load(), 600, 400);
+        Scene soyuzApolloProgram = new Scene(fxmlSoyuzApolloProgramLoader.load(), 1000, 700);
         return soyuzApolloProgram;
     }
 
@@ -154,9 +154,9 @@ public class UsaBtnController {
     }
 
     Scene setIssScene() throws IOException {
-        URL fxmlIss= getClass().getResource("iss.fxml");
+        URL fxmlIss= getClass().getResource("usa_space_program.fxml");
         FXMLLoader fxmlIssLoader = new FXMLLoader(fxmlIss);
-        Scene iSS = new Scene(fxmlIssLoader.load(), 600, 400);
+        Scene iSS = new Scene(fxmlIssLoader.load(), 1000, 700);
         return iSS;
     }
 
@@ -179,9 +179,9 @@ public class UsaBtnController {
     }
 
     Scene setSpaceShuttleProgramScene() throws IOException {
-        URL fxmlSpaceShuttleProgram= getClass().getResource("space_shuttle.fxml");
+        URL fxmlSpaceShuttleProgram= getClass().getResource("usa_space_program.fxml");
         FXMLLoader fxmlSpaceShuttleProgramLoader = new FXMLLoader(fxmlSpaceShuttleProgram);
-        Scene spaceShuttleProgram = new Scene(fxmlSpaceShuttleProgramLoader.load(), 600, 400);
+        Scene spaceShuttleProgram = new Scene(fxmlSpaceShuttleProgramLoader.load(), 1000, 700);
         return spaceShuttleProgram;
     }
 
@@ -204,9 +204,9 @@ public class UsaBtnController {
     }
 
     Scene setCosmodromsScene() throws IOException {
-        URL fxmlCosmodroms = getClass().getResource("usa_cosmodroms.fxml");
+        URL fxmlCosmodroms = getClass().getResource("usa_space_program.fxml");
         FXMLLoader fxmlCosmodromsLoader = new FXMLLoader(fxmlCosmodroms);
-        Scene cosmodroms = new Scene(fxmlCosmodromsLoader.load(), 600, 400);
+        Scene cosmodroms = new Scene(fxmlCosmodromsLoader.load(), 1000, 700);
         return cosmodroms;
     }
 
@@ -229,9 +229,9 @@ public class UsaBtnController {
     }
 
     Scene setPeoplesScene() throws IOException {
-        URL fxmlPeoples = getClass().getResource("usa_peoples.fxml");
+        URL fxmlPeoples = getClass().getResource("usa_space_program.fxml");
         FXMLLoader fxmlPeoplesLoader = new FXMLLoader(fxmlPeoples);
-        Scene peoples = new Scene(fxmlPeoplesLoader.load(), 600, 400);
+        Scene peoples = new Scene(fxmlPeoplesLoader.load(), 1000, 700);
         return peoples;
     }
 
@@ -254,9 +254,9 @@ public class UsaBtnController {
     }
 
     Scene setNasaScene() throws IOException {
-        URL fxmlNasa = getClass().getResource("nasa.fxml");
+        URL fxmlNasa = getClass().getResource("usa_space_program.fxml");
         FXMLLoader fxmlNasaLoader = new FXMLLoader(fxmlNasa);
-        Scene nasa = new Scene(fxmlNasaLoader.load(), 600, 400);
+        Scene nasa = new Scene(fxmlNasaLoader.load(), 1000, 700);
         return nasa;
     }
 
