@@ -54,9 +54,9 @@ public class ChinaBtnController {
     }
 
     Scene setPrj9211Scene() throws IOException {
-        URL fxmlLocationPrj9211 = getClass().getResource("prj9211.fxml");
+        URL fxmlLocationPrj9211 = getClass().getResource("china_space_program.fxml");
         FXMLLoader fxmlPrj9211Loader = new FXMLLoader(fxmlLocationPrj9211);
-        Scene prj9211 = new Scene(fxmlPrj9211Loader.load(), 600, 400);
+        Scene prj9211 = new Scene(fxmlPrj9211Loader.load(), 1000, 700);
         return prj9211;
     }
 
@@ -80,9 +80,9 @@ public class ChinaBtnController {
     }
 
     Scene setPrj9212Scene() throws IOException {
-        URL fxmlLocationPrj9212 = getClass().getResource("prj9212.fxml");
+        URL fxmlLocationPrj9212 = getClass().getResource("china_space_program.fxml");
         FXMLLoader fxmlPrj9212Loader = new FXMLLoader(fxmlLocationPrj9212);
-        Scene prj9212 = new Scene(fxmlPrj9212Loader.load(), 600, 400);
+        Scene prj9212 = new Scene(fxmlPrj9212Loader.load(), 1000, 700);
         return prj9212;
     }
 
@@ -105,9 +105,9 @@ public class ChinaBtnController {
     }
 
     Scene setPrj9213Scene() throws IOException {
-        URL fxmlLocationPrj9213 = getClass().getResource("prj9213.fxml");
+        URL fxmlLocationPrj9213 = getClass().getResource("china_space_program.fxml");
         FXMLLoader fxmlPrj9213Loader = new FXMLLoader(fxmlLocationPrj9213);
-        Scene prj9213 = new Scene(fxmlPrj9213Loader.load(), 600, 400);
+        Scene prj9213 = new Scene(fxmlPrj9213Loader.load(), 1000, 700);
         return prj9213;
     }
 
@@ -130,9 +130,9 @@ public class ChinaBtnController {
     }
 
     Scene setLunarScene() throws IOException {
-        URL fxmlLocationLunar = getClass().getResource("lunar.fxml");
+        URL fxmlLocationLunar = getClass().getResource("china_space_program.fxml");
         FXMLLoader fxmlLunarLoader = new FXMLLoader(fxmlLocationLunar);
-        Scene lunar = new Scene(fxmlLunarLoader.load(), 600, 400);
+        Scene lunar = new Scene(fxmlLunarLoader.load(), 1000, 700);
         return lunar;
     }
 
@@ -155,9 +155,9 @@ public class ChinaBtnController {
     }
 
     Scene setInterplanetsScene() throws IOException {
-        URL fxmlLocationInterplanets = getClass().getResource("interplanets.fxml");
+        URL fxmlLocationInterplanets = getClass().getResource("china_space_program.fxml");
         FXMLLoader fxmlInterplanetsLoader = new FXMLLoader(fxmlLocationInterplanets);
-        Scene interplanets = new Scene(fxmlInterplanetsLoader.load(), 600, 400);
+        Scene interplanets = new Scene(fxmlInterplanetsLoader.load(), 1000, 700);
         return interplanets;
     }
 
@@ -180,9 +180,9 @@ public class ChinaBtnController {
     }
 
     Scene setOrbitalsScene() throws IOException {
-        URL fxmlLocationOrbitals = getClass().getResource("orbitals_china.fxml");
+        URL fxmlLocationOrbitals = getClass().getResource("china_space_program.fxml");
         FXMLLoader fxmlOrbitalsLoader = new FXMLLoader(fxmlLocationOrbitals);
-        Scene orbitals = new Scene(fxmlOrbitalsLoader.load(), 600, 400);
+        Scene orbitals = new Scene(fxmlOrbitalsLoader.load(), 1000, 700);
         return orbitals;
     }
 
@@ -205,9 +205,9 @@ public class ChinaBtnController {
     }
 
     Scene setMarsScene() throws IOException {
-        URL fxmlLocationMars = getClass().getResource("mars_china_program.fxml");
+        URL fxmlLocationMars = getClass().getResource("china_space_program.fxml");
         FXMLLoader fxmlMarsLoader = new FXMLLoader(fxmlLocationMars);
-        Scene mars = new Scene(fxmlMarsLoader.load(), 600, 400);
+        Scene mars = new Scene(fxmlMarsLoader.load(), 1000, 700);
         return mars;
     }
 
@@ -230,9 +230,9 @@ public class ChinaBtnController {
     }
 
     Scene setCosmodromsScene() throws IOException {
-        URL fxmlLocationCosmodroms = getClass().getResource("china_cosmodroms.fxml");
+        URL fxmlLocationCosmodroms = getClass().getResource("china_space_program.fxml");
         FXMLLoader fxmlCosmodromsLoader = new FXMLLoader(fxmlLocationCosmodroms);
-        Scene cosmodroms = new Scene(fxmlCosmodromsLoader.load(), 600, 400);
+        Scene cosmodroms = new Scene(fxmlCosmodromsLoader.load(), 1000, 700);
         return cosmodroms;
     }
 
@@ -255,9 +255,9 @@ public class ChinaBtnController {
     }
 
     Scene setPeoplesScene() throws IOException {
-        URL fxmlLocationPeoples = getClass().getResource("china_peoples.fxml");
+        URL fxmlLocationPeoples = getClass().getResource("china_space_program.fxml");
         FXMLLoader fxmlPeoplesLoader = new FXMLLoader(fxmlLocationPeoples);
-        Scene peoples = new Scene(fxmlPeoplesLoader.load(), 600, 400);
+        Scene peoples = new Scene(fxmlPeoplesLoader.load(), 1000, 700);
         return peoples;
     }
 
