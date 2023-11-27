@@ -53,9 +53,9 @@ public class IndiaBtnController {
     }
 
     Scene setSatellitesScene() throws IOException {
-        URL fxmlLocationSatellites = getClass().getResource("satellites.fxml");
+        URL fxmlLocationSatellites = getClass().getResource("india_space_program.fxml");
         FXMLLoader fxmlSatellitesLoader = new FXMLLoader(fxmlLocationSatellites);
-        Scene satellites = new Scene(fxmlSatellitesLoader.load(), 600, 400);
+        Scene satellites = new Scene(fxmlSatellitesLoader.load(), 1000, 700);
         return satellites;
     }
 
@@ -79,9 +79,9 @@ public class IndiaBtnController {
     }
 
     Scene setGaganScene() throws IOException {
-        URL fxmlLocationGagan = getClass().getResource("gagan.fxml");
+        URL fxmlLocationGagan = getClass().getResource("india_space_program.fxml");
         FXMLLoader fxmlGaganLoader = new FXMLLoader(fxmlLocationGagan);
-        Scene gagan = new Scene(fxmlGaganLoader.load(), 600, 400);
+        Scene gagan = new Scene(fxmlGaganLoader.load(), 1000, 700);
         return gagan;
     }
     Stage setGaganStage(Scene scene) throws IOException {
@@ -102,9 +102,9 @@ public class IndiaBtnController {
     }
 
     Scene setIrnssScene() throws IOException {
-        URL fxmlLocationIrnss = getClass().getResource("irnss.fxml");
+        URL fxmlLocationIrnss = getClass().getResource("india_space_program.fxml");
         FXMLLoader fxmlIrnssLoader = new FXMLLoader(fxmlLocationIrnss);
-        Scene irnss = new Scene(fxmlIrnssLoader.load(), 600, 400);
+        Scene irnss = new Scene(fxmlIrnssLoader.load(), 1000, 700);
         return irnss;
     }
 
@@ -127,9 +127,9 @@ public class IndiaBtnController {
     }
 
     Scene setChandrayaanOneScene() throws IOException {
-        URL fxmlLocationChandrayaanOne = getClass().getResource("chandrayaan1.fxml");
+        URL fxmlLocationChandrayaanOne = getClass().getResource("india_space_program.fxml");
         FXMLLoader fxmlChandrayaanOneLoader = new FXMLLoader(fxmlLocationChandrayaanOne);
-        Scene chandrayaanOne = new Scene(fxmlChandrayaanOneLoader.load(), 600, 400);
+        Scene chandrayaanOne = new Scene(fxmlChandrayaanOneLoader.load(), 1000, 700);
         return chandrayaanOne;
     }
 
@@ -152,9 +152,9 @@ public class IndiaBtnController {
     }
 
     Scene setMarsOrbiterScene() throws IOException {
-        URL fxmlLocationMarsOrbiter = getClass().getResource("marsorbiter.fxml");
+        URL fxmlLocationMarsOrbiter = getClass().getResource("india_space_program.fxml");
         FXMLLoader fxmlMarsOrbiterLoader = new FXMLLoader(fxmlLocationMarsOrbiter);
-        Scene marsOrbiter = new Scene(fxmlMarsOrbiterLoader.load(), 600, 400);
+        Scene marsOrbiter = new Scene(fxmlMarsOrbiterLoader.load(), 1000, 700);
         return marsOrbiter;
     }
 
@@ -177,9 +177,9 @@ public class IndiaBtnController {
     }
 
     Scene setChandrayaanThreeScene() throws IOException {
-        URL fxmlLocationChandrayaanThree = getClass().getResource("chandrayaan3.fxml");
+        URL fxmlLocationChandrayaanThree = getClass().getResource("india_space_program.fxml");
         FXMLLoader fxmlChandrayaanThreeLoader = new FXMLLoader(fxmlLocationChandrayaanThree);
-        Scene chandrayaanThree = new Scene(fxmlChandrayaanThreeLoader.load(), 600, 400);
+        Scene chandrayaanThree = new Scene(fxmlChandrayaanThreeLoader.load(), 1000, 700);
         return chandrayaanThree;
     }
 
@@ -202,9 +202,9 @@ public class IndiaBtnController {
     }
 
     Scene setAdityaLoneScene() throws IOException {
-        URL fxmlLocationAdityaLone = getClass().getResource("adityalone.fxml");
+        URL fxmlLocationAdityaLone = getClass().getResource("india_space_program.fxml");
         FXMLLoader fxmlAdityaLoneLoader = new FXMLLoader(fxmlLocationAdityaLone);
-        Scene adityaLone = new Scene(fxmlAdityaLoneLoader.load(), 600, 400);
+        Scene adityaLone = new Scene(fxmlAdityaLoneLoader.load(), 1000, 700);
         return adityaLone;
     }
 
@@ -227,9 +227,9 @@ public class IndiaBtnController {
     }
 
     Scene setCosmodromsScene() throws IOException {
-        URL fxmlLocationCosmodroms = getClass().getResource("india_cosmodroms.fxml");
+        URL fxmlLocationCosmodroms = getClass().getResource("india_space_program.fxml");
         FXMLLoader fxmlCosmodromsLoader = new FXMLLoader(fxmlLocationCosmodroms);
-        Scene cosmodroms = new Scene(fxmlCosmodromsLoader.load(), 600, 400);
+        Scene cosmodroms = new Scene(fxmlCosmodromsLoader.load(), 1000, 700);
         return cosmodroms;
     }
 
@@ -252,9 +252,9 @@ public class IndiaBtnController {
     }
 
     Scene setPeoplesScene() throws IOException {
-        URL fxmlLocationPeoples = getClass().getResource("india_peoples.fxml");
+        URL fxmlLocationPeoples = getClass().getResource("india_space_program.fxml");
         FXMLLoader fxmlPeoplesLoader = new FXMLLoader(fxmlLocationPeoples);
-        Scene peoples = new Scene(fxmlPeoplesLoader.load(), 600, 400);
+        Scene peoples = new Scene(fxmlPeoplesLoader.load(), 1000, 700);
         return peoples;
     }
 
