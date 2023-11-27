@@ -53,9 +53,9 @@ public class SpacexBtnController {
     }
 
     Scene setFalconOneScene() throws IOException {
-        URL fxmlLocationFalconOne = getClass().getResource("falconone.fxml");
+        URL fxmlLocationFalconOne = getClass().getResource("spacex_space_program.fxml");
         FXMLLoader fxmlFalconOneLoader = new FXMLLoader(fxmlLocationFalconOne);
-        Scene falconOne = new Scene(fxmlFalconOneLoader.load(), 600, 400);
+        Scene falconOne = new Scene(fxmlFalconOneLoader.load(), 1000, 700);
         return falconOne;
     }
 
@@ -79,9 +79,9 @@ public class SpacexBtnController {
     }
 
     Scene setFalconNineScene() throws IOException {
-        URL fxmlLocationFalconNine = getClass().getResource("falconnine.fxml");
+        URL fxmlLocationFalconNine = getClass().getResource("spacex_space_program.fxml");
         FXMLLoader fxmlFalconNineLoader = new FXMLLoader(fxmlLocationFalconNine);
-        Scene falconNine = new Scene(fxmlFalconNineLoader.load(), 600, 400);
+        Scene falconNine = new Scene(fxmlFalconNineLoader.load(), 1000, 700);
         return falconNine;
     }
 
@@ -104,9 +104,9 @@ public class SpacexBtnController {
     }
 
     Scene setDragonScene() throws IOException {
-        URL fxmlLocationDragon = getClass().getResource("dragon.fxml");
+        URL fxmlLocationDragon = getClass().getResource("spacex_space_program.fxml");
         FXMLLoader fxmlDragonLoader = new FXMLLoader(fxmlLocationDragon);
-        Scene dragon = new Scene(fxmlDragonLoader.load(), 600, 400);
+        Scene dragon = new Scene(fxmlDragonLoader.load(), 1000, 700);
         return dragon;
     }
 
@@ -129,9 +129,9 @@ public class SpacexBtnController {
     }
 
     Scene setFalconHeavyScene() throws IOException {
-        URL fxmlLocationFalconHeavy = getClass().getResource("falconheavy.fxml");
+        URL fxmlLocationFalconHeavy = getClass().getResource("spacex_space_program.fxml");
         FXMLLoader fxmlFalconHeavyLoader = new FXMLLoader(fxmlLocationFalconHeavy);
-        Scene falconHeavy = new Scene(fxmlFalconHeavyLoader.load(), 600, 400);
+        Scene falconHeavy = new Scene(fxmlFalconHeavyLoader.load(), 1000, 700);
         return falconHeavy;
     }
 
@@ -154,9 +154,9 @@ public class SpacexBtnController {
     }
 
     Scene setStarshipScene() throws IOException {
-        URL fxmlLocationStarship = getClass().getResource("starship.fxml");
+        URL fxmlLocationStarship = getClass().getResource("spacex_space_program.fxml");
         FXMLLoader fxmlStarshipLoader = new FXMLLoader(fxmlLocationStarship);
-        Scene starShip = new Scene(fxmlStarshipLoader.load(), 600, 400);
+        Scene starShip = new Scene(fxmlStarshipLoader.load(), 1000, 700);
         return starShip;
     }
 
@@ -179,9 +179,9 @@ public class SpacexBtnController {
     }
 
     Scene setStarLinkScene() throws IOException {
-        URL fxmlLocationStarLink = getClass().getResource("starlink.fxml");
+        URL fxmlLocationStarLink = getClass().getResource("spacex_space_program.fxml");
         FXMLLoader fxmlStarLinkLoader = new FXMLLoader(fxmlLocationStarLink);
-        Scene starLink = new Scene(fxmlStarLinkLoader.load(), 600, 400);
+        Scene starLink = new Scene(fxmlStarLinkLoader.load(), 1000, 700);
         return starLink;
     }
 
@@ -204,9 +204,9 @@ public class SpacexBtnController {
     }
 
     Scene setElonMaskScene() throws IOException {
-        URL fxmlLocationElonMask = getClass().getResource("elonmask.fxml");
+        URL fxmlLocationElonMask = getClass().getResource("spacex_space_program.fxml");
         FXMLLoader fxmlElonMaskLoader = new FXMLLoader(fxmlLocationElonMask);
-        Scene elonMask = new Scene(fxmlElonMaskLoader.load(), 600, 400);
+        Scene elonMask = new Scene(fxmlElonMaskLoader.load(), 1000, 700);
         return elonMask;
     }
 
@@ -229,9 +229,9 @@ public class SpacexBtnController {
     }
 
     Scene setCosmodromsScene() throws IOException {
-        URL fxmlLocationCosmodroms = getClass().getResource("spacex_cosmodroms.fxml");
+        URL fxmlLocationCosmodroms = getClass().getResource("spacex_space_program.fxml");
         FXMLLoader fxmlCosmodromsLoader = new FXMLLoader(fxmlLocationCosmodroms);
-        Scene cosmodroms = new Scene(fxmlCosmodromsLoader.load(), 600, 400);
+        Scene cosmodroms = new Scene(fxmlCosmodromsLoader.load(), 1000, 700);
         return cosmodroms;
     }
 
@@ -254,9 +254,9 @@ public class SpacexBtnController {
     }
 
     Scene setPeoplesScene() throws IOException {
-        URL fxmlLocationPeoples = getClass().getResource("spacex_peoples.fxml");
+        URL fxmlLocationPeoples = getClass().getResource("spacex_space_program.fxml");
         FXMLLoader fxmlPeoplesLoader = new FXMLLoader(fxmlLocationPeoples);
-        Scene peoples = new Scene(fxmlPeoplesLoader.load(), 600, 400);
+        Scene peoples = new Scene(fxmlPeoplesLoader.load(), 1000, 700);
         return peoples;
     }
 
