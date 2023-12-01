@@ -4,10 +4,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
-import org.snorri1986.spaceconqueror.buttons.SolarSystemBtnController;
+
 
 
 import java.io.File;
@@ -32,6 +34,9 @@ public class SolarSystemLessonController implements Initializable {
 
     @FXML
     Button btnClose;
+
+    @FXML
+    ImageView photoSpace;
 
     @FXML
     protected void onBtnLocalUaClick() throws FileNotFoundException {
@@ -83,6 +88,10 @@ public class SolarSystemLessonController implements Initializable {
         switch(title) {
             case "Mercury": {
                 List<File> photoMercuryListFileSystem = uploadPhotosMercury();
+                for(File next : photoMercuryListFileSystem) {
+                    Image photo = new Image(next.toURI().toString());
+                    photoSpace.setImage(photo);
+                }
                 break;
                 //TODO: to be continued
             }
