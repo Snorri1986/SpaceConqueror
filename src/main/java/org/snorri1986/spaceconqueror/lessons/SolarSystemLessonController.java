@@ -82,6 +82,14 @@ public class SolarSystemLessonController implements Initializable {
     }
 
     @FXML
+    protected void mercuryOnePhotoClick() {
+        String mercuryPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mercury\\1.jpg";
+        File photoMercuryOneFile = new File(mercuryPhotoOnePath);
+        Image photoMercuryOneImage = new Image(photoMercuryOneFile.toURI().toString());
+        photoSpace.setImage(photoMercuryOneImage);
+    }
+
+    @FXML
     protected void onBtnNextPhotoClick() {
         Stage stage = (Stage) btnClose.getScene().getWindow();
         String title = stage.getTitle();

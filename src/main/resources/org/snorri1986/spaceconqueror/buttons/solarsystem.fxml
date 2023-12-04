@@ -12,7 +12,7 @@
                <children>
                   <ImageView fx:id="photoSpace" fitHeight="429.0" fitWidth="402.0" pickOnBounds="true" preserveRatio="true" />
                </children></VBox>
-            <Button fx:id="btnOne" layoutX="40.0" layoutY="623.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" text="One" />
+            <Button fx:id="btnOne" layoutX="40.0" layoutY="623.0" mnemonicParsing="false" onMouseClicked="#mercuryOnePhotoClick" prefHeight="26.0" prefWidth="113.0" text="One" />
             <Button fx:id="btnThree" layoutX="336.0" layoutY="623.0" mnemonicParsing="false" onMouseClicked="#onBtnNextPhotoClick" prefHeight="26.0" prefWidth="123.0" text="Three" />
             <Button fx:id="btnTwo" layoutX="177.0" layoutY="623.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="139.0" text="Two" />
             </children></AnchorPane>
