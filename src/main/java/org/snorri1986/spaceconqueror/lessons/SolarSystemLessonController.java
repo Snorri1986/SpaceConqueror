@@ -91,6 +91,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoMercuryOneImage);
                 break;
             }
+            case "Venus": {
+                String venusPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\venus\\1.jpg";
+                File photoVenusOneFile = new File(venusPhotoOnePath);
+                Image photoVenusOneImage = new Image(photoVenusOneFile.toURI().toString());
+                photoSpace.setImage(photoVenusOneImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -109,6 +116,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoMercuryTwoImage);
                 break;
             }
+            case "Venus": {
+                String venusPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\venus\\2.jpg";
+                File photoVenusTwoFile = new File(venusPhotoTwoPath);
+                Image photoVenusTwoImage = new Image(photoVenusTwoFile.toURI().toString());
+                photoSpace.setImage(photoVenusTwoImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -125,6 +139,13 @@ public class SolarSystemLessonController implements Initializable {
                 File photoMercuryThreeFile = new File(mercuryPhotoThreePath);
                 Image photoMercuryThreeImage = new Image(photoMercuryThreeFile.toURI().toString());
                 photoSpace.setImage(photoMercuryThreeImage);
+                break;
+            }
+            case "Venus": {
+                String venusPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\venus\\3.jpg";
+                File photoVenusThreeFile = new File(venusPhotoThreePath);
+                Image photoVenusThreeImage = new Image(photoVenusThreeFile.toURI().toString());
+                photoSpace.setImage(photoVenusThreeImage);
                 break;
             }
             default: {
