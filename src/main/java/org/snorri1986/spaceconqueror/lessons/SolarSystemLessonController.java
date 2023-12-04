@@ -15,8 +15,6 @@ import org.apache.log4j.Logger;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
@@ -82,26 +80,56 @@ public class SolarSystemLessonController implements Initializable {
     }
 
     @FXML
-    protected void mercuryOnePhotoClick() {
-        String mercuryPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mercury\\1.jpg";
-        File photoMercuryOneFile = new File(mercuryPhotoOnePath);
-        Image photoMercuryOneImage = new Image(photoMercuryOneFile.toURI().toString());
-        photoSpace.setImage(photoMercuryOneImage);
+    protected void showPhotoOne() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Mercury": {
+                String mercuryPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mercury\\1.jpg";
+                File photoMercuryOneFile = new File(mercuryPhotoOnePath);
+                Image photoMercuryOneImage = new Image(photoMercuryOneFile.toURI().toString());
+                photoSpace.setImage(photoMercuryOneImage);
+                break;
+            }
+            default: {
+                System.out.println("No photo");
+            }
+        }
     }
 
     @FXML
-    protected void mercuryTwoPhotoClick() {
-        String mercuryPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mercury\\2.jpg";
-        File photoMercuryTwoFile = new File(mercuryPhotoTwoPath);
-        Image photoMercuryTwoImage = new Image(photoMercuryTwoFile.toURI().toString());
-        photoSpace.setImage(photoMercuryTwoImage);
+    protected void showPhotoTwo() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Mercury": {
+                String mercuryPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mercury\\2.jpg";
+                File photoMercuryTwoFile = new File(mercuryPhotoTwoPath);
+                Image photoMercuryTwoImage = new Image(photoMercuryTwoFile.toURI().toString());
+                photoSpace.setImage(photoMercuryTwoImage);
+                break;
+            }
+            default: {
+                System.out.println("No photo");
+            }
+        }
     }
 
     @FXML
-    protected void mercuryThreePhotoClick() {
-        String mercuryPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mercury\\3.jpg";
-        File photoMercuryThreeFile = new File(mercuryPhotoThreePath);
-        Image photoMercuryThreeImage = new Image(photoMercuryThreeFile.toURI().toString());
-        photoSpace.setImage(photoMercuryThreeImage);
+    protected void showPhotoThree() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Mercury" : {
+                String mercuryPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mercury\\3.jpg";
+                File photoMercuryThreeFile = new File(mercuryPhotoThreePath);
+                Image photoMercuryThreeImage = new Image(photoMercuryThreeFile.toURI().toString());
+                photoSpace.setImage(photoMercuryThreeImage);
+                break;
+            }
+            default: {
+                System.out.println("No photo");
+            }
+        }
     }
 }
