@@ -104,42 +104,4 @@ public class SolarSystemLessonController implements Initializable {
         Image photoMercuryThreeImage = new Image(photoMercuryThreeFile.toURI().toString());
         photoSpace.setImage(photoMercuryThreeImage);
     }
-
-    @FXML
-    protected void onBtnNextPhotoClick() {
-        Stage stage = (Stage) btnClose.getScene().getWindow();
-        String title = stage.getTitle();
-        switch(title) {
-            case "Mercury": {
-                showPhotoMercury();
-                break;
-                //TODO: to be continued
-            }
-        }
-
-    }
-
-    private List<File> uploadPhotosMercury() {
-        List<File> photoMercuryList = new ArrayList<>();
-        String mercuryPhotoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mercury";
-        File photoMercuryDirectory = new File(mercuryPhotoPath);
-        File[] files = photoMercuryDirectory.listFiles();
-        if (files != null) {
-            for (File file : files) {
-                photoMercuryList.add(file);
-//                System.out.println("Upload photo");
-            }
-        }
-       //TODO: add logging
-        return photoMercuryList;
-    }
-
-    private void showPhotoMercury() {
-        List<File> photoMercuryListFileSystem = uploadPhotosMercury();
-        Image photo;
-        for(File next : photoMercuryListFileSystem) {
-            photo = new Image(next.toURI().toString());
-            photoSpace.setImage(photo);
-        }
-    }
 }
