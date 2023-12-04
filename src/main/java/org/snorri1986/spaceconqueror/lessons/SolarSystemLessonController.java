@@ -112,6 +112,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoMarsOneImage);
                 break;
             }
+            case "Jupiter": {
+                String jupiterPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\jupiter\\1.jpg";
+                File photoJupiterOneFile = new File(jupiterPhotoOnePath);
+                Image photoJupiterOneImage = new Image(photoJupiterOneFile.toURI().toString());
+                photoSpace.setImage(photoJupiterOneImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -151,6 +158,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoMarsTwoImage);
                 break;
             }
+            case "Jupiter": {
+                String jupiterPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\jupiter\\2.jpg";
+                File photoJupiterTwoFile = new File(jupiterPhotoTwoPath);
+                Image photoJupiterTwoImage = new Image(photoJupiterTwoFile.toURI().toString());
+                photoSpace.setImage(photoJupiterTwoImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -188,6 +202,13 @@ public class SolarSystemLessonController implements Initializable {
                 File photoMarsThreeFile = new File(marsPhotoThreePath);
                 Image photoMarsThreeImage = new Image(photoMarsThreeFile.toURI().toString());
                 photoSpace.setImage(photoMarsThreeImage);
+                break;
+            }
+            case "Jupiter": {
+                String jupiterPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\jupiter\\3.jpg";
+                File photoJupiterThreeFile = new File(jupiterPhotoThreePath);
+                Image photoJupiterThreeImage = new Image(photoJupiterThreeFile.toURI().toString());
+                photoSpace.setImage(photoJupiterThreeImage);
                 break;
             }
             default: {
