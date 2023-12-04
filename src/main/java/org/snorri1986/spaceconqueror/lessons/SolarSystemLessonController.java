@@ -98,6 +98,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoVenusOneImage);
                 break;
             }
+            case "Earth": {
+                String earthPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\earth\\1.jpg";
+                File photoEarthOneFile = new File(earthPhotoOnePath);
+                Image photoEarthOneImage = new Image(photoEarthOneFile.toURI().toString());
+                photoSpace.setImage(photoEarthOneImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -123,6 +130,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoVenusTwoImage);
                 break;
             }
+            case "Earth": {
+                String earthPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\earth\\2.jpg";
+                File photoEarthTwoFile = new File(earthPhotoTwoPath);
+                Image photoEarthTwoImage = new Image(photoEarthTwoFile.toURI().toString());
+                photoSpace.setImage(photoEarthTwoImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -146,6 +160,13 @@ public class SolarSystemLessonController implements Initializable {
                 File photoVenusThreeFile = new File(venusPhotoThreePath);
                 Image photoVenusThreeImage = new Image(photoVenusThreeFile.toURI().toString());
                 photoSpace.setImage(photoVenusThreeImage);
+                break;
+            }
+            case "Earth": {
+                String earthPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\earth\\3.jpg";
+                File photoEarthThreeFile = new File(earthPhotoThreePath);
+                Image photoEarthThreeImage = new Image(photoEarthThreeFile.toURI().toString());
+                photoSpace.setImage(photoEarthThreeImage);
                 break;
             }
             default: {
