@@ -87,11 +87,7 @@ public class SolarSystemLessonController implements Initializable {
         String title = stage.getTitle();
         switch(title) {
             case "Mercury": {
-                List<File> photoMercuryListFileSystem = uploadPhotosMercury();
-                for(File next : photoMercuryListFileSystem) {
-                    Image photo = new Image(next.toURI().toString());
-                    photoSpace.setImage(photo);
-                }
+                showPhotoMercury();
                 break;
                 //TODO: to be continued
             }
@@ -107,9 +103,19 @@ public class SolarSystemLessonController implements Initializable {
         if (files != null) {
             for (File file : files) {
                 photoMercuryList.add(file);
+//                System.out.println("Upload photo");
             }
         }
        //TODO: add logging
         return photoMercuryList;
+    }
+
+    private void showPhotoMercury() {
+        List<File> photoMercuryListFileSystem = uploadPhotosMercury();
+        Image photo;
+        for(File next : photoMercuryListFileSystem) {
+            photo = new Image(next.toURI().toString());
+            photoSpace.setImage(photo);
+        }
     }
 }
