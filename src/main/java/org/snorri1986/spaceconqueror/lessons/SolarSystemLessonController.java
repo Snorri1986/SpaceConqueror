@@ -105,6 +105,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoEarthOneImage);
                 break;
             }
+            case "Mars": {
+                String marsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mars\\1.jpg";
+                File photoMarsOneFile = new File(marsPhotoOnePath);
+                Image photoMarsOneImage = new Image(photoMarsOneFile.toURI().toString());
+                photoSpace.setImage(photoMarsOneImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -137,6 +144,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoEarthTwoImage);
                 break;
             }
+            case "Mars": {
+                String marsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mars\\2.jpg";
+                File photoMarsTwoFile = new File(marsPhotoTwoPath);
+                Image photoMarsTwoImage = new Image(photoMarsTwoFile.toURI().toString());
+                photoSpace.setImage(photoMarsTwoImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -167,6 +181,13 @@ public class SolarSystemLessonController implements Initializable {
                 File photoEarthThreeFile = new File(earthPhotoThreePath);
                 Image photoEarthThreeImage = new Image(photoEarthThreeFile.toURI().toString());
                 photoSpace.setImage(photoEarthThreeImage);
+                break;
+            }
+            case "Mars": {
+                String marsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\mars\\3.jpg";
+                File photoMarsThreeFile = new File(marsPhotoThreePath);
+                Image photoMarsThreeImage = new Image(photoMarsThreeFile.toURI().toString());
+                photoSpace.setImage(photoMarsThreeImage);
                 break;
             }
             default: {
