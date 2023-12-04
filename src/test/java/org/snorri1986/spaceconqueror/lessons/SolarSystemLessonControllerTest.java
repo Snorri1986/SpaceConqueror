@@ -77,4 +77,31 @@ public class SolarSystemLessonControllerTest extends ApplicationTest {
         assertNotNull(photoMercuryThreeFile);
         assertNotNull(photoMercuryThreeImage);
     }
+
+    @Test
+    public void testVenusPhotoOne() {
+        String venusPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\venus\\1.jpg";
+        File photoVenusOneFile = new File(venusPhotoOnePath);
+        Image photoVenusOneImage = new Image(photoVenusOneFile.toURI().toString());
+        assertNotNull(photoVenusOneFile);
+        assertNotNull(photoVenusOneImage);
+    }
+
+    @Test
+    public void testVenusPhotoTwo() {
+        String venusPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\venus\\2.jpg";
+        File photoVenusTwoFile = new File(venusPhotoTwoPath);
+        Image photoVenusTwoImage = new Image(photoVenusTwoFile.toURI().toString());
+        assertNotNull(photoVenusTwoFile);
+        assertNotNull(photoVenusTwoImage);
+    }
+
+    @Test
+    public void testVenusPhotoThree() {
+        String venusPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\venus\\3.jpg";
+        File photoVenusThreeFile = new File(venusPhotoThreePath);
+        Image photoVenusThreeImage = new Image(photoVenusThreeFile.toURI().toString());
+        assertNotNull(photoVenusThreeFile);
+        assertNotNull(photoVenusThreeImage);
+    }
 }
