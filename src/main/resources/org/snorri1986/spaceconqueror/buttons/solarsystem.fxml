@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
 <SplitPane dividerPositions="0.4966577540106951" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.snorri1986.spaceconqueror.lessons.SolarSystemLessonController">
     <items>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
             <children>
-                <VBox layoutX="74.0" layoutY="41.0" prefHeight="573.0" prefWidth="402.0" />
-            <Button fx:id="btnScrollLeft" layoutX="40.0" layoutY="623.0" mnemonicParsing="false" text="&lt;&lt;&lt;" />
-            <Button fx:id="btnScrollRight" layoutX="418.0" layoutY="623.0" mnemonicParsing="false" text="&gt;&gt;&gt;" />
+                <VBox layoutX="74.0" layoutY="41.0" prefHeight="573.0" prefWidth="402.0">
+               <children>
+                  <ImageView fx:id="photoSpace" fitHeight="429.0" fitWidth="402.0" pickOnBounds="true" preserveRatio="true" />
+               </children></VBox>
+            <Button fx:id="btnOne" layoutX="40.0" layoutY="623.0" mnemonicParsing="false" onMouseClicked="#showPhotoOne" prefHeight="26.0" prefWidth="113.0" text="One" />
+            <Button fx:id="btnThree" layoutX="336.0" layoutY="623.0" mnemonicParsing="false" onMouseClicked="#showPhotoThree" prefHeight="26.0" prefWidth="123.0" text="Three" />
+            <Button fx:id="btnTwo" layoutX="177.0" layoutY="623.0" mnemonicParsing="false" onMouseClicked="#showPhotoTwo" prefHeight="26.0" prefWidth="139.0" text="Two" />
             </children></AnchorPane>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
             <children>

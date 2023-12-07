@@ -211,3 +211,4 @@ javafx.fxml.LoadException: Error resolving onMouseClicked='#closeMercuryStage', 
 	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
+2023-11-29 20:56:20 ERROR SolarSystemLessonController: - Photos uploaded sucessfully
