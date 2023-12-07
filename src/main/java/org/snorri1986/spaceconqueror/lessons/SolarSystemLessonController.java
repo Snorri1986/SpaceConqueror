@@ -119,6 +119,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoJupiterOneImage);
                 break;
             }
+            case "Saturn": {
+                String saturnPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\saturn\\1.jpg";
+                File photoSaturnOneFile = new File(saturnPhotoOnePath);
+                Image photoSaturnOneImage = new Image(photoSaturnOneFile.toURI().toString());
+                photoSpace.setImage(photoSaturnOneImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -165,6 +172,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoJupiterTwoImage);
                 break;
             }
+            case "Saturn": {
+                String saturnPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\saturn\\2.jpg";
+                File photoSaturnTwoFile = new File(saturnPhotoTwoPath);
+                Image photoSaturnTwoImage = new Image(photoSaturnTwoFile.toURI().toString());
+                photoSpace.setImage(photoSaturnTwoImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -209,6 +223,13 @@ public class SolarSystemLessonController implements Initializable {
                 File photoJupiterThreeFile = new File(jupiterPhotoThreePath);
                 Image photoJupiterThreeImage = new Image(photoJupiterThreeFile.toURI().toString());
                 photoSpace.setImage(photoJupiterThreeImage);
+                break;
+            }
+            case "Saturn": {
+                String saturnPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\saturn\\3.jpg";
+                File photoSaturnThreeFile = new File(saturnPhotoThreePath);
+                Image photoSaturnThreeImage = new Image(photoSaturnThreeFile.toURI().toString());
+                photoSpace.setImage(photoSaturnThreeImage);
                 break;
             }
             default: {
