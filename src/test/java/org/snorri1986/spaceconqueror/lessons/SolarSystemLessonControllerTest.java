@@ -212,4 +212,31 @@ public class SolarSystemLessonControllerTest extends ApplicationTest {
         assertNotNull(photoSaturnThreeFile);
         assertNotNull(photoSaturnThreeImage);
     }
+
+    @Test
+    public void testUranusPhotoOne() {
+        String uranusPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\uranus\\1.jpg";
+        File photoUranusOneFile = new File(uranusPhotoOnePath);
+        Image photoUranusOneImage = new Image(photoUranusOneFile.toURI().toString());
+        assertNotNull(photoUranusOneFile);
+        assertNotNull(photoUranusOneImage);
+    }
+
+    @Test
+    public void testUranusPhotoTwo() {
+        String uranusPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\uranus\\2.jpg";
+        File photoUranusTwoFile = new File(uranusPhotoTwoPath);
+        Image photoUranusTwoImage = new Image(photoUranusTwoFile.toURI().toString());
+        assertNotNull(photoUranusTwoFile);
+        assertNotNull(photoUranusTwoImage);
+    }
+
+    @Test
+    public void testUranusPhotoThree() {
+        String uranusPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\uranus\\3.jpg";
+        File photoUranusThreeFile = new File(uranusPhotoThreePath);
+        Image photoUranusThreeImage = new Image(photoUranusThreeFile.toURI().toString());
+        assertNotNull(photoUranusThreeFile);
+        assertNotNull(photoUranusThreeImage);
+    }
 }
