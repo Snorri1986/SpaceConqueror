@@ -126,6 +126,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoSaturnOneImage);
                 break;
             }
+            case "Uranus": {
+                String uranusPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\uranus\\1.jpg";
+                File photoUranusOneFile = new File(uranusPhotoOnePath);
+                Image photoUranusOneImage = new Image(photoUranusOneFile.toURI().toString());
+                photoSpace.setImage(photoUranusOneImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -179,6 +186,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoSaturnTwoImage);
                 break;
             }
+            case "Uranus": {
+                String uranusPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\uranus\\2.jpg";
+                File photoUranusTwoFile = new File(uranusPhotoTwoPath);
+                Image photoUranusTwoImage = new Image(photoUranusTwoFile.toURI().toString());
+                photoSpace.setImage(photoUranusTwoImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -230,6 +244,13 @@ public class SolarSystemLessonController implements Initializable {
                 File photoSaturnThreeFile = new File(saturnPhotoThreePath);
                 Image photoSaturnThreeImage = new Image(photoSaturnThreeFile.toURI().toString());
                 photoSpace.setImage(photoSaturnThreeImage);
+                break;
+            }
+            case "Uranus": {
+                String uranusPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\uranus\\3.jpg";
+                File photoUranusThreeFile = new File(uranusPhotoThreePath);
+                Image photoUranusThreeImage = new Image(photoUranusThreeFile.toURI().toString());
+                photoSpace.setImage(photoUranusThreeImage);
                 break;
             }
             default: {
