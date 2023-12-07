@@ -133,6 +133,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoUranusOneImage);
                 break;
             }
+            case "Neptune": {
+                String neptunePhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\neptune\\1.jpg";
+                File photoNeptuneOneFile = new File(neptunePhotoOnePath);
+                Image photoNeptuneOneImage = new Image(photoNeptuneOneFile.toURI().toString());
+                photoSpace.setImage(photoNeptuneOneImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -193,6 +200,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoUranusTwoImage);
                 break;
             }
+            case "Neptune": {
+                String neptunePhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\neptune\\2.jpg";
+                File photoNeptuneTwoFile = new File(neptunePhotoTwoPath);
+                Image photoNeptuneTwoImage = new Image(photoNeptuneTwoFile.toURI().toString());
+                photoSpace.setImage(photoNeptuneTwoImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -251,6 +265,13 @@ public class SolarSystemLessonController implements Initializable {
                 File photoUranusThreeFile = new File(uranusPhotoThreePath);
                 Image photoUranusThreeImage = new Image(photoUranusThreeFile.toURI().toString());
                 photoSpace.setImage(photoUranusThreeImage);
+                break;
+            }
+            case "Neptune": {
+                String neptunePhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\neptune\\3.jpg";
+                File photoNeptuneThreeFile = new File(neptunePhotoThreePath);
+                Image photoNeptuneThreeImage = new Image(photoNeptuneThreeFile.toURI().toString());
+                photoSpace.setImage(photoNeptuneThreeImage);
                 break;
             }
             default: {
