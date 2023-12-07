@@ -140,6 +140,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoNeptuneOneImage);
                 break;
             }
+            case "Pluto": {
+                String plutoPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\pluto\\1.jpg";
+                File photoPlutoOneFile = new File(plutoPhotoOnePath);
+                Image photoPlutoOneImage = new Image(photoPlutoOneFile.toURI().toString());
+                photoSpace.setImage(photoPlutoOneImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -207,6 +214,13 @@ public class SolarSystemLessonController implements Initializable {
                 photoSpace.setImage(photoNeptuneTwoImage);
                 break;
             }
+            case "Pluto": {
+                String plutoPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\pluto\\2.jpg";
+                File photoPlutoTwoFile = new File(plutoPhotoTwoPath);
+                Image photoPlutoTwoImage = new Image(photoPlutoTwoFile.toURI().toString());
+                photoSpace.setImage(photoPlutoTwoImage);
+                break;
+            }
             default: {
                 System.out.println("No photo");
             }
@@ -272,6 +286,13 @@ public class SolarSystemLessonController implements Initializable {
                 File photoNeptuneThreeFile = new File(neptunePhotoThreePath);
                 Image photoNeptuneThreeImage = new Image(photoNeptuneThreeFile.toURI().toString());
                 photoSpace.setImage(photoNeptuneThreeImage);
+                break;
+            }
+            case "Pluto": {
+                String plutoPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\pluto\\3.jpg";
+                File photoPlutoThreeFile = new File(plutoPhotoThreePath);
+                Image photoPlutoThreeImage = new Image(photoPlutoThreeFile.toURI().toString());
+                photoSpace.setImage(photoPlutoThreeImage);
                 break;
             }
             default: {
