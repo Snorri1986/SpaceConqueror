@@ -266,4 +266,31 @@ public class SolarSystemLessonControllerTest extends ApplicationTest {
         assertNotNull(photoNeptuneThreeFile);
         assertNotNull(photoNeptuneThreeImage);
     }
+
+    @Test
+    public void testPlutoPhotoOne() {
+        String plutoPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\pluto\\1.jpg";
+        File photoPlutoOneFile = new File(plutoPhotoOnePath);
+        Image photoPlutoOneImage = new Image(photoPlutoOneFile.toURI().toString());
+        assertNotNull(photoPlutoOneFile);
+        assertNotNull(photoPlutoOneImage);
+    }
+
+    @Test
+    public void testPlutoPhotoTwo() {
+        String plutoPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\pluto\\2.jpg";
+        File photoPlutoTwoFile = new File(plutoPhotoTwoPath);
+        Image photoPlutoTwoImage = new Image(photoPlutoTwoFile.toURI().toString());
+        assertNotNull(photoPlutoTwoFile);
+        assertNotNull(photoPlutoTwoImage);
+    }
+
+    @Test
+    public void testPlutoPhotoThree() {
+        String plutoPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\solarsystem\\pluto\\3.jpg";
+        File photoPlutoThreeFile = new File(plutoPhotoThreePath);
+        Image photoPlutoThreeImage = new Image(photoPlutoThreeFile.toURI().toString());
+        assertNotNull(photoPlutoThreeFile);
+        assertNotNull(photoPlutoThreeImage);
+    }
 }
