@@ -1,5 +1,6 @@
 package org.snorri1986.spaceconqueror.lessons;
 
+import javafx.scene.image.Image;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
@@ -47,5 +48,32 @@ public class SovietUnionLessonControllerTest extends ApplicationTest {
     public void checkInitialDirectoryDK() {
         fileChooserDKtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\sovietunion\\dk"));
         assertNotNull(fileChooserDKtest.getInitialDirectory());
+    }
+
+    @Test
+    public void testVostokPhotoOne() {
+        String vostokPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\1.jpg";
+        File photoVostokOneFile = new File(vostokPhotoOnePath);
+        Image photoVostokOneImage = new Image(photoVostokOneFile.toURI().toString());
+        assertNotNull(photoVostokOneFile);
+        assertNotNull(photoVostokOneImage);
+    }
+
+    @Test
+    public void testMercuryPhotoTwo() {
+        String vostokPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\2.jpg";
+        File photoVostokTwoFile = new File(vostokPhotoTwoPath);
+        Image photoVostokTwoImage = new Image(photoVostokTwoFile.toURI().toString());
+        assertNotNull(photoVostokTwoFile);
+        assertNotNull(photoVostokTwoImage);
+    }
+
+    @Test
+    public void testMercuryPhotoThree() {
+        String vostokPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\3.jpg";
+        File photoVostokThreeFile = new File(vostokPhotoThreePath);
+        Image photoVostokThreeImage = new Image(photoVostokThreeFile.toURI().toString());
+        assertNotNull(photoVostokThreeFile);
+        assertNotNull(photoVostokThreeImage);
     }
 }
