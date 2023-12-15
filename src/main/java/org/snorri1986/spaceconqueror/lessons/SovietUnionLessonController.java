@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -23,6 +25,9 @@ public class SovietUnionLessonController implements Initializable  {
 
     @FXML
     Button btnClose;
+
+    @FXML
+    ImageView photoSpace;
 
     @FXML
     protected void onBtnLocalUaClick() throws FileNotFoundException {
@@ -65,5 +70,47 @@ public class SovietUnionLessonController implements Initializable  {
         fileChooserEN.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\sovietunion\\en"));
         fileChooserUA.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\sovietunion\\ua"));
         fileChooserDK.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\sovietunion\\dk"));
+    }
+    @FXML
+    protected void showPhotoOne() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Vostok": {
+                String vostokPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\1.jpg";
+                File photoVostokOneFile = new File(vostokPhotoOnePath);
+                Image photoVostokOneImage = new Image(photoVostokOneFile.toURI().toString());
+                photoSpace.setImage(photoVostokOneImage);
+                break;
+            }
+        }
+    }
+    @FXML
+    protected void showPhotoTwo() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Vostok": {
+                String vostokPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\2.jpg";
+                File photoVostokTwoFile = new File(vostokPhotoTwoPath);
+                Image photoVostokTwoImage = new Image(photoVostokTwoFile.toURI().toString());
+                photoSpace.setImage(photoVostokTwoImage);
+                break;
+            }
+        }
+    }
+    @FXML
+    protected void showPhotoThree() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Vostok": {
+                String vostokPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\3.jpg";
+                File photoVostokThreeFile = new File(vostokPhotoThreePath);
+                Image photoVostokThreeImage = new Image(photoVostokThreeFile.toURI().toString());
+                photoSpace.setImage(photoVostokThreeImage);
+                break;
+            }
+        }
     }
 }
