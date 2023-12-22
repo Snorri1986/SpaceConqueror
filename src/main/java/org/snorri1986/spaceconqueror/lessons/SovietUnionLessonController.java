@@ -83,6 +83,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoVostokOneImage);
                 break;
             }
+            case "Voshod": {
+                String voshodPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\voshod\\1.jpg";
+                File photoVoshodOneFile = new File(voshodPhotoOnePath);
+                Image photoVoshodOneImage = new Image(photoVoshodOneFile.toURI().toString());
+                photoSpace.setImage(photoVoshodOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -94,6 +101,13 @@ public class SovietUnionLessonController implements Initializable  {
                 String vostokPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\2.jpg";
                 File photoVostokTwoFile = new File(vostokPhotoTwoPath);
                 Image photoVostokTwoImage = new Image(photoVostokTwoFile.toURI().toString());
+                photoSpace.setImage(photoVostokTwoImage);
+                break;
+            }
+            case "Voshod": {
+                String voshodPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\voshod\\2.jpg";
+                File photoVoshodTwoFile = new File(voshodPhotoTwoPath);
+                Image photoVostokTwoImage = new Image(photoVoshodTwoFile.toURI().toString());
                 photoSpace.setImage(photoVostokTwoImage);
                 break;
             }
@@ -109,6 +123,13 @@ public class SovietUnionLessonController implements Initializable  {
                 File photoVostokThreeFile = new File(vostokPhotoThreePath);
                 Image photoVostokThreeImage = new Image(photoVostokThreeFile.toURI().toString());
                 photoSpace.setImage(photoVostokThreeImage);
+                break;
+            }
+            case "Voshod": {
+                String voshodPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\voshod\\3.jpg";
+                File photoVoshodThreeFile = new File(voshodPhotoThreePath);
+                Image photoVoshodThreeImage = new Image(photoVoshodThreeFile.toURI().toString());
+                photoSpace.setImage(photoVoshodThreeImage);
                 break;
             }
         }
