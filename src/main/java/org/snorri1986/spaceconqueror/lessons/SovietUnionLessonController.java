@@ -90,6 +90,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoVoshodOneImage);
                 break;
             }
+            case "Soyuz": {
+                String soyuzPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\soyuz\\1.jpg";
+                File photoSoyuzOneFile = new File(soyuzPhotoOnePath);
+                Image photoSoyuzOneImage = new Image(photoSoyuzOneFile.toURI().toString());
+                photoSpace.setImage(photoSoyuzOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -111,6 +118,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoVostokTwoImage);
                 break;
             }
+            case "Soyuz": {
+                String soyuzPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\soyuz\\2.jpg";
+                File photoSoyuzTwoFile = new File(soyuzPhotoTwoPath);
+                Image photoSoyuzTwoImage = new Image(photoSoyuzTwoFile.toURI().toString());
+                photoSpace.setImage(photoSoyuzTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -130,6 +144,13 @@ public class SovietUnionLessonController implements Initializable  {
                 File photoVoshodThreeFile = new File(voshodPhotoThreePath);
                 Image photoVoshodThreeImage = new Image(photoVoshodThreeFile.toURI().toString());
                 photoSpace.setImage(photoVoshodThreeImage);
+                break;
+            }
+            case "Soyuz": {
+                String soyuzPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\soyuz\\3.jpg";
+                File photoSoyuzThreeFile = new File(soyuzPhotoThreePath);
+                Image photoSoyuzThreeImage = new Image(photoSoyuzThreeFile.toURI().toString());
+                photoSpace.setImage(photoSoyuzThreeImage);
                 break;
             }
         }
