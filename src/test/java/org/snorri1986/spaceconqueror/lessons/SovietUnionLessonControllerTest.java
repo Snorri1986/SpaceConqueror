@@ -130,4 +130,31 @@ public class SovietUnionLessonControllerTest extends ApplicationTest {
         assertNotNull(photoSoyuzThreeFile);
         assertNotNull(photoSoyuzThreeImage);
     }
+
+    @Test
+    public void testMirPhotoOne() {
+        String mirPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mir\\1.jpg";
+        File photoMirOneFile = new File(mirPhotoOnePath);
+        Image photoMirOneImage = new Image(photoMirOneFile.toURI().toString());
+        assertNotNull(photoMirOneFile);
+        assertNotNull(photoMirOneImage);
+    }
+
+    @Test
+    public void testMirPhotoTwo() {
+        String mirPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mir\\2.jpg";
+        File photoMirTwoFile = new File(mirPhotoTwoPath);
+        Image photoMirTwoImage = new Image(photoMirTwoFile.toURI().toString());
+        assertNotNull(photoMirTwoFile);
+        assertNotNull(photoMirTwoImage);
+    }
+
+    @Test
+    public void testMirPhotoThree() {
+        String mirPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mir\\3.jpg";
+        File photoMirThreeFile = new File(mirPhotoThreePath);
+        Image photoMirThreeImage = new Image(photoMirThreeFile.toURI().toString());
+        assertNotNull(photoMirThreeFile);
+        assertNotNull(photoMirThreeImage);
+    }
 }
