@@ -60,7 +60,7 @@ public class SovietUnionLessonControllerTest extends ApplicationTest {
     }
 
     @Test
-    public void testMercuryPhotoTwo() {
+    public void testVostokPhotoTwo() {
         String vostokPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\2.jpg";
         File photoVostokTwoFile = new File(vostokPhotoTwoPath);
         Image photoVostokTwoImage = new Image(photoVostokTwoFile.toURI().toString());
@@ -69,7 +69,7 @@ public class SovietUnionLessonControllerTest extends ApplicationTest {
     }
 
     @Test
-    public void testMercuryPhotoThree() {
+    public void testVostokPhotoThree() {
         String vostokPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\3.jpg";
         File photoVostokThreeFile = new File(vostokPhotoThreePath);
         Image photoVostokThreeImage = new Image(photoVostokThreeFile.toURI().toString());
