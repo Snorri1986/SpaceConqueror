@@ -76,4 +76,31 @@ public class SovietUnionLessonControllerTest extends ApplicationTest {
         assertNotNull(photoVostokThreeFile);
         assertNotNull(photoVostokThreeImage);
     }
+
+    @Test
+    public void testVoshodPhotoOne() {
+        String voshodPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\voshod\\1.jpg";
+        File photoVoshodOneFile = new File(voshodPhotoOnePath);
+        Image photoVoshodOneImage = new Image(photoVoshodOneFile.toURI().toString());
+        assertNotNull(photoVoshodOneFile);
+        assertNotNull(photoVoshodOneImage);
+    }
+
+    @Test
+    public void testVoshodPhotoTwo() {
+        String voshodPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\voshod\\2.jpg";
+        File photoVoshodTwoFile = new File(voshodPhotoTwoPath);
+        Image photoVoshodTwoImage = new Image(photoVoshodTwoFile.toURI().toString());
+        assertNotNull(photoVoshodTwoFile);
+        assertNotNull(photoVoshodTwoImage);
+    }
+
+    @Test
+    public void testVoshodPhotoThree() {
+        String voshodPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\voshod\\3.jpg";
+        File photoVoshodThreeFile = new File(voshodPhotoThreePath);
+        Image photoVoshodThreeImage = new Image(photoVoshodThreeFile.toURI().toString());
+        assertNotNull(photoVoshodThreeFile);
+        assertNotNull(photoVoshodThreeImage);
+    }
 }
