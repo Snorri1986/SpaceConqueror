@@ -97,6 +97,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoSoyuzOneImage);
                 break;
             }
+            case "Mir": {
+                String mirPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mir\\1.jpg";
+                File photoMirOneFile = new File(mirPhotoOnePath);
+                Image photoMirOneImage = new Image(photoMirOneFile.toURI().toString());
+                photoSpace.setImage(photoMirOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -125,6 +132,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoSoyuzTwoImage);
                 break;
             }
+            case "Mir": {
+                String mirPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mir\\2.jpg";
+                File photoMirTwoFile = new File(mirPhotoTwoPath);
+                Image photoMirTwoImage = new Image(photoMirTwoFile.toURI().toString());
+                photoSpace.setImage(photoMirTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -151,6 +165,13 @@ public class SovietUnionLessonController implements Initializable  {
                 File photoSoyuzThreeFile = new File(soyuzPhotoThreePath);
                 Image photoSoyuzThreeImage = new Image(photoSoyuzThreeFile.toURI().toString());
                 photoSpace.setImage(photoSoyuzThreeImage);
+                break;
+            }
+            case "Mir": {
+                String mirPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mir\\3.jpg";
+                File photoMirThreeFile = new File(mirPhotoThreePath);
+                Image photoMirThreeImage = new Image(photoMirThreeFile.toURI().toString());
+                photoSpace.setImage(photoMirThreeImage);
                 break;
             }
         }
