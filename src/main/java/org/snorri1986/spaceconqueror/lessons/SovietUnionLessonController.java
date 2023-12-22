@@ -104,6 +104,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoMirOneImage);
                 break;
             }
+            case "Buran": {
+                String buranPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\buran\\1.jpg";
+                File photoBuranOneFile = new File(buranPhotoOnePath);
+                Image photoBuranOneImage = new Image(photoBuranOneFile.toURI().toString());
+                photoSpace.setImage(photoBuranOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -139,6 +146,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoMirTwoImage);
                 break;
             }
+            case "Buran": {
+                String buranPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\buran\\2.jpg";
+                File photoBuranTwoFile = new File(buranPhotoTwoPath);
+                Image photoBuranTwoImage = new Image(photoBuranTwoFile.toURI().toString());
+                photoSpace.setImage(photoBuranTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -172,6 +186,13 @@ public class SovietUnionLessonController implements Initializable  {
                 File photoMirThreeFile = new File(mirPhotoThreePath);
                 Image photoMirThreeImage = new Image(photoMirThreeFile.toURI().toString());
                 photoSpace.setImage(photoMirThreeImage);
+                break;
+            }
+            case "Buran": {
+                String buranPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\buran\\3.jpg";
+                File photoBuranThreeFile = new File(buranPhotoThreePath);
+                Image photoBuranThreeImage = new Image(photoBuranThreeFile.toURI().toString());
+                photoSpace.setImage(photoBuranThreeImage);
                 break;
             }
         }
