@@ -111,6 +111,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoBuranOneImage);
                 break;
             }
+            case "Luna": {
+                String lunaPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\luna\\1.jpg";
+                File photoLunaOneFile = new File(lunaPhotoOnePath);
+                Image photoLunaOneImage = new Image(photoLunaOneFile.toURI().toString());
+                photoSpace.setImage(photoLunaOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -153,6 +160,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoBuranTwoImage);
                 break;
             }
+            case "Luna": {
+                String lunaPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\luna\\2.jpg";
+                File photoLunaTwoFile = new File(lunaPhotoTwoPath);
+                Image photoLunaTwoImage = new Image(photoLunaTwoFile.toURI().toString());
+                photoSpace.setImage(photoLunaTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -193,6 +207,13 @@ public class SovietUnionLessonController implements Initializable  {
                 File photoBuranThreeFile = new File(buranPhotoThreePath);
                 Image photoBuranThreeImage = new Image(photoBuranThreeFile.toURI().toString());
                 photoSpace.setImage(photoBuranThreeImage);
+                break;
+            }
+            case "Luna": {
+                String lunaPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\luna\\3.jpg";
+                File photoLunaThreeFile = new File(lunaPhotoThreePath);
+                Image photoLunaThreeImage = new Image(photoLunaThreeFile.toURI().toString());
+                photoSpace.setImage(photoLunaThreeImage);
                 break;
             }
         }
