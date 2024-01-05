@@ -232,9 +232,33 @@ public class SovietUnionLessonControllerTest extends ApplicationTest {
     @Test
     public void testVeneraPhotoThree() {
         String veneraPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\venera\\3.jpg";
-        File veneraBuranThreeFile = new File(veneraPhotoThreePath);
-        Image veneraBuranThreeImage = new Image(veneraBuranThreeFile.toURI().toString());
-        assertNotNull(veneraBuranThreeFile);
-        assertNotNull(veneraBuranThreeImage);
+        File photoVeneraThreeFile = new File(veneraPhotoThreePath);
+        Image photoVeneraThreeImage = new Image(photoVeneraThreeFile.toURI().toString());
+        assertNotNull(photoVeneraThreeFile);
+        assertNotNull(photoVeneraThreeImage);
+    }
+    @Test
+    public void testVegaPhotoOne() {
+        String vegaPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vega\\1.jpg";
+        File photoVegaOneFile = new File(vegaPhotoOnePath);
+        Image photoVegaOneImage = new Image(photoVegaOneFile.toURI().toString());
+        assertNotNull(photoVegaOneFile);
+        assertNotNull(photoVegaOneImage);
+    }
+    @Test
+    public void testVegaPhotoTwo() {
+        String vegaPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vega\\2.jpg";
+        File photoVegaTwoFile = new File(vegaPhotoTwoPath);
+        Image photoVegaTwoImage = new Image(photoVegaTwoFile.toURI().toString());
+        assertNotNull(photoVegaTwoFile);
+        assertNotNull(photoVegaTwoImage);
+    }
+    @Test
+    public void testVegaPhotoThree() {
+        String vegaPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vega\\3.jpg";
+        File photoVegaThreeFile = new File(vegaPhotoThreePath);
+        Image photoVegaThreeImage = new Image(photoVegaThreeFile.toURI().toString());
+        assertNotNull(photoVegaThreeFile);
+        assertNotNull(photoVegaThreeImage);
     }
 }
