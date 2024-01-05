@@ -184,4 +184,30 @@ public class SovietUnionLessonControllerTest extends ApplicationTest {
         assertNotNull(photoBuranThreeFile);
         assertNotNull(photoBuranThreeImage);
     }
+    @Test
+    public void testLunaPhotoOne() {
+        String lunaPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\luna\\1.jpg";
+        File photoLunaOneFile = new File(lunaPhotoOnePath);
+        Image photoLunaOneImage = new Image(photoLunaOneFile.toURI().toString());
+        assertNotNull(photoLunaOneFile);
+        assertNotNull(photoLunaOneImage);
+    }
+
+    @Test
+    public void testLunaPhotoTwo() {
+        String lunaPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\luna\\2.jpg";
+        File photoLunaTwoFile = new File(lunaPhotoTwoPath);
+        Image photoLunaTwoImage = new Image(photoLunaTwoFile.toURI().toString());
+        assertNotNull(photoLunaTwoFile);
+        assertNotNull(photoLunaTwoImage);
+    }
+
+    @Test
+    public void testLunaPhotoThree() {
+        String lunaPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\luna\\3.jpg";
+        File lunaBuranThreeFile = new File(lunaPhotoThreePath);
+        Image lunaBuranThreeImage = new Image(lunaBuranThreeFile.toURI().toString());
+        assertNotNull(lunaBuranThreeFile);
+        assertNotNull(lunaBuranThreeImage);
+    }
 }
