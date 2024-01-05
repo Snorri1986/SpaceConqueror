@@ -210,4 +210,31 @@ public class SovietUnionLessonControllerTest extends ApplicationTest {
         assertNotNull(lunaBuranThreeFile);
         assertNotNull(lunaBuranThreeImage);
     }
+
+    @Test
+    public void testVeneraPhotoOne() {
+        String veneraPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\venera\\1.jpg";
+        File photoVeneraOneFile = new File(veneraPhotoOnePath);
+        Image photoVeneraOneImage = new Image(photoVeneraOneFile.toURI().toString());
+        assertNotNull(photoVeneraOneFile);
+        assertNotNull(photoVeneraOneImage);
+    }
+
+    @Test
+    public void testVeneraPhotoTwo() {
+        String veneraPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\venera\\2.jpg";
+        File photoVeneraTwoFile = new File(veneraPhotoTwoPath);
+        Image photoVeneraTwoImage = new Image(photoVeneraTwoFile.toURI().toString());
+        assertNotNull(photoVeneraTwoFile);
+        assertNotNull(photoVeneraTwoImage);
+    }
+
+    @Test
+    public void testVeneraPhotoThree() {
+        String veneraPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\venera\\3.jpg";
+        File veneraBuranThreeFile = new File(veneraPhotoThreePath);
+        Image veneraBuranThreeImage = new Image(veneraBuranThreeFile.toURI().toString());
+        assertNotNull(veneraBuranThreeFile);
+        assertNotNull(veneraBuranThreeImage);
+    }
 }
