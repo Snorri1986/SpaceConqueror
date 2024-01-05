@@ -118,6 +118,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoLunaOneImage);
                 break;
             }
+            case "Venera": {
+                String veneraPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\venera\\1.jpg";
+                File photoVeneraOneFile = new File(veneraPhotoOnePath);
+                Image photoVeneraOneImage = new Image(photoVeneraOneFile.toURI().toString());
+                photoSpace.setImage(photoVeneraOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -167,6 +174,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoLunaTwoImage);
                 break;
             }
+            case "Venera": {
+                String veneraPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\venera\\2.jpg";
+                File photoVeneraTwoFile = new File(veneraPhotoTwoPath);
+                Image photoVeneraTwoImage = new Image(photoVeneraTwoFile.toURI().toString());
+                photoSpace.setImage(photoVeneraTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -214,6 +228,13 @@ public class SovietUnionLessonController implements Initializable  {
                 File photoLunaThreeFile = new File(lunaPhotoThreePath);
                 Image photoLunaThreeImage = new Image(photoLunaThreeFile.toURI().toString());
                 photoSpace.setImage(photoLunaThreeImage);
+                break;
+            }
+            case "Venera": {
+                String veneraPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\venera\\3.jpg";
+                File photoVeneraThreeFile = new File(veneraPhotoThreePath);
+                Image photoVeneraThreeImage = new Image(photoVeneraThreeFile.toURI().toString());
+                photoSpace.setImage(photoVeneraThreeImage);
                 break;
             }
         }
