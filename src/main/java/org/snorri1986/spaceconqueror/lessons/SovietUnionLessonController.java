@@ -125,6 +125,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoVeneraOneImage);
                 break;
             }
+            case "Vega": {
+                String vegaPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vega\\1.jpg";
+                File photoVegaOneFile = new File(vegaPhotoOnePath);
+                Image photoVegaOneImage = new Image(photoVegaOneFile.toURI().toString());
+                photoSpace.setImage(photoVegaOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -181,6 +188,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoVeneraTwoImage);
                 break;
             }
+            case "Vega": {
+                String vegaPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vega\\2.jpg";
+                File photoVegaTwoFile = new File(vegaPhotoTwoPath);
+                Image photoVegaTwoImage = new Image(photoVegaTwoFile.toURI().toString());
+                photoSpace.setImage(photoVegaTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -235,6 +249,13 @@ public class SovietUnionLessonController implements Initializable  {
                 File photoVeneraThreeFile = new File(veneraPhotoThreePath);
                 Image photoVeneraThreeImage = new Image(photoVeneraThreeFile.toURI().toString());
                 photoSpace.setImage(photoVeneraThreeImage);
+                break;
+            }
+            case "Vega": {
+                String vegaPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vega\\3.jpg";
+                File photoVegaThreeFile = new File(vegaPhotoThreePath);
+                Image photoVegaThreeImage = new Image(photoVegaThreeFile.toURI().toString());
+                photoSpace.setImage(photoVegaThreeImage);
                 break;
             }
         }
