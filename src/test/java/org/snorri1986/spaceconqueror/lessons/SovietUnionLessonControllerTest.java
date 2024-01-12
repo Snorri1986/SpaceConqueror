@@ -1,5 +1,6 @@
 package org.snorri1986.spaceconqueror.lessons;
 
+import javafx.scene.image.Image;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
@@ -47,5 +48,241 @@ public class SovietUnionLessonControllerTest extends ApplicationTest {
     public void checkInitialDirectoryDK() {
         fileChooserDKtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\sovietunion\\dk"));
         assertNotNull(fileChooserDKtest.getInitialDirectory());
+    }
+
+    @Test
+    public void testVostokPhotoOne() {
+        String vostokPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\1.jpg";
+        File photoVostokOneFile = new File(vostokPhotoOnePath);
+        Image photoVostokOneImage = new Image(photoVostokOneFile.toURI().toString());
+        assertNotNull(photoVostokOneFile);
+        assertNotNull(photoVostokOneImage);
+    }
+
+    @Test
+    public void testVostokPhotoTwo() {
+        String vostokPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\2.jpg";
+        File photoVostokTwoFile = new File(vostokPhotoTwoPath);
+        Image photoVostokTwoImage = new Image(photoVostokTwoFile.toURI().toString());
+        assertNotNull(photoVostokTwoFile);
+        assertNotNull(photoVostokTwoImage);
+    }
+
+    @Test
+    public void testVostokPhotoThree() {
+        String vostokPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vostok\\3.jpg";
+        File photoVostokThreeFile = new File(vostokPhotoThreePath);
+        Image photoVostokThreeImage = new Image(photoVostokThreeFile.toURI().toString());
+        assertNotNull(photoVostokThreeFile);
+        assertNotNull(photoVostokThreeImage);
+    }
+
+    @Test
+    public void testVoshodPhotoOne() {
+        String voshodPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\voshod\\1.jpg";
+        File photoVoshodOneFile = new File(voshodPhotoOnePath);
+        Image photoVoshodOneImage = new Image(photoVoshodOneFile.toURI().toString());
+        assertNotNull(photoVoshodOneFile);
+        assertNotNull(photoVoshodOneImage);
+    }
+
+    @Test
+    public void testVoshodPhotoTwo() {
+        String voshodPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\voshod\\2.jpg";
+        File photoVoshodTwoFile = new File(voshodPhotoTwoPath);
+        Image photoVoshodTwoImage = new Image(photoVoshodTwoFile.toURI().toString());
+        assertNotNull(photoVoshodTwoFile);
+        assertNotNull(photoVoshodTwoImage);
+    }
+
+    @Test
+    public void testVoshodPhotoThree() {
+        String voshodPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\voshod\\3.jpg";
+        File photoVoshodThreeFile = new File(voshodPhotoThreePath);
+        Image photoVoshodThreeImage = new Image(photoVoshodThreeFile.toURI().toString());
+        assertNotNull(photoVoshodThreeFile);
+        assertNotNull(photoVoshodThreeImage);
+    }
+
+    @Test
+    public void testSoyuzPhotoOne() {
+        String soyuzPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\soyuz\\1.jpg";
+        File photoSoyuzOneFile = new File(soyuzPhotoOnePath);
+        Image photoSoyuzOneImage = new Image(photoSoyuzOneFile.toURI().toString());
+        assertNotNull(photoSoyuzOneFile);
+        assertNotNull(photoSoyuzOneImage);
+    }
+
+    @Test
+    public void testSoyuzPhotoTwo() {
+        String soyuzPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\soyuz\\2.jpg";
+        File photoSoyuzTwoFile = new File(soyuzPhotoTwoPath);
+        Image photoSoyuzTwoImage = new Image(photoSoyuzTwoFile.toURI().toString());
+        assertNotNull(photoSoyuzTwoFile);
+        assertNotNull(photoSoyuzTwoImage);
+    }
+
+    @Test
+    public void testSoyuzPhotoThree() {
+        String soyuzPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\soyuz\\3.jpg";
+        File photoSoyuzThreeFile = new File(soyuzPhotoThreePath);
+        Image photoSoyuzThreeImage = new Image(photoSoyuzThreeFile.toURI().toString());
+        assertNotNull(photoSoyuzThreeFile);
+        assertNotNull(photoSoyuzThreeImage);
+    }
+
+    @Test
+    public void testMirPhotoOne() {
+        String mirPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mir\\1.jpg";
+        File photoMirOneFile = new File(mirPhotoOnePath);
+        Image photoMirOneImage = new Image(photoMirOneFile.toURI().toString());
+        assertNotNull(photoMirOneFile);
+        assertNotNull(photoMirOneImage);
+    }
+
+    @Test
+    public void testMirPhotoTwo() {
+        String mirPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mir\\2.jpg";
+        File photoMirTwoFile = new File(mirPhotoTwoPath);
+        Image photoMirTwoImage = new Image(photoMirTwoFile.toURI().toString());
+        assertNotNull(photoMirTwoFile);
+        assertNotNull(photoMirTwoImage);
+    }
+
+    @Test
+    public void testMirPhotoThree() {
+        String mirPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mir\\3.jpg";
+        File photoMirThreeFile = new File(mirPhotoThreePath);
+        Image photoMirThreeImage = new Image(photoMirThreeFile.toURI().toString());
+        assertNotNull(photoMirThreeFile);
+        assertNotNull(photoMirThreeImage);
+    }
+
+    @Test
+    public void testBuranPhotoOne() {
+        String buranPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\buran\\1.jpg";
+        File photoBuranOneFile = new File(buranPhotoOnePath);
+        Image photoBuranOneImage = new Image(photoBuranOneFile.toURI().toString());
+        assertNotNull(photoBuranOneFile);
+        assertNotNull(photoBuranOneImage);
+    }
+
+    @Test
+    public void testBuranPhotoTwo() {
+        String buranPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\buran\\2.jpg";
+        File photoBuranTwoFile = new File(buranPhotoTwoPath);
+        Image photoBuranTwoImage = new Image(photoBuranTwoFile.toURI().toString());
+        assertNotNull(photoBuranTwoFile);
+        assertNotNull(photoBuranTwoImage);
+    }
+
+    @Test
+    public void testBuranPhotoThree() {
+        String buranPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\buran\\3.jpg";
+        File photoBuranThreeFile = new File(buranPhotoThreePath);
+        Image photoBuranThreeImage = new Image(photoBuranThreeFile.toURI().toString());
+        assertNotNull(photoBuranThreeFile);
+        assertNotNull(photoBuranThreeImage);
+    }
+    @Test
+    public void testLunaPhotoOne() {
+        String lunaPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\luna\\1.jpg";
+        File photoLunaOneFile = new File(lunaPhotoOnePath);
+        Image photoLunaOneImage = new Image(photoLunaOneFile.toURI().toString());
+        assertNotNull(photoLunaOneFile);
+        assertNotNull(photoLunaOneImage);
+    }
+
+    @Test
+    public void testLunaPhotoTwo() {
+        String lunaPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\luna\\2.jpg";
+        File photoLunaTwoFile = new File(lunaPhotoTwoPath);
+        Image photoLunaTwoImage = new Image(photoLunaTwoFile.toURI().toString());
+        assertNotNull(photoLunaTwoFile);
+        assertNotNull(photoLunaTwoImage);
+    }
+
+    @Test
+    public void testLunaPhotoThree() {
+        String lunaPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\luna\\3.jpg";
+        File lunaBuranThreeFile = new File(lunaPhotoThreePath);
+        Image lunaBuranThreeImage = new Image(lunaBuranThreeFile.toURI().toString());
+        assertNotNull(lunaBuranThreeFile);
+        assertNotNull(lunaBuranThreeImage);
+    }
+
+    @Test
+    public void testVeneraPhotoOne() {
+        String veneraPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\venera\\1.jpg";
+        File photoVeneraOneFile = new File(veneraPhotoOnePath);
+        Image photoVeneraOneImage = new Image(photoVeneraOneFile.toURI().toString());
+        assertNotNull(photoVeneraOneFile);
+        assertNotNull(photoVeneraOneImage);
+    }
+
+    @Test
+    public void testVeneraPhotoTwo() {
+        String veneraPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\venera\\2.jpg";
+        File photoVeneraTwoFile = new File(veneraPhotoTwoPath);
+        Image photoVeneraTwoImage = new Image(photoVeneraTwoFile.toURI().toString());
+        assertNotNull(photoVeneraTwoFile);
+        assertNotNull(photoVeneraTwoImage);
+    }
+
+    @Test
+    public void testVeneraPhotoThree() {
+        String veneraPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\venera\\3.jpg";
+        File photoVeneraThreeFile = new File(veneraPhotoThreePath);
+        Image photoVeneraThreeImage = new Image(photoVeneraThreeFile.toURI().toString());
+        assertNotNull(photoVeneraThreeFile);
+        assertNotNull(photoVeneraThreeImage);
+    }
+    @Test
+    public void testVegaPhotoOne() {
+        String vegaPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vega\\1.jpg";
+        File photoVegaOneFile = new File(vegaPhotoOnePath);
+        Image photoVegaOneImage = new Image(photoVegaOneFile.toURI().toString());
+        assertNotNull(photoVegaOneFile);
+        assertNotNull(photoVegaOneImage);
+    }
+    @Test
+    public void testVegaPhotoTwo() {
+        String vegaPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vega\\2.jpg";
+        File photoVegaTwoFile = new File(vegaPhotoTwoPath);
+        Image photoVegaTwoImage = new Image(photoVegaTwoFile.toURI().toString());
+        assertNotNull(photoVegaTwoFile);
+        assertNotNull(photoVegaTwoImage);
+    }
+    @Test
+    public void testVegaPhotoThree() {
+        String vegaPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\vega\\3.jpg";
+        File photoVegaThreeFile = new File(vegaPhotoThreePath);
+        Image photoVegaThreeImage = new Image(photoVegaThreeFile.toURI().toString());
+        assertNotNull(photoVegaThreeFile);
+        assertNotNull(photoVegaThreeImage);
+    }
+    @Test
+    public void testMarsPhotoOne() {
+        String vegaMarsOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mars\\1.jpg";
+        File photoMarsOneFile = new File(vegaMarsOnePath);
+        Image photoMarsOneImage = new Image(photoMarsOneFile.toURI().toString());
+        assertNotNull(photoMarsOneFile);
+        assertNotNull(photoMarsOneImage);
+    }
+    @Test
+    public void testMarsPhotoTwo() {
+        String marsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mars\\2.jpg";
+        File photoMarsTwoFile = new File(marsPhotoTwoPath);
+        Image photoMarsTwoImage = new Image(photoMarsTwoFile.toURI().toString());
+        assertNotNull(photoMarsTwoFile);
+        assertNotNull(photoMarsTwoImage);
+    }
+    @Test
+    public void testMarsPhotoThree() {
+        String vegaMarsThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mars\\3.jpg";
+        File photoMarsThreeFile = new File(vegaMarsThreePath);
+        Image photoMarsThreeImage = new Image(photoMarsThreeFile.toURI().toString());
+        assertNotNull(photoMarsThreeFile);
+        assertNotNull(photoMarsThreeImage);
     }
 }
