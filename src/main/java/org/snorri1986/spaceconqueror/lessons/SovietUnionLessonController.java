@@ -132,6 +132,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoVegaOneImage);
                 break;
             }
+            case "Mars": {
+                String marsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mars\\1.jpg";
+                File photoMarsOneFile = new File(marsPhotoOnePath);
+                Image photoMarsOneImage = new Image(photoMarsOneFile.toURI().toString());
+                photoSpace.setImage(photoMarsOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -195,6 +202,13 @@ public class SovietUnionLessonController implements Initializable  {
                 photoSpace.setImage(photoVegaTwoImage);
                 break;
             }
+            case "Mars": {
+                String marsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mars\\2.jpg";
+                File photoMarsTwoFile = new File(marsPhotoTwoPath);
+                Image photoMarsTwoImage = new Image(photoMarsTwoFile.toURI().toString());
+                photoSpace.setImage(photoMarsTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -256,6 +270,13 @@ public class SovietUnionLessonController implements Initializable  {
                 File photoVegaThreeFile = new File(vegaPhotoThreePath);
                 Image photoVegaThreeImage = new Image(photoVegaThreeFile.toURI().toString());
                 photoSpace.setImage(photoVegaThreeImage);
+                break;
+            }
+            case "Mars": {
+                String marsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mars\\3.jpg";
+                File photoMarsThreeFile = new File(marsPhotoThreePath);
+                Image photoMarsThreeImage = new Image(photoMarsThreeFile.toURI().toString());
+                photoSpace.setImage(photoMarsThreeImage);
                 break;
             }
         }
