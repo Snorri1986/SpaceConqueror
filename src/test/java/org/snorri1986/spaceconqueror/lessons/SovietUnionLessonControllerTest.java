@@ -261,4 +261,28 @@ public class SovietUnionLessonControllerTest extends ApplicationTest {
         assertNotNull(photoVegaThreeFile);
         assertNotNull(photoVegaThreeImage);
     }
+    @Test
+    public void testMarsPhotoOne() {
+        String vegaMarsOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mars\\1.jpg";
+        File photoMarsOneFile = new File(vegaMarsOnePath);
+        Image photoMarsOneImage = new Image(photoMarsOneFile.toURI().toString());
+        assertNotNull(photoMarsOneFile);
+        assertNotNull(photoMarsOneImage);
+    }
+    @Test
+    public void testMarsPhotoTwo() {
+        String marsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mars\\2.jpg";
+        File photoMarsTwoFile = new File(marsPhotoTwoPath);
+        Image photoMarsTwoImage = new Image(photoMarsTwoFile.toURI().toString());
+        assertNotNull(photoMarsTwoFile);
+        assertNotNull(photoMarsTwoImage);
+    }
+    @Test
+    public void testMarsPhotoThree() {
+        String vegaMarsThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\sovietunion\\mars\\3.jpg";
+        File photoMarsThreeFile = new File(vegaMarsThreePath);
+        Image photoMarsThreeImage = new Image(photoMarsThreeFile.toURI().toString());
+        assertNotNull(photoMarsThreeFile);
+        assertNotNull(photoMarsThreeImage);
+    }
 }
