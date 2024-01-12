@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -23,6 +25,9 @@ public class ChinaLessonController implements Initializable  {
 
     @FXML
     Button btnClose;
+
+    @FXML
+    ImageView photoSpace;
 
     @FXML
     protected void onBtnLocalUaClick() throws FileNotFoundException {
@@ -65,5 +70,50 @@ public class ChinaLessonController implements Initializable  {
         fileChooserEN.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\china\\en"));
         fileChooserUA.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\china\\ua"));
         fileChooserDK.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\china\\dk"));
+    }
+
+    @FXML
+    protected void showPhotoOne() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "PRJ9211": {
+                String prj9211PhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\prj9211\\1.jpg";
+                File photoPrj9211OneFile = new File(prj9211PhotoOnePath);
+                Image photoPrj9211OneImage = new Image(photoPrj9211OneFile.toURI().toString());
+                photoSpace.setImage(photoPrj9211OneImage);
+                break;
+            }
+        }
+    }
+
+    @FXML
+    protected void showPhotoTwo() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "PRJ9211": {
+                String prj9211PhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\prj9211\\2.jpg";
+                File photoPrj9211TwoFile = new File(prj9211PhotoTwoPath);
+                Image photoPrj9211TwoImage = new Image(photoPrj9211TwoFile.toURI().toString());
+                photoSpace.setImage(photoPrj9211TwoImage);
+                break;
+            }
+        }
+    }
+
+    @FXML
+    protected void showPhotoThree() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "PRJ9211": {
+                String prj9211PhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\prj9211\\3.jpg";
+                File photoPrj9211ThreeFile = new File(prj9211PhotoThreePath);
+                Image photoPrj9211ThreeImage = new Image(photoPrj9211ThreeFile.toURI().toString());
+                photoSpace.setImage(photoPrj9211ThreeImage);
+                break;
+            }
+        }
     }
 }
