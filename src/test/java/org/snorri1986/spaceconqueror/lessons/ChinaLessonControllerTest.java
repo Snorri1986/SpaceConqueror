@@ -74,4 +74,28 @@ public class ChinaLessonControllerTest extends ApplicationTest {
         assertNotNull(photoprj9211ThreeFile);
         assertNotNull(photoprj9211ThreeImage);
     }
+    @Test
+    public void testPRJ9212PhotoOne() {
+        String prj9212PhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\prj9212\\1.jpg";
+        File photoprj9212OneFile = new File(prj9212PhotoOnePath);
+        Image photoprj9212OneImage = new Image(photoprj9212OneFile.toURI().toString());
+        assertNotNull(photoprj9212OneFile);
+        assertNotNull(photoprj9212OneImage);
+    }
+    @Test
+    public void testPRJ9212PhotoTwo() {
+        String prj9212PhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\prj9212\\2.jpg";
+        File photoprj9212TwoFile = new File(prj9212PhotoTwoPath);
+        Image photoprj9212TwoImage = new Image(photoprj9212TwoFile.toURI().toString());
+        assertNotNull(photoprj9212TwoFile);
+        assertNotNull(photoprj9212TwoImage);
+    }
+    @Test
+    public void testPRJ9212PhotoThree() {
+        String prj9212PhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\prj9212\\3.jpg";
+        File photoprj9212ThreeFile = new File(prj9212PhotoThreePath);
+        Image photoprj9212ThreeImage = new Image(photoprj9212ThreeFile.toURI().toString());
+        assertNotNull(photoprj9212ThreeFile);
+        assertNotNull(photoprj9212ThreeImage);
+    }
 }
