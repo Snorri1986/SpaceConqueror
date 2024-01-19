@@ -84,6 +84,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoPrj9211OneImage);
                 break;
             }
+            case "PRJ9212": {
+                String prj9212PhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\prj9212\\1.jpg";
+                File photoPrj9212OneFile = new File(prj9212PhotoOnePath);
+                Image photoPrj9212OneImage = new Image(photoPrj9212OneFile.toURI().toString());
+                photoSpace.setImage(photoPrj9212OneImage);
+                break;
+            }
         }
     }
 
@@ -99,6 +106,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoPrj9211TwoImage);
                 break;
             }
+            case "PRJ9212": {
+                String prj9212PhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\prj9212\\2.jpg";
+                File photoPrj9212TwoFile = new File(prj9212PhotoTwoPath);
+                Image photoPrj9212TwoImage = new Image(photoPrj9212TwoFile.toURI().toString());
+                photoSpace.setImage(photoPrj9212TwoImage);
+                break;
+            }
         }
     }
 
@@ -112,6 +126,13 @@ public class ChinaLessonController implements Initializable  {
                 File photoPrj9211ThreeFile = new File(prj9211PhotoThreePath);
                 Image photoPrj9211ThreeImage = new Image(photoPrj9211ThreeFile.toURI().toString());
                 photoSpace.setImage(photoPrj9211ThreeImage);
+                break;
+            }
+            case "PRJ9212": {
+                String prj9212PhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\prj9212\\3.jpg";
+                File photoPrj9212ThreeFile = new File(prj9212PhotoThreePath);
+                Image photoPrj9212ThreeImage = new Image(photoPrj9212ThreeFile.toURI().toString());
+                photoSpace.setImage(photoPrj9212ThreeImage);
                 break;
             }
         }
