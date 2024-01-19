@@ -98,6 +98,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoPrj9213OneImage);
                 break;
             }
+            case "Lunar": {
+                String lunarPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\lunar\\1.jpg";
+                File photoLunarOneFile = new File(lunarPhotoOnePath);
+                Image photoLunarOneImage = new Image(photoLunarOneFile.toURI().toString());
+                photoSpace.setImage(photoLunarOneImage);
+                break;
+            }
         }
     }
 
@@ -127,6 +134,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoPrj9213TwoImage);
                 break;
             }
+            case "Lunar": {
+                String lunarPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\lunar\\2.jpg";
+                File photoLunarTwoFile = new File(lunarPhotoTwoPath);
+                Image photoLunarTwoImage = new Image(photoLunarTwoFile.toURI().toString());
+                photoSpace.setImage(photoLunarTwoImage);
+                break;
+            }
         }
     }
 
@@ -154,6 +168,13 @@ public class ChinaLessonController implements Initializable  {
                 File photoPrj9213ThreeFile = new File(prj9213PhotoThreePath);
                 Image photoPrj9213ThreeImage = new Image(photoPrj9213ThreeFile.toURI().toString());
                 photoSpace.setImage(photoPrj9213ThreeImage);
+                break;
+            }
+            case "Lunar": {
+                String lunarPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\lunar\\3.jpg";
+                File photoLunarThreeFile = new File(lunarPhotoThreePath);
+                Image photoLunarThreeImage = new Image(photoLunarThreeFile.toURI().toString());
+                photoSpace.setImage(photoLunarThreeImage);
                 break;
             }
         }
