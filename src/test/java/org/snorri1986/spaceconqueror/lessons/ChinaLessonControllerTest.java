@@ -122,4 +122,28 @@ public class ChinaLessonControllerTest extends ApplicationTest {
         assertNotNull(photoprj9213ThreeFile);
         assertNotNull(photoprj9213ThreeImage);
     }
+    @Test
+    public void testLunarPhotoOne() {
+        String lunarPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\lunar\\1.jpg";
+        File photoLunarOneFile = new File(lunarPhotoOnePath);
+        Image photoLunarOneImage = new Image(photoLunarOneFile.toURI().toString());
+        assertNotNull(photoLunarOneFile);
+        assertNotNull(photoLunarOneImage);
+    }
+    @Test
+    public void testLunarPhotoTwo() {
+        String lunarPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\lunar\\2.jpg";
+        File photoLunarTwoFile = new File(lunarPhotoTwoPath);
+        Image photoLunarTwoImage = new Image(photoLunarTwoFile.toURI().toString());
+        assertNotNull(photoLunarTwoFile);
+        assertNotNull(photoLunarTwoImage);
+    }
+    @Test
+    public void testLunarPhotoThree() {
+        String lunarPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\lunar\\3.jpg";
+        File photoLunarThreeFile = new File(lunarPhotoThreePath);
+        Image photoLunarThreeImage = new Image(photoLunarThreeFile.toURI().toString());
+        assertNotNull(photoLunarThreeFile);
+        assertNotNull(photoLunarThreeImage);
+    }
 }
