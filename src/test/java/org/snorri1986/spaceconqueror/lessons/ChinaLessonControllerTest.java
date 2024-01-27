@@ -146,4 +146,28 @@ public class ChinaLessonControllerTest extends ApplicationTest {
         assertNotNull(photoLunarThreeFile);
         assertNotNull(photoLunarThreeImage);
     }
+    @Test
+    public void testInterplanetsPhotoOne() {
+        String interplanetsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Interplanets\\1.jpg";
+        File photoInterplanetsOneFile = new File(interplanetsPhotoOnePath);
+        Image photoInterplanetsOneImage = new Image(photoInterplanetsOneFile.toURI().toString());
+        assertNotNull(photoInterplanetsOneFile);
+        assertNotNull(photoInterplanetsOneImage);
+    }
+    @Test
+    public void testInterplanetsPhotoTwo() {
+        String interplanetsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Interplanets\\2.jpg";
+        File photoInterplanetsTwoFile = new File(interplanetsPhotoTwoPath);
+        Image photoInterplanetsTwoImage = new Image(photoInterplanetsTwoFile.toURI().toString());
+        assertNotNull(photoInterplanetsTwoFile);
+        assertNotNull(photoInterplanetsTwoImage);
+    }
+    @Test
+    public void testInterplanetsPhotoThree() {
+        String interplanetsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Interplanets\\3.jpg";
+        File photoInterplanetsThreeFile = new File(interplanetsPhotoThreePath);
+        Image photoInterplanetsThreeImage = new Image(photoInterplanetsThreeFile.toURI().toString());
+        assertNotNull(photoInterplanetsThreeFile);
+        assertNotNull(photoInterplanetsThreeImage);
+    }
 }
