@@ -112,6 +112,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoInterplanetsOneImage);
                 break;
             }
+            case "Orbitals": {
+                String orbitalsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Orbitals\\1.jpg";
+                File photoOrbitalsOneFile = new File(orbitalsPhotoOnePath);
+                Image photoOrbitalsOneImage = new Image(photoOrbitalsOneFile.toURI().toString());
+                photoSpace.setImage(photoOrbitalsOneImage);
+                break;
+            }
         }
     }
 
@@ -155,6 +162,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoInterplanetsTwoImage);
                 break;
             }
+            case "Orbitals": {
+                String orbitalsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Orbitals\\2.jpg";
+                File photoOrbitalsTwoFile = new File(orbitalsPhotoTwoPath);
+                Image photoOrbitalsTwoImage = new Image(photoOrbitalsTwoFile.toURI().toString());
+                photoSpace.setImage(photoOrbitalsTwoImage);
+                break;
+            }
         }
     }
 
@@ -196,6 +210,13 @@ public class ChinaLessonController implements Initializable  {
                 File photoInterplanetsThreeFile = new File(interplanetsPhotoThreePath);
                 Image photoInterplanetsThreeImage = new Image(photoInterplanetsThreeFile.toURI().toString());
                 photoSpace.setImage(photoInterplanetsThreeImage);
+                break;
+            }
+            case "Orbitals": {
+                String orbitalsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Orbitals\\3.jpg";
+                File photoOrbitalsThreeFile = new File(orbitalsPhotoThreePath);
+                Image photoOrbitalsThreeImage = new Image(photoOrbitalsThreeFile.toURI().toString());
+                photoSpace.setImage(photoOrbitalsThreeImage);
                 break;
             }
         }
