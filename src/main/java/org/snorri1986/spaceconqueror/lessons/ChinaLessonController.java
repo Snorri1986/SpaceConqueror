@@ -105,6 +105,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoLunarOneImage);
                 break;
             }
+            case "Interplanets": {
+                String interplanetsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Interplanets\\1.jpg";
+                File photoInterplanetsOneFile = new File(interplanetsPhotoOnePath);
+                Image photoInterplanetsOneImage = new Image(photoInterplanetsOneFile.toURI().toString());
+                photoSpace.setImage(photoInterplanetsOneImage);
+                break;
+            }
         }
     }
 
@@ -141,6 +148,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoLunarTwoImage);
                 break;
             }
+            case "Interplanets": {
+                String interplanetsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Interplanets\\2.jpg";
+                File photoInterplanetsTwoFile = new File(interplanetsPhotoTwoPath);
+                Image photoInterplanetsTwoImage = new Image(photoInterplanetsTwoFile.toURI().toString());
+                photoSpace.setImage(photoInterplanetsTwoImage);
+                break;
+            }
         }
     }
 
@@ -175,6 +189,13 @@ public class ChinaLessonController implements Initializable  {
                 File photoLunarThreeFile = new File(lunarPhotoThreePath);
                 Image photoLunarThreeImage = new Image(photoLunarThreeFile.toURI().toString());
                 photoSpace.setImage(photoLunarThreeImage);
+                break;
+            }
+            case "Interplanets": {
+                String interplanetsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Interplanets\\3.jpg";
+                File photoInterplanetsThreeFile = new File(interplanetsPhotoThreePath);
+                Image photoInterplanetsThreeImage = new Image(photoInterplanetsThreeFile.toURI().toString());
+                photoSpace.setImage(photoInterplanetsThreeImage);
                 break;
             }
         }
