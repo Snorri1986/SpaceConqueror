@@ -119,6 +119,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoOrbitalsOneImage);
                 break;
             }
+            case "Mars": {
+                String marsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Mars\\1.jpg";
+                File photoMarsOneFile = new File(marsPhotoOnePath);
+                Image photoMarsOneImage = new Image(photoMarsOneFile.toURI().toString());
+                photoSpace.setImage(photoMarsOneImage);
+                break;
+            }
         }
     }
 
@@ -169,6 +176,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoOrbitalsTwoImage);
                 break;
             }
+            case "Mars": {
+                String marsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Mars\\2.jpg";
+                File photoMarsTwoFile = new File(marsPhotoTwoPath);
+                Image photoMarsTwoImage = new Image(photoMarsTwoFile.toURI().toString());
+                photoSpace.setImage(photoMarsTwoImage);
+                break;
+            }
         }
     }
 
@@ -217,6 +231,13 @@ public class ChinaLessonController implements Initializable  {
                 File photoOrbitalsThreeFile = new File(orbitalsPhotoThreePath);
                 Image photoOrbitalsThreeImage = new Image(photoOrbitalsThreeFile.toURI().toString());
                 photoSpace.setImage(photoOrbitalsThreeImage);
+                break;
+            }
+            case "Mars": {
+                String orbitalsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Mars\\3.jpg";
+                File photoMarsThreeFile = new File(orbitalsPhotoThreePath);
+                Image photoMarsThreeImage = new Image(photoMarsThreeFile.toURI().toString());
+                photoSpace.setImage(photoMarsThreeImage);
                 break;
             }
         }
