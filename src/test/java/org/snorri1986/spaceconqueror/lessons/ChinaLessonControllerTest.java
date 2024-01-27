@@ -170,4 +170,28 @@ public class ChinaLessonControllerTest extends ApplicationTest {
         assertNotNull(photoInterplanetsThreeFile);
         assertNotNull(photoInterplanetsThreeImage);
     }
+    @Test
+    public void testOrbitalsPhotoOne() {
+        String orbitalsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Orbitals\\1.jpg";
+        File photoOrbitalsOneFile = new File(orbitalsPhotoOnePath);
+        Image photoOrbitalsOneImage = new Image(photoOrbitalsOneFile.toURI().toString());
+        assertNotNull(photoOrbitalsOneFile);
+        assertNotNull(photoOrbitalsOneImage);
+    }
+    @Test
+    public void testOrbitalsPhotoTwo() {
+        String orbitalsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Orbitals\\2.jpg";
+        File photoOrbitalsTwoFile = new File(orbitalsPhotoTwoPath);
+        Image photoOrbitalsTwoImage = new Image(photoOrbitalsTwoFile.toURI().toString());
+        assertNotNull(photoOrbitalsTwoFile);
+        assertNotNull(photoOrbitalsTwoImage);
+    }
+    @Test
+    public void testOrbitalsPhotoThree() {
+        String orbitalsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Orbitals\\3.jpg";
+        File photoOrbitalsThreeFile = new File(orbitalsPhotoThreePath);
+        Image photoOrbitalsThreeImage = new Image(photoOrbitalsThreeFile.toURI().toString());
+        assertNotNull(photoOrbitalsThreeFile);
+        assertNotNull(photoOrbitalsThreeImage);
+    }
 }
