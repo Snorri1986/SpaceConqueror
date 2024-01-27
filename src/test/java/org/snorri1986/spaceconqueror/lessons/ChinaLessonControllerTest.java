@@ -194,4 +194,28 @@ public class ChinaLessonControllerTest extends ApplicationTest {
         assertNotNull(photoOrbitalsThreeFile);
         assertNotNull(photoOrbitalsThreeImage);
     }
+    @Test
+    public void testMarsPhotoOne() {
+        String marsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Mars\\1.jpg";
+        File photoMarsOneFile = new File(marsPhotoOnePath);
+        Image photoMarsOneImage = new Image(photoMarsOneFile.toURI().toString());
+        assertNotNull(photoMarsOneFile);
+        assertNotNull(photoMarsOneImage);
+    }
+    @Test
+    public void testMarsPhotoTwo() {
+        String marsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Mars\\2.jpg";
+        File photoMarsTwoFile = new File(marsPhotoTwoPath);
+        Image photoMarsTwoImage = new Image(photoMarsTwoFile.toURI().toString());
+        assertNotNull(photoMarsTwoFile);
+        assertNotNull(photoMarsTwoImage);
+    }
+    @Test
+    public void testMarsPhotoThree() {
+        String marsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\Mars\\3.jpg";
+        File photoMarsThreeFile = new File(marsPhotoThreePath);
+        Image photoMarsThreeImage = new Image(photoMarsThreeFile.toURI().toString());
+        assertNotNull(photoMarsThreeFile);
+        assertNotNull(photoMarsThreeImage);
+    }
 }
