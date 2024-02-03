@@ -242,4 +242,28 @@ public class ChinaLessonControllerTest extends ApplicationTest {
         assertNotNull(chinaCosmodromsPhotoThreeFile);
         assertNotNull(chinaCosmodromsPhotoThreeImage);
     }
+    @Test
+    public void testChinaPeoplesPhotoOne() {
+        String chinaPeoplesPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\peoples\\1.jpg";
+        File chinaPeoplesPhotoOneFile = new File(chinaPeoplesPhotoOnePath);
+        Image chinaPeoplesPhotoOneImage = new Image(chinaPeoplesPhotoOneFile.toURI().toString());
+        assertNotNull(chinaPeoplesPhotoOneFile);
+        assertNotNull(chinaPeoplesPhotoOneImage);
+    }
+    @Test
+    public void testChinaPeoplesPhotoTwo() {
+        String chinaPeoplesPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\peoples\\2.jpg";
+        File chinaPeoplesPhotoTwoFile = new File(chinaPeoplesPhotoTwoPath);
+        Image chinaPeoplesPhotoTwoImage = new Image(chinaPeoplesPhotoTwoFile.toURI().toString());
+        assertNotNull(chinaPeoplesPhotoTwoFile);
+        assertNotNull(chinaPeoplesPhotoTwoImage);
+    }
+    @Test
+    public void testChinaPeoplesPhotoThree() {
+        String chinaPeoplesPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\peoples\\3.jpg";
+        File chinaPeoplesPhotoThreeFile = new File(chinaPeoplesPhotoThreePath);
+        Image chinaPeoplesPhotoThreeImage = new Image(chinaPeoplesPhotoThreeFile.toURI().toString());
+        assertNotNull(chinaPeoplesPhotoThreeFile);
+        assertNotNull(chinaPeoplesPhotoThreeImage);
+    }
 }
