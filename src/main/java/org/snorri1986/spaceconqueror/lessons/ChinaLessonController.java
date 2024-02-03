@@ -133,6 +133,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoCosmodromsOneImage);
                 break;
             }
+            case "China Peoples": {
+                String peoplesPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\peoples\\1.jpg";
+                File photoPeoplesOneFile = new File(peoplesPhotoOnePath);
+                Image photoPeoplesOneImage = new Image(photoPeoplesOneFile.toURI().toString());
+                photoSpace.setImage(photoPeoplesOneImage);
+                break;
+            }
         }
     }
 
@@ -197,6 +204,13 @@ public class ChinaLessonController implements Initializable  {
                 photoSpace.setImage(photoCosmodromsTwoImage);
                 break;
             }
+            case "China Peoples": {
+                String peoplesPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\peoples\\2.jpg";
+                File photoPeoplesTwoFile = new File(peoplesPhotoTwoPath);
+                Image photoPeoplesTwoImage = new Image(photoPeoplesTwoFile.toURI().toString());
+                photoSpace.setImage(photoPeoplesTwoImage);
+                break;
+            }
         }
     }
 
@@ -259,6 +273,13 @@ public class ChinaLessonController implements Initializable  {
                 File photoCosmodromsThreeFile = new File(cosmodromsPhotoThreePath);
                 Image photoCosmodromsThreeImage = new Image(photoCosmodromsThreeFile.toURI().toString());
                 photoSpace.setImage(photoCosmodromsThreeImage);
+                break;
+            }
+            case "China Peoples": {
+                String peoplesPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\china\\peoples\\3.jpg";
+                File photoPeoplesThreeFile = new File(peoplesPhotoThreePath);
+                Image photoPeoplesThreeImage = new Image(photoPeoplesThreeFile.toURI().toString());
+                photoSpace.setImage(photoPeoplesThreeImage);
                 break;
             }
         }
