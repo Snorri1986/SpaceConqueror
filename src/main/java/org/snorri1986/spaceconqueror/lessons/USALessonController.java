@@ -66,4 +66,19 @@ public class USALessonController implements Initializable  {
         fileChooserUA.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\usa\\ua"));
         fileChooserDK.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\usa\\dk"));
     }
+
+    @FXML
+    protected void showPhotoOne() {
+
+    }
+
+    @FXML
+    protected void showPhotoTwo() {
+
+    }
+
+    @FXML
+    protected void showPhotoThree() {
+
+    }
 }
