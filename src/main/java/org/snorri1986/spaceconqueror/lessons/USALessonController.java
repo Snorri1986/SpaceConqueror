@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -23,6 +25,9 @@ public class USALessonController implements Initializable  {
 
     @FXML
     Button btnClose;
+
+    @FXML
+    ImageView photoSpace;
 
     @FXML
     protected void onBtnLocalUaClick() throws FileNotFoundException {
@@ -69,16 +74,52 @@ public class USALessonController implements Initializable  {
 
     @FXML
     protected void showPhotoOne() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Mercury Project": {
+                String MercuryPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\1.jpg";
+                File photoMercuryOneFile = new File(MercuryPhotoOnePath);
+                Image photoMercuryOneImage = new Image(photoMercuryOneFile.toURI().toString());
+                photoSpace.setImage(photoMercuryOneImage);
+                break;
+            }
+
+        }
 
     }
 
     @FXML
     protected void showPhotoTwo() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Mercury Project": {
+                String MercuryPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\2.jpg";
+                File photoMercuryTwoFile = new File(MercuryPhotoTwoPath);
+                Image photoMercuryTwoImage = new Image(photoMercuryTwoFile.toURI().toString());
+                photoSpace.setImage(photoMercuryTwoImage);
+                break;
+            }
+
+        }
 
     }
 
     @FXML
     protected void showPhotoThree() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Mercury Project": {
+                String MercuryPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\3.jpg";
+                File photoMercuryThreeFile = new File(MercuryPhotoThreePath);
+                Image photoMercuryThreeImage = new Image(photoMercuryThreeFile.toURI().toString());
+                photoSpace.setImage(photoMercuryThreeImage);
+                break;
+            }
+
+        }
 
     }
 }
