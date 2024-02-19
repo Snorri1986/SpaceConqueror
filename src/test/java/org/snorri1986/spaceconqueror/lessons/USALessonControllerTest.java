@@ -98,4 +98,28 @@ public class USALessonControllerTest extends ApplicationTest {
         assertNotNull(photoGeminiThreeFile);
         assertNotNull(photoGeminiThreeImage);
     }
+    @Test
+    public void testUSAApolloPhotoOne() {
+        String apolloPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\apollo\\1.jpg";
+        File photoApolloOneFile = new File(apolloPhotoOnePath);
+        Image photoApolloOneImage = new Image(photoApolloOneFile.toURI().toString());
+        assertNotNull(photoApolloOneFile);
+        assertNotNull(photoApolloOneImage);
+    }
+    @Test
+    public void testUSAApolloPhotoTwo() {
+        String apolloPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\apollo\\2.jpg";
+        File photoApolloTwoFile = new File(apolloPhotoTwoPath);
+        Image photoApolloTwoImage = new Image(photoApolloTwoFile.toURI().toString());
+        assertNotNull(photoApolloTwoFile);
+        assertNotNull(photoApolloTwoImage);
+    }
+    @Test
+    public void testUSAApolloPhotoThree() {
+        String apolloPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\apollo\\3.jpg";
+        File photoApolloThreeFile = new File(apolloPhotoThreePath);
+        Image photoApolloThreeImage = new Image(photoApolloThreeFile.toURI().toString());
+        assertNotNull(photoApolloThreeFile);
+        assertNotNull(photoApolloThreeImage);
+    }
 }
