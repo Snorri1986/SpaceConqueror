@@ -1,5 +1,6 @@
 package org.snorri1986.spaceconqueror.lessons;
 
+import javafx.scene.image.Image;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
@@ -47,5 +48,30 @@ public class USALessonControllerTest extends ApplicationTest {
     public void checkInitialDirectoryDK() {
         fileChooserDKtest.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\usa\\dk"));
         assertNotNull(fileChooserDKtest.getInitialDirectory());
+    }
+    @Test
+    public void testUSAMercuryPhotoOne() {
+        String mercuryPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\1.jpg";
+        File photoMercuryOneFile = new File(mercuryPhotoOnePath);
+        Image photoMercuryOneImage = new Image(photoMercuryOneFile.toURI().toString());
+        assertNotNull(photoMercuryOneFile);
+        assertNotNull(photoMercuryOneImage);
+    }
+    @Test
+    public void testUSAMercuryPhotoTwo() {
+        String mercuryPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\2.jpg";
+        File photoMercuryTwoFile = new File(mercuryPhotoTwoPath);
+        Image photoMercuryTwoImage = new Image(photoMercuryTwoFile.toURI().toString());
+        assertNotNull(photoMercuryTwoFile);
+        assertNotNull(photoMercuryTwoImage);
+    }
+
+    @Test
+    public void testUSAMercuryPhotoThree() {
+        String mercuryPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\3.jpg";
+        File photoMercuryThreeFile = new File(mercuryPhotoThreePath);
+        Image photoMercuryThreeImage = new Image(photoMercuryThreeFile.toURI().toString());
+        assertNotNull(photoMercuryThreeFile);
+        assertNotNull(photoMercuryThreeImage);
     }
 }
