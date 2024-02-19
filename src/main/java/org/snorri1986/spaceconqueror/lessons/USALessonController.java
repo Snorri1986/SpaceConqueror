@@ -78,10 +78,17 @@ public class USALessonController implements Initializable  {
         String title = stage.getTitle();
         switch(title) {
             case "Mercury Project": {
-                String MercuryPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\1.jpg";
-                File photoMercuryOneFile = new File(MercuryPhotoOnePath);
+                String mercuryPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\1.jpg";
+                File photoMercuryOneFile = new File(mercuryPhotoOnePath);
                 Image photoMercuryOneImage = new Image(photoMercuryOneFile.toURI().toString());
                 photoSpace.setImage(photoMercuryOneImage);
+                break;
+            }
+            case "Gemini Program": {
+                String geminiPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\gemini\\1.jpg";
+                File photoGeminiOneFile = new File(geminiPhotoOnePath);
+                Image photoGeminiOneImage = new Image(photoGeminiOneFile.toURI().toString());
+                photoSpace.setImage(photoGeminiOneImage);
                 break;
             }
 
@@ -95,10 +102,17 @@ public class USALessonController implements Initializable  {
         String title = stage.getTitle();
         switch(title) {
             case "Mercury Project": {
-                String MercuryPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\2.jpg";
-                File photoMercuryTwoFile = new File(MercuryPhotoTwoPath);
+                String mercuryPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\2.jpg";
+                File photoMercuryTwoFile = new File(mercuryPhotoTwoPath);
                 Image photoMercuryTwoImage = new Image(photoMercuryTwoFile.toURI().toString());
                 photoSpace.setImage(photoMercuryTwoImage);
+                break;
+            }
+            case "Gemini Program": {
+                String geminiPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\gemini\\2.jpg";
+                File photoGeminiTwoFile = new File(geminiPhotoTwoPath);
+                Image photoGeminiTwoImage = new Image(photoGeminiTwoFile.toURI().toString());
+                photoSpace.setImage(photoGeminiTwoImage);
                 break;
             }
 
@@ -112,10 +126,17 @@ public class USALessonController implements Initializable  {
         String title = stage.getTitle();
         switch(title) {
             case "Mercury Project": {
-                String MercuryPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\3.jpg";
-                File photoMercuryThreeFile = new File(MercuryPhotoThreePath);
+                String mercuryPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\mercury\\3.jpg";
+                File photoMercuryThreeFile = new File(mercuryPhotoThreePath);
                 Image photoMercuryThreeImage = new Image(photoMercuryThreeFile.toURI().toString());
                 photoSpace.setImage(photoMercuryThreeImage);
+                break;
+            }
+            case "Gemini Program": {
+                String geminiPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\gemini\\3.jpg";
+                File photoGeminiThreeFile = new File(geminiPhotoThreePath);
+                Image photoGeminiThreeImage = new Image(photoGeminiThreeFile.toURI().toString());
+                photoSpace.setImage(photoGeminiThreeImage);
                 break;
             }
 
