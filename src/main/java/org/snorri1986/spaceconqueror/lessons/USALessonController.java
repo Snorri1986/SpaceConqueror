@@ -91,6 +91,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoGeminiOneImage);
                 break;
             }
+            case "Apollo Program": {
+                String apolloPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\apollo\\1.jpg";
+                File photoApolloOneFile = new File(apolloPhotoOnePath);
+                Image photoApolloOneImage = new Image(photoApolloOneFile.toURI().toString());
+                photoSpace.setImage(photoApolloOneImage);
+                break;
+            }
 
         }
 
@@ -115,6 +122,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoGeminiTwoImage);
                 break;
             }
+            case "Apollo Program": {
+                String apolloPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\apollo\\2.jpg";
+                File photoApolloTwoFile = new File(apolloPhotoTwoPath);
+                Image photoApolloTwoImage = new Image(photoApolloTwoFile.toURI().toString());
+                photoSpace.setImage(photoApolloTwoImage);
+                break;
+            }
 
         }
 
@@ -137,6 +151,13 @@ public class USALessonController implements Initializable  {
                 File photoGeminiThreeFile = new File(geminiPhotoThreePath);
                 Image photoGeminiThreeImage = new Image(photoGeminiThreeFile.toURI().toString());
                 photoSpace.setImage(photoGeminiThreeImage);
+                break;
+            }
+            case "Apollo Program": {
+                String apolloPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\apollo\\3.jpg";
+                File photoApolloThreeFile = new File(apolloPhotoThreePath);
+                Image photoApolloThreeImage = new Image(photoApolloThreeFile.toURI().toString());
+                photoSpace.setImage(photoApolloThreeImage);
                 break;
             }
 
