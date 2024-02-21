@@ -122,4 +122,28 @@ public class USALessonControllerTest extends ApplicationTest {
         assertNotNull(photoApolloThreeFile);
         assertNotNull(photoApolloThreeImage);
     }
+    @Test
+    public void testUSASoyuzApolloProgramPhotoOne() {
+        String soyuzApolloProgramPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\soyuz-apollo\\1.jpg";
+        File photoSoyuzApolloProgramOneFile = new File(soyuzApolloProgramPhotoOnePath);
+        Image photoSoyuzApolloProgramOneImage = new Image(photoSoyuzApolloProgramOneFile.toURI().toString());
+        assertNotNull(photoSoyuzApolloProgramOneFile);
+        assertNotNull(photoSoyuzApolloProgramOneImage);
+    }
+    @Test
+    public void testUSASoyuzApolloProgramPhotoTwo() {
+        String soyuzApolloProgramPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\soyuz-apollo\\2.jpg";
+        File photoSoyuzApolloProgramTwoFile = new File(soyuzApolloProgramPhotoTwoPath);
+        Image photoSoyuzApolloProgramTwoImage = new Image(photoSoyuzApolloProgramTwoFile.toURI().toString());
+        assertNotNull(photoSoyuzApolloProgramTwoFile);
+        assertNotNull(photoSoyuzApolloProgramTwoImage);
+    }
+    @Test
+    public void testUSASoyuzApolloProgramPhotoThree() {
+        String soyuzApolloProgramPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\soyuz-apollo\\3.jpg";
+        File photoSoyuzApolloProgramThreeFile = new File(soyuzApolloProgramPhotoThreePath);
+        Image photoSoyuzApolloProgramThreeImage = new Image(photoSoyuzApolloProgramThreeFile.toURI().toString());
+        assertNotNull(photoSoyuzApolloProgramThreeFile);
+        assertNotNull(photoSoyuzApolloProgramThreeImage);
+    }
 }
