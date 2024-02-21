@@ -98,6 +98,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoApolloOneImage);
                 break;
             }
+            case "Soyuz Apollo Program": {
+                String soyuzApolloProgramPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\soyuz-apollo\\1.jpg";
+                File photoSoyuzApolloProgramOneFile = new File(soyuzApolloProgramPhotoOnePath);
+                Image photoSoyuzApolloProgramOneImage = new Image(photoSoyuzApolloProgramOneFile.toURI().toString());
+                photoSpace.setImage(photoSoyuzApolloProgramOneImage);
+                break;
+            }
 
         }
 
@@ -129,6 +136,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoApolloTwoImage);
                 break;
             }
+            case "Soyuz Apollo Program": {
+                String soyuzApolloProgramPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\soyuz-apollo\\2.jpg";
+                File photoSoyuzApolloProgramTwoFile = new File(soyuzApolloProgramPhotoTwoPath);
+                Image photoSoyuzApolloProgramTwoImage = new Image(photoSoyuzApolloProgramTwoFile.toURI().toString());
+                photoSpace.setImage(photoSoyuzApolloProgramTwoImage);
+                break;
+            }
 
         }
 
@@ -158,6 +172,13 @@ public class USALessonController implements Initializable  {
                 File photoApolloThreeFile = new File(apolloPhotoThreePath);
                 Image photoApolloThreeImage = new Image(photoApolloThreeFile.toURI().toString());
                 photoSpace.setImage(photoApolloThreeImage);
+                break;
+            }
+            case "Soyuz Apollo Program": {
+                String soyuzApolloProgramPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\soyuz-apollo\\3.jpg";
+                File photoSoyuzApolloProgramThreeFile = new File(soyuzApolloProgramPhotoThreePath);
+                Image photoSoyuzApolloProgramThreeImage = new Image(photoSoyuzApolloProgramThreeFile.toURI().toString());
+                photoSpace.setImage(photoSoyuzApolloProgramThreeImage);
                 break;
             }
 
