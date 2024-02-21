@@ -170,4 +170,28 @@ public class USALessonControllerTest extends ApplicationTest {
         assertNotNull(issPhotoThreeFile);
         assertNotNull(issPhotoThreeImage);
     }
+    @Test
+    public void testUSASpaceShuttleProgramPhotoOne() {
+        String spaceShuttleProgramPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\space_shuttle\\1.jpg";
+        File spaceShuttleProgramPhotoOneFile = new File(spaceShuttleProgramPhotoOnePath);
+        Image spaceShuttleProgramPhotoOneImage = new Image(spaceShuttleProgramPhotoOneFile.toURI().toString());
+        assertNotNull(spaceShuttleProgramPhotoOneFile);
+        assertNotNull(spaceShuttleProgramPhotoOneImage);
+    }
+    @Test
+    public void testUSASpaceShuttleProgramPhotoTwo() {
+        String spaceShuttleProgramPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\space_shuttle\\2.jpg";
+        File spaceShuttleProgramPhotoTwoFile = new File(spaceShuttleProgramPhotoTwoPath);
+        Image spaceShuttleProgramPhotoTwoImage = new Image(spaceShuttleProgramPhotoTwoFile.toURI().toString());
+        assertNotNull(spaceShuttleProgramPhotoTwoFile);
+        assertNotNull(spaceShuttleProgramPhotoTwoImage);
+    }
+    @Test
+    public void testUSASpaceShuttleProgramPhotoThree() {
+        String spaceShuttleProgramPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\space_shuttle\\3.jpg";
+        File spaceShuttleProgramPhotoThreeFile = new File(spaceShuttleProgramPhotoThreePath);
+        Image spaceShuttleProgramPhotoThreeImage = new Image(spaceShuttleProgramPhotoThreeFile.toURI().toString());
+        assertNotNull(spaceShuttleProgramPhotoThreeFile);
+        assertNotNull(spaceShuttleProgramPhotoThreeImage);
+    }
 }
