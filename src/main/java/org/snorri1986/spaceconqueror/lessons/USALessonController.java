@@ -112,6 +112,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoISSOneImage);
                 break;
             }
+            case "Space Shuttle Program": {
+                String spaceShuttleProgramPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\space_shuttle\\1.jpg";
+                File spaceShuttleProgramOneFile = new File(spaceShuttleProgramPhotoOnePath);
+                Image photoSpaceShuttleProgramOneImage = new Image(spaceShuttleProgramOneFile.toURI().toString());
+                photoSpace.setImage(photoSpaceShuttleProgramOneImage);
+                break;
+            }
 
 
         }
@@ -158,6 +165,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoISSTwoImage);
                 break;
             }
+            case "Space Shuttle Program": {
+                String spaceShuttleProgramPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\space_shuttle\\2.jpg";
+                File spaceShuttleProgramTwoFile = new File(spaceShuttleProgramPhotoTwoPath);
+                Image photoSpaceShuttleProgramTwoImage = new Image(spaceShuttleProgramTwoFile.toURI().toString());
+                photoSpace.setImage(photoSpaceShuttleProgramTwoImage);
+                break;
+            }
 
         }
 
@@ -201,6 +215,13 @@ public class USALessonController implements Initializable  {
                 File photoISSThreeFile = new File(issPhotoThreePath);
                 Image photoISSThreeImage = new Image(photoISSThreeFile.toURI().toString());
                 photoSpace.setImage(photoISSThreeImage);
+                break;
+            }
+            case "Space Shuttle Program": {
+                String spaceShuttleProgramPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\space_shuttle\\3.jpg";
+                File spaceShuttleProgramThreeFile = new File(spaceShuttleProgramPhotoThreePath);
+                Image photoSpaceShuttleProgramThreeImage = new Image(spaceShuttleProgramThreeFile.toURI().toString());
+                photoSpace.setImage(photoSpaceShuttleProgramThreeImage);
                 break;
             }
 
