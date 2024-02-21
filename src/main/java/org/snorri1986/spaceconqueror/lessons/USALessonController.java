@@ -105,6 +105,14 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoSoyuzApolloProgramOneImage);
                 break;
             }
+            case "ISS": {
+                String issPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\iss\\1.jpg";
+                File photoISSOneFile = new File(issPhotoOnePath);
+                Image photoISSOneImage = new Image(photoISSOneFile.toURI().toString());
+                photoSpace.setImage(photoISSOneImage);
+                break;
+            }
+
 
         }
 
@@ -143,6 +151,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoSoyuzApolloProgramTwoImage);
                 break;
             }
+            case "ISS": {
+                String issPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\iss\\2.jpg";
+                File photoISSTwoFile = new File(issPhotoTwoPath);
+                Image photoISSTwoImage = new Image(photoISSTwoFile.toURI().toString());
+                photoSpace.setImage(photoISSTwoImage);
+                break;
+            }
 
         }
 
@@ -179,6 +194,13 @@ public class USALessonController implements Initializable  {
                 File photoSoyuzApolloProgramThreeFile = new File(soyuzApolloProgramPhotoThreePath);
                 Image photoSoyuzApolloProgramThreeImage = new Image(photoSoyuzApolloProgramThreeFile.toURI().toString());
                 photoSpace.setImage(photoSoyuzApolloProgramThreeImage);
+                break;
+            }
+            case "ISS": {
+                String issPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\iss\\3.jpg";
+                File photoISSThreeFile = new File(issPhotoThreePath);
+                Image photoISSThreeImage = new Image(photoISSThreeFile.toURI().toString());
+                photoSpace.setImage(photoISSThreeImage);
                 break;
             }
 
