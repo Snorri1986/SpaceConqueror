@@ -126,8 +126,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoUsaCosmodromsProgramOneImage);
                 break;
             }
-
-
+            case "USA Peoples": {
+                String usaPeoplesProgramPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\people\\1.jpg";
+                File usaPeoplesProgramOneFile = new File(usaPeoplesProgramPhotoOnePath);
+                Image photoUsaPeoplesProgramOneImage = new Image(usaPeoplesProgramOneFile.toURI().toString());
+                photoSpace.setImage(photoUsaPeoplesProgramOneImage);
+                break;
+            }
         }
 
     }
@@ -184,6 +189,13 @@ public class USALessonController implements Initializable  {
                 File usaCosmodromsProgramTwoFile = new File(usaCosmodromsProgramPhotoTwoPath);
                 Image photoUsaCosmodromsProgramTwoImage = new Image(usaCosmodromsProgramTwoFile.toURI().toString());
                 photoSpace.setImage(photoUsaCosmodromsProgramTwoImage);
+                break;
+            }
+            case "USA Peoples": {
+                String usaPeoplesProgramPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\people\\2.jpg";
+                File usaPeoplesProgramTwoFile = new File(usaPeoplesProgramPhotoTwoPath);
+                Image photoUsaPeoplesProgramTwoImage = new Image(usaPeoplesProgramTwoFile.toURI().toString());
+                photoSpace.setImage(photoUsaPeoplesProgramTwoImage);
                 break;
             }
 
@@ -243,6 +255,13 @@ public class USALessonController implements Initializable  {
                 File usaCosmodromsProgramThreeFile = new File(usaCosmodromsProgramPhotoThreePath);
                 Image photoUsaCosmodromsProgramThreeImage = new Image(usaCosmodromsProgramThreeFile.toURI().toString());
                 photoSpace.setImage(photoUsaCosmodromsProgramThreeImage);
+                break;
+            }
+            case "USA Peoples": {
+                String usaPeoplesProgramPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\people\\3.jpg";
+                File usaPeoplesProgramThreeFile = new File(usaPeoplesProgramPhotoThreePath);
+                Image photoUsaPeoplesProgramThreeImage = new Image(usaPeoplesProgramThreeFile.toURI().toString());
+                photoSpace.setImage(photoUsaPeoplesProgramThreeImage);
                 break;
             }
 
