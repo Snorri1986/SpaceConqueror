@@ -133,6 +133,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoUsaPeoplesProgramOneImage);
                 break;
             }
+            case "NASA": {
+                String nasaPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\nasa\\1.jpg";
+                File nasaOneFile = new File(nasaPhotoOnePath);
+                Image nasaOneImage = new Image(nasaOneFile.toURI().toString());
+                photoSpace.setImage(nasaOneImage);
+                break;
+            }
         }
 
     }
@@ -198,7 +205,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoUsaPeoplesProgramTwoImage);
                 break;
             }
-
+            case "NASA": {
+                String nasaPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\nasa\\2.jpg";
+                File nasaTwoFile = new File(nasaPhotoTwoPath);
+                Image nasaTwoImage = new Image(nasaTwoFile.toURI().toString());
+                photoSpace.setImage(nasaTwoImage);
+                break;
+            }
         }
 
     }
@@ -264,7 +277,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoUsaPeoplesProgramThreeImage);
                 break;
             }
-
+            case "NASA": {
+                String nasaPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\nasa\\3.jpg";
+                File nasaThreeFile = new File(nasaPhotoThreePath);
+                Image nasaThreeImage = new Image(nasaThreeFile.toURI().toString());
+                photoSpace.setImage(nasaThreeImage);
+                break;
+            }
         }
 
     }
