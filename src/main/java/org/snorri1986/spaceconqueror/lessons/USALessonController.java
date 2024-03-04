@@ -119,6 +119,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoSpaceShuttleProgramOneImage);
                 break;
             }
+            case "USA Cosmodroms": {
+                String usaCosmodromsProgramPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\cosmodroms\\1.jpg";
+                File usaCosmodromsProgramOneFile = new File(usaCosmodromsProgramPhotoOnePath);
+                Image photoUsaCosmodromsProgramOneImage = new Image(usaCosmodromsProgramOneFile.toURI().toString());
+                photoSpace.setImage(photoUsaCosmodromsProgramOneImage);
+                break;
+            }
 
 
         }
@@ -172,6 +179,13 @@ public class USALessonController implements Initializable  {
                 photoSpace.setImage(photoSpaceShuttleProgramTwoImage);
                 break;
             }
+            case "USA Cosmodroms": {
+                String usaCosmodromsProgramPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\cosmodroms\\2.jpg";
+                File usaCosmodromsProgramTwoFile = new File(usaCosmodromsProgramPhotoTwoPath);
+                Image photoUsaCosmodromsProgramTwoImage = new Image(usaCosmodromsProgramTwoFile.toURI().toString());
+                photoSpace.setImage(photoUsaCosmodromsProgramTwoImage);
+                break;
+            }
 
         }
 
@@ -222,6 +236,13 @@ public class USALessonController implements Initializable  {
                 File spaceShuttleProgramThreeFile = new File(spaceShuttleProgramPhotoThreePath);
                 Image photoSpaceShuttleProgramThreeImage = new Image(spaceShuttleProgramThreeFile.toURI().toString());
                 photoSpace.setImage(photoSpaceShuttleProgramThreeImage);
+                break;
+            }
+            case "USA Cosmodroms": {
+                String usaCosmodromsProgramPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\cosmodroms\\3.jpg";
+                File usaCosmodromsProgramThreeFile = new File(usaCosmodromsProgramPhotoThreePath);
+                Image photoUsaCosmodromsProgramThreeImage = new Image(usaCosmodromsProgramThreeFile.toURI().toString());
+                photoSpace.setImage(photoUsaCosmodromsProgramThreeImage);
                 break;
             }
 
