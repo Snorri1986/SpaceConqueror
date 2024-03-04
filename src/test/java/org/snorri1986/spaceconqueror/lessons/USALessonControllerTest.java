@@ -242,4 +242,28 @@ public class USALessonControllerTest extends ApplicationTest {
         assertNotNull(usaPeoplesPhotoThreeFile);
         assertNotNull(usaPeoplesPhotoThreeImage);
     }
+    @Test
+    public void testUSAnasaPhotoOne() {
+        String usaNasaPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\nasa\\1.jpg";
+        File usaNasaPhotoOneFile = new File(usaNasaPhotoOnePath);
+        Image usaNasaPhotoOneImage = new Image(usaNasaPhotoOneFile.toURI().toString());
+        assertNotNull(usaNasaPhotoOneFile);
+        assertNotNull(usaNasaPhotoOneImage);
+    }
+    @Test
+    public void testUSAnasaPhotoTwo() {
+        String usaNasaPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\nasa\\2.jpg";
+        File usaNasaPhotoTwoFile = new File(usaNasaPhotoTwoPath);
+        Image usaNasaPhotoTwoImage = new Image(usaNasaPhotoTwoFile.toURI().toString());
+        assertNotNull(usaNasaPhotoTwoFile);
+        assertNotNull(usaNasaPhotoTwoImage);
+    }
+    @Test
+    public void testUSAnasaPhotoThree() {
+        String usaNasaPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\usa\\nasa\\3.jpg";
+        File usaNasaPhotoThreeFile = new File(usaNasaPhotoThreePath);
+        Image usaNasaPhotoThreeImage = new Image(usaNasaPhotoThreeFile.toURI().toString());
+        assertNotNull(usaNasaPhotoThreeFile);
+        assertNotNull(usaNasaPhotoThreeImage);
+    }
 }
