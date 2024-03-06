@@ -73,4 +73,28 @@ public class IndiaLessonControllerTest extends ApplicationTest {
         assertNotNull(photoIndiaSatellitesThreeFile);
         assertNotNull(photoIndiaSatellitesThreeImage);
     }
+    @Test
+    public void testIndiaGaganPhotoOne() {
+        String indiaGaganPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\gagan\\1.jpg";
+        File photoIndiaGaganOneFile = new File(indiaGaganPhotoOnePath);
+        Image photoIndiaGaganOneImage = new Image(photoIndiaGaganOneFile.toURI().toString());
+        assertNotNull(photoIndiaGaganOneFile);
+        assertNotNull(photoIndiaGaganOneImage);
+    }
+    @Test
+    public void testIndiaGaganPhotoTwo() {
+        String indiaGaganPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\gagan\\2.jpg";
+        File photoIndiaGaganTwoFile = new File(indiaGaganPhotoTwoPath);
+        Image photoIndiaGaganTwoImage = new Image(photoIndiaGaganTwoFile.toURI().toString());
+        assertNotNull(photoIndiaGaganTwoFile);
+        assertNotNull(photoIndiaGaganTwoImage);
+    }
+    @Test
+    public void testIndiaGaganPhotoThree() {
+        String indiaGaganPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\gagan\\3.jpg";
+        File photoIndiaGaganThreeFile = new File(indiaGaganPhotoThreePath);
+        Image photoIndiaGaganThreeImage = new Image(photoIndiaGaganThreeFile.toURI().toString());
+        assertNotNull(photoIndiaGaganThreeFile);
+        assertNotNull(photoIndiaGaganThreeImage);
+    }
 }
