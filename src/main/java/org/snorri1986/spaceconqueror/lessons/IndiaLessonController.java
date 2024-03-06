@@ -83,6 +83,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoSatellitesOneImage);
                 break;
             }
+            case "GAGAN": {
+                String gaganPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\gagan\\1.jpg";
+                File photoGaganOneFile = new File(gaganPhotoOnePath);
+                Image photoGaganOneImage = new Image(photoGaganOneFile.toURI().toString());
+                photoSpace.setImage(photoGaganOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -97,6 +104,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoSatellitesTwoImage);
                 break;
             }
+            case "GAGAN": {
+                String gaganPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\gagan\\2.jpg";
+                File photoGaganTwoFile = new File(gaganPhotoTwoPath);
+                Image photoGaganTwoImage = new Image(photoGaganTwoFile.toURI().toString());
+                photoSpace.setImage(photoGaganTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -109,6 +123,13 @@ public class IndiaLessonController implements Initializable  {
                 File photoSatellitesThreeFile = new File(satellitesPhotoThreePath);
                 Image photoSatellitesThreeImage = new Image(photoSatellitesThreeFile.toURI().toString());
                 photoSpace.setImage(photoSatellitesThreeImage);
+                break;
+            }
+            case "GAGAN": {
+                String gaganPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\gagan\\3.jpg";
+                File photoGaganThreeFile = new File(gaganPhotoThreePath);
+                Image photoGaganThreeImage = new Image(photoGaganThreeFile.toURI().toString());
+                photoSpace.setImage(photoGaganThreeImage);
                 break;
             }
         }
