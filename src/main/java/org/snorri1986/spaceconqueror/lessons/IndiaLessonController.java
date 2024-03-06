@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -23,6 +25,9 @@ public class IndiaLessonController implements Initializable  {
 
     @FXML
     Button btnClose;
+
+    @FXML
+    ImageView photoSpace;
 
     @FXML
     protected void onBtnLocalUaClick() throws FileNotFoundException {
@@ -66,13 +71,46 @@ public class IndiaLessonController implements Initializable  {
         fileChooserUA.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\india\\ua"));
         fileChooserDK.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\india\\dk"));
     }
-
     @FXML
-    protected void showPhotoOne() { }
-
+    protected void showPhotoOne() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Satellites": {
+                String satellitesPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\satellites\\1.jpg";
+                File photoSatellitesOneFile = new File(satellitesPhotoOnePath);
+                Image photoSatellitesOneImage = new Image(photoSatellitesOneFile.toURI().toString());
+                photoSpace.setImage(photoSatellitesOneImage);
+                break;
+            }
+        }
+    }
     @FXML
-    protected void showPhotoTwo() { }
-
+    protected void showPhotoTwo() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Satellites": {
+                String satellitesPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\satellites\\2.jpg";
+                File photoSatellitesTwoFile = new File(satellitesPhotoTwoPath);
+                Image photoSatellitesTwoImage = new Image(photoSatellitesTwoFile.toURI().toString());
+                photoSpace.setImage(photoSatellitesTwoImage);
+                break;
+            }
+        }
+    }
     @FXML
-    protected void showPhotoThree() { }
+    protected void showPhotoThree() {
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch(title) {
+            case "Satellites": {
+                String satellitesPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\satellites\\3.jpg";
+                File photoSatellitesThreeFile = new File(satellitesPhotoThreePath);
+                Image photoSatellitesThreeImage = new Image(photoSatellitesThreeFile.toURI().toString());
+                photoSpace.setImage(photoSatellitesThreeImage);
+                break;
+            }
+        }
+    }
 }
