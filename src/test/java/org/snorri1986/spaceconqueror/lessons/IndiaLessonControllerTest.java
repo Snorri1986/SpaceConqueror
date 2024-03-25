@@ -145,4 +145,28 @@ public class IndiaLessonControllerTest extends ApplicationTest {
         assertNotNull(photoIndiaChandrayaan1ThreeFile);
         assertNotNull(photoIndiaChandrayaan1ThreeImage);
     }
+    @Test
+    public void testIndiaMarsOrbiterPhotoOne() {
+        String indiaMarsOrbiterPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\marsorbiter\\1.jpg";
+        File photoIndiaMarsOrbiterOneFile = new File(indiaMarsOrbiterPhotoOnePath);
+        Image photoIndiaMarsOrbiterOneImage = new Image(photoIndiaMarsOrbiterOneFile.toURI().toString());
+        assertNotNull(photoIndiaMarsOrbiterOneFile);
+        assertNotNull(photoIndiaMarsOrbiterOneImage);
+    }
+    @Test
+    public void testIndiaMarsOrbiterPhotoTwo() {
+        String indiaMarsOrbiterPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\marsorbiter\\2.jpg";
+        File photoIndiaMarsOrbiterTwoFile = new File(indiaMarsOrbiterPhotoTwoPath);
+        Image photoIndiaMarsOrbiterTwoImage = new Image(photoIndiaMarsOrbiterTwoFile.toURI().toString());
+        assertNotNull(photoIndiaMarsOrbiterTwoFile);
+        assertNotNull(photoIndiaMarsOrbiterTwoImage);
+    }
+    @Test
+    public void testIndiaMarsOrbiterPhotoThree() {
+        String indiaMarsOrbiterPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\marsorbiter\\3.jpg";
+        File photoIndiaMarsOrbiterThreeFile = new File(indiaMarsOrbiterPhotoThreePath);
+        Image photoIndiaMarsOrbiterThreeImage = new Image(photoIndiaMarsOrbiterThreeFile.toURI().toString());
+        assertNotNull(photoIndiaMarsOrbiterThreeFile);
+        assertNotNull(photoIndiaMarsOrbiterThreeImage);
+    }
 }
