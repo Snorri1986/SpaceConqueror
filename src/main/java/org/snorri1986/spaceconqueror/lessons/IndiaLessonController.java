@@ -97,6 +97,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoIrnssOneImage);
                 break;
             }
+            case "Chandrayaan-1": {
+                String chandrayaan1PhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\chandrayaan1\\1.jpg";
+                File photoChandrayaan1OneFile = new File(chandrayaan1PhotoOnePath);
+                Image photoChandrayaan1OneImage = new Image(photoChandrayaan1OneFile.toURI().toString());
+                photoSpace.setImage(photoChandrayaan1OneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -125,6 +132,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoIrnssTwoImage);
                 break;
             }
+            case "Chandrayaan-1": {
+                String chandrayaan1PhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\chandrayaan1\\2.jpg";
+                File photoChandrayaan1TwoFile = new File(chandrayaan1PhotoTwoPath);
+                Image photoChandrayaan1TwoImage = new Image(photoChandrayaan1TwoFile.toURI().toString());
+                photoSpace.setImage(photoChandrayaan1TwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -151,6 +165,13 @@ public class IndiaLessonController implements Initializable  {
                 File photoIrnssThreeFile = new File(irnssPhotoThreePath);
                 Image photoIrnssThreeImage = new Image(photoIrnssThreeFile.toURI().toString());
                 photoSpace.setImage(photoIrnssThreeImage);
+                break;
+            }
+            case "Chandrayaan-1": {
+                String chandrayaan1PhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\chandrayaan1\\3.jpg";
+                File photoChandrayaan1ThreeFile = new File(chandrayaan1PhotoThreePath);
+                Image photoChandrayaan1ThreeImage = new Image(photoChandrayaan1ThreeFile.toURI().toString());
+                photoSpace.setImage(photoChandrayaan1ThreeImage);
                 break;
             }
         }
