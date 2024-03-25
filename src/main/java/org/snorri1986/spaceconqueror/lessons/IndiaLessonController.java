@@ -104,6 +104,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoChandrayaan1OneImage);
                 break;
             }
+            case "Mars Orbiter": {
+                String marsOrbiterPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\marsorbiter\\1.jpg";
+                File photoMarsOrbiterOneFile = new File(marsOrbiterPhotoOnePath);
+                Image photoMarsOrbiterOneImage = new Image(photoMarsOrbiterOneFile.toURI().toString());
+                photoSpace.setImage(photoMarsOrbiterOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -139,6 +146,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoChandrayaan1TwoImage);
                 break;
             }
+            case "Mars Orbiter": {
+                String marsOrbiterPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\marsorbiter\\2.jpg";
+                File photoMarsOrbiterTwoFile = new File(marsOrbiterPhotoTwoPath);
+                Image photoMarsOrbiterTwoImage = new Image(photoMarsOrbiterTwoFile.toURI().toString());
+                photoSpace.setImage(photoMarsOrbiterTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -172,6 +186,13 @@ public class IndiaLessonController implements Initializable  {
                 File photoChandrayaan1ThreeFile = new File(chandrayaan1PhotoThreePath);
                 Image photoChandrayaan1ThreeImage = new Image(photoChandrayaan1ThreeFile.toURI().toString());
                 photoSpace.setImage(photoChandrayaan1ThreeImage);
+                break;
+            }
+            case "Mars Orbiter": {
+                String marsOrbiterPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\marsorbiter\\3.jpg";
+                File photoMarsOrbiterThreeFile = new File(marsOrbiterPhotoThreePath);
+                Image photoMarsOrbiterThreeImage = new Image(photoMarsOrbiterThreeFile.toURI().toString());
+                photoSpace.setImage(photoMarsOrbiterThreeImage);
                 break;
             }
         }
