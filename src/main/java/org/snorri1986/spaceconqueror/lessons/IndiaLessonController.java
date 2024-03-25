@@ -90,6 +90,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoGaganOneImage);
                 break;
             }
+            case "IRNSS": {
+                String irnssPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\irnss\\1.jpg";
+                File photoIrnssOneFile = new File(irnssPhotoOnePath);
+                Image photoIrnssOneImage = new Image(photoIrnssOneFile.toURI().toString());
+                photoSpace.setImage(photoIrnssOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -111,6 +118,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoGaganTwoImage);
                 break;
             }
+            case "IRNSS": {
+                String irnssPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\irnss\\2.jpg";
+                File photoIrnssTwoFile = new File(irnssPhotoTwoPath);
+                Image photoIrnssTwoImage = new Image(photoIrnssTwoFile.toURI().toString());
+                photoSpace.setImage(photoIrnssTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -130,6 +144,13 @@ public class IndiaLessonController implements Initializable  {
                 File photoGaganThreeFile = new File(gaganPhotoThreePath);
                 Image photoGaganThreeImage = new Image(photoGaganThreeFile.toURI().toString());
                 photoSpace.setImage(photoGaganThreeImage);
+                break;
+            }
+            case "IRNSS": {
+                String irnssPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\irnss\\3.jpg";
+                File photoIrnssThreeFile = new File(irnssPhotoThreePath);
+                Image photoIrnssThreeImage = new Image(photoIrnssThreeFile.toURI().toString());
+                photoSpace.setImage(photoIrnssThreeImage);
                 break;
             }
         }
