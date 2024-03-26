@@ -193,4 +193,28 @@ public class IndiaLessonControllerTest extends ApplicationTest {
         assertNotNull(photoIndiaChandrayaan3ThreeFile);
         assertNotNull(photoIndiaChandrayaan3ThreeImage);
     }
+    @Test
+    public void testIndiaAdityaL1PhotoOne() {
+        String indiaAdityaL1PhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\adityaL1\\1.jpg";
+        File photoIndiaAdityaL1OneFile = new File(indiaAdityaL1PhotoOnePath);
+        Image photoIndiaAdityaL1OneImage = new Image(photoIndiaAdityaL1OneFile.toURI().toString());
+        assertNotNull(photoIndiaAdityaL1OneFile);
+        assertNotNull(photoIndiaAdityaL1OneImage);
+    }
+    @Test
+    public void testIndiaAdityaL1PhotoTwo() {
+        String indiaAdityaL1PhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\adityaL1\\2.jpg";
+        File photoIndiaAdityaL1TwoFile = new File(indiaAdityaL1PhotoTwoPath);
+        Image photoIndiaAdityaL1TwoImage = new Image(photoIndiaAdityaL1TwoFile.toURI().toString());
+        assertNotNull(photoIndiaAdityaL1TwoFile);
+        assertNotNull(photoIndiaAdityaL1TwoImage);
+    }
+    @Test
+    public void testIndiaAdityaL1PhotoThree() {
+        String indiaAdityaL1PhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\adityaL1\\3.jpg";
+        File photoIndiaAdityaL1ThreeFile = new File(indiaAdityaL1PhotoThreePath);
+        Image photoIndiaAdityaL1ThreeImage = new Image(photoIndiaAdityaL1ThreeFile.toURI().toString());
+        assertNotNull(photoIndiaAdityaL1ThreeFile);
+        assertNotNull(photoIndiaAdityaL1ThreeImage);
+    }
 }
