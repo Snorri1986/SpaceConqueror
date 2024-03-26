@@ -125,6 +125,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoAdityaL1OneImage);
                 break;
             }
+            case "India Cosmodroms": {
+                String cosmodromsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\cosmodroms\\1.jpg";
+                File photoCosmodromsOneFile = new File(cosmodromsPhotoOnePath);
+                Image photoCosmodromsOneImage = new Image(photoCosmodromsOneFile.toURI().toString());
+                photoSpace.setImage(photoCosmodromsOneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -181,6 +188,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoAdityaL1TwoImage);
                 break;
             }
+            case "India Cosmodroms": {
+                String cosmodromsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\cosmodroms\\2.jpg";
+                File photoCosmodromsTwoFile = new File(cosmodromsPhotoTwoPath);
+                Image photoCosmodromsTwoImage = new Image(photoCosmodromsTwoFile.toURI().toString());
+                photoSpace.setImage(photoCosmodromsTwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -235,6 +249,13 @@ public class IndiaLessonController implements Initializable  {
                 File photoAdityaL1ThreeFile = new File(adityaL1PhotoThreePath);
                 Image photoAdityaL1ThreeImage = new Image(photoAdityaL1ThreeFile.toURI().toString());
                 photoSpace.setImage(photoAdityaL1ThreeImage);
+                break;
+            }
+            case "India Cosmodroms": {
+                String cosmodromsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\cosmodroms\\3.jpg";
+                File photoCosmodromsThreeFile = new File(cosmodromsPhotoThreePath);
+                Image photoCosmodromsThreeImage = new Image(photoCosmodromsThreeFile.toURI().toString());
+                photoSpace.setImage(photoCosmodromsThreeImage);
                 break;
             }
         }

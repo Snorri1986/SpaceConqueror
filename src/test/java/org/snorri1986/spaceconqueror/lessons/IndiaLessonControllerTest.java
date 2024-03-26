@@ -217,4 +217,6 @@ public class IndiaLessonControllerTest extends ApplicationTest {
         assertNotNull(photoIndiaAdityaL1ThreeFile);
         assertNotNull(photoIndiaAdityaL1ThreeImage);
     }
+
+    //TODO: add unit tests for India Cosmodroms
 }
