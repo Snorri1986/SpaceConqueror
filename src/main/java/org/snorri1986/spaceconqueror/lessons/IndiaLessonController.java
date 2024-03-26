@@ -111,6 +111,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoMarsOrbiterOneImage);
                 break;
             }
+            case "Chandrayaan-3": {
+                String chandrayaan3PhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\chandrayaan3\\1.jpg";
+                File photoChandrayaan3OneFile = new File(chandrayaan3PhotoOnePath);
+                Image photoChandrayaan3OneImage = new Image(photoChandrayaan3OneFile.toURI().toString());
+                photoSpace.setImage(photoChandrayaan3OneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -153,6 +160,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoMarsOrbiterTwoImage);
                 break;
             }
+            case "Chandrayaan-3": {
+                String chandrayaan3PhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\chandrayaan3\\2.jpg";
+                File photoChandrayaan3TwoFile = new File(chandrayaan3PhotoTwoPath);
+                Image photoChandrayaan3TwoImage = new Image(photoChandrayaan3TwoFile.toURI().toString());
+                photoSpace.setImage(photoChandrayaan3TwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -193,6 +207,13 @@ public class IndiaLessonController implements Initializable  {
                 File photoMarsOrbiterThreeFile = new File(marsOrbiterPhotoThreePath);
                 Image photoMarsOrbiterThreeImage = new Image(photoMarsOrbiterThreeFile.toURI().toString());
                 photoSpace.setImage(photoMarsOrbiterThreeImage);
+                break;
+            }
+            case "Chandrayaan-3": {
+                String chandrayaan3PhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\chandrayaan3\\3.jpg";
+                File photoChandrayaan3ThreeFile = new File(chandrayaan3PhotoThreePath);
+                Image photoChandrayaan3ThreeImage = new Image(photoChandrayaan3ThreeFile.toURI().toString());
+                photoSpace.setImage(photoChandrayaan3ThreeImage);
                 break;
             }
         }
