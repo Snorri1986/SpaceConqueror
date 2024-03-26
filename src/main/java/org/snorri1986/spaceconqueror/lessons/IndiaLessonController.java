@@ -118,6 +118,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoChandrayaan3OneImage);
                 break;
             }
+            case "Aditya-L1": {
+                String adityaL1PhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\adityaL1\\1.jpg";
+                File photoAdityaL1OneFile = new File(adityaL1PhotoOnePath);
+                Image photoAdityaL1OneImage = new Image(photoAdityaL1OneFile.toURI().toString());
+                photoSpace.setImage(photoAdityaL1OneImage);
+                break;
+            }
         }
     }
     @FXML
@@ -167,6 +174,13 @@ public class IndiaLessonController implements Initializable  {
                 photoSpace.setImage(photoChandrayaan3TwoImage);
                 break;
             }
+            case "Aditya-L1": {
+                String adityaL1PhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\adityaL1\\2.jpg";
+                File photoAdityaL1TwoFile = new File(adityaL1PhotoTwoPath);
+                Image photoAdityaL1TwoImage = new Image(photoAdityaL1TwoFile.toURI().toString());
+                photoSpace.setImage(photoAdityaL1TwoImage);
+                break;
+            }
         }
     }
     @FXML
@@ -214,6 +228,13 @@ public class IndiaLessonController implements Initializable  {
                 File photoChandrayaan3ThreeFile = new File(chandrayaan3PhotoThreePath);
                 Image photoChandrayaan3ThreeImage = new Image(photoChandrayaan3ThreeFile.toURI().toString());
                 photoSpace.setImage(photoChandrayaan3ThreeImage);
+                break;
+            }
+            case "Aditya-L1": {
+                String adityaL1PhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\adityaL1\\3.jpg";
+                File photoAdityaL1ThreeFile = new File(adityaL1PhotoThreePath);
+                Image photoAdityaL1ThreeImage = new Image(photoAdityaL1ThreeFile.toURI().toString());
+                photoSpace.setImage(photoAdityaL1ThreeImage);
                 break;
             }
         }
