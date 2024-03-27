@@ -217,6 +217,28 @@ public class IndiaLessonControllerTest extends ApplicationTest {
         assertNotNull(photoIndiaAdityaL1ThreeFile);
         assertNotNull(photoIndiaAdityaL1ThreeImage);
     }
-
-    //TODO: add unit tests for India Cosmodroms
+    @Test
+    public void testIndiaCosmodromsPhotoOne() {
+        String indiaCosmodromsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\cosmodroms\\1.jpg";
+        File photoIndiaCosmodromsOneFile = new File(indiaCosmodromsPhotoOnePath);
+        Image photoIndiaCosmodromsOneImage = new Image(photoIndiaCosmodromsOneFile.toURI().toString());
+        assertNotNull(photoIndiaCosmodromsOneFile);
+        assertNotNull(photoIndiaCosmodromsOneImage);
+    }
+    @Test
+    public void testIndiaCosmodromsPhotoTwo() {
+        String indiaCosmodromsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\cosmodroms\\2.jpg";
+        File photoIndiaCosmodromsTwoFile = new File(indiaCosmodromsPhotoTwoPath);
+        Image photoIndiaCosmodromsTwoImage = new Image(photoIndiaCosmodromsTwoFile.toURI().toString());
+        assertNotNull(photoIndiaCosmodromsTwoFile);
+        assertNotNull(photoIndiaCosmodromsTwoImage);
+    }
+    @Test
+    public void testIndiaCosmodromsPhotoThree() {
+        String indiaCosmodromsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\cosmodroms\\3.jpg";
+        File photoIndiaCosmodromsThreeFile = new File(indiaCosmodromsPhotoThreePath);
+        Image photoIndiaCosmodromsThreeImage = new Image(photoIndiaCosmodromsThreeFile.toURI().toString());
+        assertNotNull(photoIndiaCosmodromsThreeFile);
+        assertNotNull(photoIndiaCosmodromsThreeImage);
+    }
 }
