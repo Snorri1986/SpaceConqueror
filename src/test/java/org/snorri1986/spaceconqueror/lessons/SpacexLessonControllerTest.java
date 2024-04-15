@@ -51,27 +51,29 @@ public class SpacexLessonControllerTest extends ApplicationTest {
     }
 
     @Test
-    public void testSpacexPhotoOne() {
-        String indiaSatellitesPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcone1\\1.jpg";
-        File photoIndiaSatellitesOneFile = new File(indiaSatellitesPhotoOnePath);
-        Image photoIndiaSatellitesOneImage = new Image(photoIndiaSatellitesOneFile.toURI().toString());
-        assertNotNull(photoIndiaSatellitesOneFile);
-        assertNotNull(photoIndiaSatellitesOneImage);
+    public void testSpacexFalconOnePhotoOne() {
+        String spacexPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcon1\\1.jpg";
+        File photoSpacexOneFile = new File(spacexPhotoOnePath);
+        Image photoSpacexOneImage = new Image(photoSpacexOneFile.toURI().toString());
+        assertNotNull(photoSpacexOneFile);
+        assertNotNull(photoSpacexOneImage);
     }
+
     @Test
-    public void testIndiaSatellitesPhotoTwo() {
-        String indiaSatellitesPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\satellites\\2.jpg";
-        File photoIndiaSatellitesTwoFile = new File(indiaSatellitesPhotoTwoPath);
-        Image photoIndiaSatellitesTwoImage = new Image(photoIndiaSatellitesTwoFile.toURI().toString());
-        assertNotNull(photoIndiaSatellitesTwoFile);
-        assertNotNull(photoIndiaSatellitesTwoImage);
+    public void testSpacexFalconOnePhotoTwo() {
+        String spacexPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcon1\\2.jpg";
+        File photoSpacexTwoFile = new File(spacexPhotoTwoPath);
+        Image photoSpacexTwoImage = new Image(photoSpacexTwoFile.toURI().toString());
+        assertNotNull(photoSpacexTwoFile);
+        assertNotNull(photoSpacexTwoImage);
     }
+
     @Test
-    public void testIndiaSatellitesPhotoThree() {
-        String indiaSatellitesPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\india\\satellites\\3.jpg";
-        File photoIndiaSatellitesThreeFile = new File(indiaSatellitesPhotoThreePath);
-        Image photoIndiaSatellitesThreeImage = new Image(photoIndiaSatellitesThreeFile.toURI().toString());
-        assertNotNull(photoIndiaSatellitesThreeFile);
-        assertNotNull(photoIndiaSatellitesThreeImage);
+    public void testSpacexFalconOnePhotoThree() {
+        String spacexPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcon1\\3.jpg";
+        File photoSpacexThreeFile = new File(spacexPhotoThreePath);
+        Image photoSpacexTwoImage = new Image(photoSpacexThreeFile.toURI().toString());
+        assertNotNull(photoSpacexThreeFile);
+        assertNotNull(photoSpacexTwoImage);
     }
 }
