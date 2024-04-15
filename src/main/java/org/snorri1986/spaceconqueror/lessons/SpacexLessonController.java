@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -73,16 +74,46 @@ public class SpacexLessonController implements Initializable  {
 
     @FXML
     protected void showPhotoOne() {
-
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch (title) {
+            case "Falcon One": {
+                String falconOnePhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcone1\\1.jpg";
+                File photoFalconOneFile = new File(falconOnePhotoOnePath);
+                Image photoFalconOneImage = new Image(photoFalconOneFile.toURI().toString());
+                photoSpace.setImage(photoFalconOneImage);
+                break;
+            }
+        }
     }
 
     @FXML
     protected void showPhotoTwo() {
-
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch (title) {
+            case "Falcon One": {
+                String falconOnePhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcone1\\2.jpg";
+                File photoFalconOneFileTwo = new File(falconOnePhotoTwoPath);
+                Image photoFalconOneImageTwo = new Image(photoFalconOneFileTwo.toURI().toString());
+                photoSpace.setImage(photoFalconOneImageTwo);
+                break;
+            }
+        }
     }
 
     @FXML
     protected void showPhotoThree() {
-
+        Stage stage = (Stage) btnClose.getScene().getWindow();
+        String title = stage.getTitle();
+        switch (title) {
+            case "Falcon One": {
+                String falconOnePhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcone1\\3.jpg";
+                File photoFalconOneFileThree = new File(falconOnePhotoThreePath);
+                Image photoFalconOneImageThree = new Image(photoFalconOneFileThree.toURI().toString());
+                photoSpace.setImage(photoFalconOneImageThree);
+                break;
+            }
+        }
     }
 }
