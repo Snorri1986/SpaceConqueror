@@ -78,7 +78,7 @@ public class SpacexLessonController implements Initializable  {
         String title = stage.getTitle();
         switch (title) {
             case "Falcon One": {
-                String falconOnePhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcone1\\1.jpg";
+                String falconOnePhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcon1\\1.jpg";
                 File photoFalconOneFile = new File(falconOnePhotoOnePath);
                 Image photoFalconOneImage = new Image(photoFalconOneFile.toURI().toString());
                 photoSpace.setImage(photoFalconOneImage);
@@ -93,7 +93,7 @@ public class SpacexLessonController implements Initializable  {
         String title = stage.getTitle();
         switch (title) {
             case "Falcon One": {
-                String falconOnePhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcone1\\2.jpg";
+                String falconOnePhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcon1\\2.jpg";
                 File photoFalconOneFileTwo = new File(falconOnePhotoTwoPath);
                 Image photoFalconOneImageTwo = new Image(photoFalconOneFileTwo.toURI().toString());
                 photoSpace.setImage(photoFalconOneImageTwo);
@@ -108,7 +108,7 @@ public class SpacexLessonController implements Initializable  {
         String title = stage.getTitle();
         switch (title) {
             case "Falcon One": {
-                String falconOnePhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcone1\\3.jpg";
+                String falconOnePhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcon1\\3.jpg";
                 File photoFalconOneFileThree = new File(falconOnePhotoThreePath);
                 Image photoFalconOneImageThree = new Image(photoFalconOneFileThree.toURI().toString());
                 photoSpace.setImage(photoFalconOneImageThree);
