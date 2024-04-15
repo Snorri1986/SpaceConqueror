@@ -84,6 +84,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoFalconOneImage);
                 break;
             }
+            case "Falcon Nine": {
+                String falconNinePhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcon9\\1.jpg";
+                File photoFalconNineFileOne = new File(falconNinePhotoOnePath);
+                Image photoFalconNineImageOne = new Image(photoFalconNineFileOne.toURI().toString());
+                photoSpace.setImage(photoFalconNineImageOne);
+                break;
+            }
         }
     }
 
@@ -99,6 +106,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoFalconOneImageTwo);
                 break;
             }
+            case "Falcon Nine": {
+                String falconNinePhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcon9\\2.jpg";
+                File photoFalconNineFileTwo = new File(falconNinePhotoTwoPath);
+                Image photoFalconNineImageTwo = new Image(photoFalconNineFileTwo.toURI().toString());
+                photoSpace.setImage(photoFalconNineImageTwo);
+                break;
+            }
         }
     }
 
@@ -112,6 +126,13 @@ public class SpacexLessonController implements Initializable  {
                 File photoFalconOneFileThree = new File(falconOnePhotoThreePath);
                 Image photoFalconOneImageThree = new Image(photoFalconOneFileThree.toURI().toString());
                 photoSpace.setImage(photoFalconOneImageThree);
+                break;
+            }
+            case "Falcon Nine": {
+                String falconNinePhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falcon9\\3.jpg";
+                File photoFalconNineFileThree = new File(falconNinePhotoThreePath);
+                Image photoFalconNineImageThree = new Image(photoFalconNineFileThree.toURI().toString());
+                photoSpace.setImage(photoFalconNineImageThree);
                 break;
             }
         }
