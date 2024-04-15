@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -23,6 +24,9 @@ public class SpacexLessonController implements Initializable  {
 
     @FXML
     Button btnClose;
+
+    @FXML
+    ImageView photoSpace;
 
     @FXML
     protected void onBtnLocalUaClick() throws FileNotFoundException {
@@ -65,5 +69,20 @@ public class SpacexLessonController implements Initializable  {
         fileChooserEN.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\spacex\\en"));
         fileChooserUA.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\spacex\\ua"));
         fileChooserDK.setInitialDirectory(new File("D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\text\\spacex\\dk"));
+    }
+
+    @FXML
+    protected void showPhotoOne() {
+
+    }
+
+    @FXML
+    protected void showPhotoTwo() {
+
+    }
+
+    @FXML
+    protected void showPhotoThree() {
+
     }
 }
