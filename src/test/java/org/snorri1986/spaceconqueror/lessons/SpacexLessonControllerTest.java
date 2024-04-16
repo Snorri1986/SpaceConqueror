@@ -157,4 +157,31 @@ public class SpacexLessonControllerTest extends ApplicationTest {
         assertNotNull(photoSpacexFalconHeavyThreeFile);
         assertNotNull(photoSpacexFalconHeavyThreeImage);
     }
+
+    @Test
+    public void testStarShipPhotoOne() {
+        String spacexStarShipPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\starship\\1.jpg";
+        File photoSpacexStarShipOneFile = new File(spacexStarShipPhotoOnePath);
+        Image photoSpacexStarShipOneImage = new Image(photoSpacexStarShipOneFile.toURI().toString());
+        assertNotNull(photoSpacexStarShipOneFile);
+        assertNotNull(photoSpacexStarShipOneImage);
+    }
+
+    @Test
+    public void testStarShipPhotoTwo() {
+        String spacexStarShipPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\starship\\2.jpg";
+        File photoSpacexStarShipTwoFile = new File(spacexStarShipPhotoTwoPath);
+        Image photoSpacexStarShipTwoImage = new Image(photoSpacexStarShipTwoFile.toURI().toString());
+        assertNotNull(photoSpacexStarShipTwoFile);
+        assertNotNull(photoSpacexStarShipTwoImage);
+    }
+
+    @Test
+    public void testStarShipPhotoThree() {
+        String spacexStarShipPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\starship\\3.jpg";
+        File photoSpacexStarShipThreeFile = new File(spacexStarShipPhotoThreePath);
+        Image photoSpacexStarShipThreeImage = new Image(photoSpacexStarShipThreeFile.toURI().toString());
+        assertNotNull(photoSpacexStarShipThreeFile);
+        assertNotNull(photoSpacexStarShipThreeImage);
+    }
 }
