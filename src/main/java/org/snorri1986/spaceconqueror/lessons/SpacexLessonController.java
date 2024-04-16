@@ -98,6 +98,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoDragonImageOne);
                 break;
             }
+            case "Falcon Heavy": {
+                String falconHeavyPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falconheavy\\1.jpg";
+                File photoFalconHeavyFileOne = new File(falconHeavyPhotoOnePath);
+                Image photoFalconHeavyImageOne = new Image(photoFalconHeavyFileOne.toURI().toString());
+                photoSpace.setImage(photoFalconHeavyImageOne);
+                break;
+            }
         }
     }
 
@@ -127,6 +134,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoDragonImageTwo);
                 break;
             }
+            case "Falcon Heavy": {
+                String falconHeavyPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falconheavy\\2.jpg";
+                File photoFalconHeavyFileTwo = new File(falconHeavyPhotoTwoPath);
+                Image photoFalconHeavyImageTwo = new Image(photoFalconHeavyFileTwo.toURI().toString());
+                photoSpace.setImage(photoFalconHeavyImageTwo);
+                break;
+            }
         }
     }
 
@@ -154,6 +168,13 @@ public class SpacexLessonController implements Initializable  {
                 File photoDragonFileThree = new File(dragonPhotoThreePath);
                 Image photoDragonImageThree = new Image(photoDragonFileThree.toURI().toString());
                 photoSpace.setImage(photoDragonImageThree);
+                break;
+            }
+            case "Falcon Heavy": {
+                String falconHeavyPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\falconheavy\\3.jpg";
+                File photoFalconHeavyFileThree = new File(falconHeavyPhotoThreePath);
+                Image photoFalconHeavyImageThree = new Image(photoFalconHeavyFileThree.toURI().toString());
+                photoSpace.setImage(photoFalconHeavyImageThree);
                 break;
             }
         }
