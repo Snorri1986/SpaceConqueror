@@ -91,6 +91,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoFalconNineImageOne);
                 break;
             }
+            case "Dragon": {
+                String dragonPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\dragon\\1.jpg";
+                File photoDragonFileOne = new File(dragonPhotoOnePath);
+                Image photoDragonImageOne = new Image(photoDragonFileOne.toURI().toString());
+                photoSpace.setImage(photoDragonImageOne);
+                break;
+            }
         }
     }
 
@@ -113,6 +120,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoFalconNineImageTwo);
                 break;
             }
+            case "Dragon": {
+                String dragonPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\dragon\\2.jpg";
+                File photoDragonFileTwo = new File(dragonPhotoTwoPath);
+                Image photoDragonImageTwo = new Image(photoDragonFileTwo.toURI().toString());
+                photoSpace.setImage(photoDragonImageTwo);
+                break;
+            }
         }
     }
 
@@ -133,6 +147,13 @@ public class SpacexLessonController implements Initializable  {
                 File photoFalconNineFileThree = new File(falconNinePhotoThreePath);
                 Image photoFalconNineImageThree = new Image(photoFalconNineFileThree.toURI().toString());
                 photoSpace.setImage(photoFalconNineImageThree);
+                break;
+            }
+            case "Dragon": {
+                String dragonPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\dragon\\3.jpg";
+                File photoDragonFileThree = new File(dragonPhotoThreePath);
+                Image photoDragonImageThree = new Image(photoDragonFileThree.toURI().toString());
+                photoSpace.setImage(photoDragonImageThree);
                 break;
             }
         }
