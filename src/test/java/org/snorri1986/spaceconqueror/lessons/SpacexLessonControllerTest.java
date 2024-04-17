@@ -211,4 +211,31 @@ public class SpacexLessonControllerTest extends ApplicationTest {
         assertNotNull(photoSpacexStarlinkThreeFile);
         assertNotNull(photoSpacexStarlinkThreeImage);
     }
+
+    @Test
+    public void testElonMaskPhotoOne() {
+        String spacexElonMaskPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\elonmask\\1.jpg";
+        File photoSpacexElonMaskOneFile = new File(spacexElonMaskPhotoOnePath);
+        Image photoSpacexElonMaskOneImage = new Image(photoSpacexElonMaskOneFile.toURI().toString());
+        assertNotNull(photoSpacexElonMaskOneFile);
+        assertNotNull(photoSpacexElonMaskOneImage);
+    }
+
+    @Test
+    public void testElonMaskPhotoTwo() {
+        String spacexElonMaskPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\elonmask\\2.jpg";
+        File photoSpacexElonMaskTwoFile = new File(spacexElonMaskPhotoTwoPath);
+        Image photoSpacexElonMaskTwoImage = new Image(photoSpacexElonMaskTwoFile.toURI().toString());
+        assertNotNull(photoSpacexElonMaskTwoFile);
+        assertNotNull(photoSpacexElonMaskTwoImage);
+    }
+
+    @Test
+    public void testElonMaskPhotoThree() {
+        String spacexElonMaskPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\elonmask\\3.jpg";
+        File photoSpacexElonMaskThreeFile = new File(spacexElonMaskPhotoThreePath);
+        Image photoSpacexElonMaskThreeImage = new Image(photoSpacexElonMaskThreeFile.toURI().toString());
+        assertNotNull(photoSpacexElonMaskThreeFile);
+        assertNotNull(photoSpacexElonMaskThreeImage);
+    }
 }
