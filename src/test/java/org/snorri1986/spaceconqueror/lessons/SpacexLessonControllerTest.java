@@ -238,4 +238,31 @@ public class SpacexLessonControllerTest extends ApplicationTest {
         assertNotNull(photoSpacexElonMaskThreeFile);
         assertNotNull(photoSpacexElonMaskThreeImage);
     }
+
+    @Test
+    public void testSpacexCosmodromsPhotoOne() {
+        String spacexCosmodromsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\cosmodroms\\1.jpg";
+        File photoSpacexCosmodromsOneFile = new File(spacexCosmodromsPhotoOnePath);
+        Image photoSpacexCosmodromsOneImage = new Image(photoSpacexCosmodromsOneFile.toURI().toString());
+        assertNotNull(photoSpacexCosmodromsOneFile);
+        assertNotNull(photoSpacexCosmodromsOneImage);
+    }
+
+    @Test
+    public void testSpacexCosmodromsPhotoTwo() {
+        String spacexCosmodromsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\cosmodroms\\2.jpg";
+        File photoSpacexCosmodromsTwoFile = new File(spacexCosmodromsPhotoTwoPath);
+        Image photoSpacexCosmodromsTwoImage = new Image(photoSpacexCosmodromsTwoFile.toURI().toString());
+        assertNotNull(photoSpacexCosmodromsTwoFile);
+        assertNotNull(photoSpacexCosmodromsTwoImage);
+    }
+
+    @Test
+    public void testSpacexCosmodromsPhotoThree() {
+        String spacexCosmodromsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\cosmodroms\\3.jpg";
+        File photoSpacexCosmodromsThreeFile = new File(spacexCosmodromsPhotoThreePath);
+        Image photoSpacexCosmodromsThreeImage = new Image(photoSpacexCosmodromsThreeFile.toURI().toString());
+        assertNotNull(photoSpacexCosmodromsThreeFile);
+        assertNotNull(photoSpacexCosmodromsThreeImage);
+    }
 }
