@@ -126,6 +126,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoElonMaskImageOne);
                 break;
             }
+            case "SpaceX Cosmodroms": {
+                String spacexCosmodromsPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\cosmodroms\\1.jpg";
+                File photoSpacexCosmodromsFileOne = new File(spacexCosmodromsPhotoOnePath);
+                Image photoSpacexCosmodromsImageOne = new Image(photoSpacexCosmodromsFileOne.toURI().toString());
+                photoSpace.setImage(photoSpacexCosmodromsImageOne);
+                break;
+            }
         }
     }
 
@@ -183,6 +190,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoElonMaskImageTwo);
                 break;
             }
+            case "SpaceX Cosmodroms": {
+                String spacexCosmodromsPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\cosmodroms\\2.jpg";
+                File photoSpacexCosmodromsFileTwo = new File(spacexCosmodromsPhotoTwoPath);
+                Image photoSpacexCosmodromsImageTwo = new Image(photoSpacexCosmodromsFileTwo.toURI().toString());
+                photoSpace.setImage(photoSpacexCosmodromsImageTwo);
+                break;
+            }
         }
     }
 
@@ -238,6 +252,13 @@ public class SpacexLessonController implements Initializable  {
                 File photoElonMaskFileThree = new File(elonMaskPhotoThreePath);
                 Image photoElonMaskImageThree = new Image(photoElonMaskFileThree.toURI().toString());
                 photoSpace.setImage(photoElonMaskImageThree);
+                break;
+            }
+            case "SpaceX Cosmodroms": {
+                String spacexCosmodromsPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\cosmodroms\\3.jpg";
+                File photoSpacexCosmodromsFileThree = new File(spacexCosmodromsPhotoThreePath);
+                Image photoSpacexCosmodromsImageThree = new Image(photoSpacexCosmodromsFileThree.toURI().toString());
+                photoSpace.setImage(photoSpacexCosmodromsImageThree);
                 break;
             }
         }
