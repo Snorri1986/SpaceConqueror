@@ -112,6 +112,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoStarShipImageOne);
                 break;
             }
+            case "Starlink": {
+                String startLinkPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\starlink\\1.jpg";
+                File photoStarLinkFileOne = new File(startLinkPhotoOnePath);
+                Image photoStarLinkImageOne = new Image(photoStarLinkFileOne.toURI().toString());
+                photoSpace.setImage(photoStarLinkImageOne);
+                break;
+            }
         }
     }
 
@@ -155,6 +162,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoStarShipImageTwo);
                 break;
             }
+            case "Starlink": {
+                String startLinkPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\starlink\\2.jpg";
+                File photoStarLinkFileTwo = new File(startLinkPhotoTwoPath);
+                Image photoStarLinkImageTwo = new Image(photoStarLinkFileTwo.toURI().toString());
+                photoSpace.setImage(photoStarLinkImageTwo);
+                break;
+            }
         }
     }
 
@@ -196,6 +210,13 @@ public class SpacexLessonController implements Initializable  {
                 File photoStarShipFileThree = new File(starShipPhotoThreePath);
                 Image photoStarShipImageThree = new Image(photoStarShipFileThree.toURI().toString());
                 photoSpace.setImage(photoStarShipImageThree);
+                break;
+            }
+            case "Starlink": {
+                String startLinkPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\starlink\\3.jpg";
+                File photoStarLinkFileThree = new File(startLinkPhotoThreePath);
+                Image photoStarLinkImageThree = new Image(photoStarLinkFileThree.toURI().toString());
+                photoSpace.setImage(photoStarLinkImageThree);
                 break;
             }
         }
