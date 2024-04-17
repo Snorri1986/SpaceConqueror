@@ -119,6 +119,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoStarLinkImageOne);
                 break;
             }
+            case "ElonMask": {
+                String elonMaskPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\elonmask\\1.jpg";
+                File photoElonMaskFileOne = new File(elonMaskPhotoOnePath);
+                Image photoElonMaskImageOne = new Image(photoElonMaskFileOne.toURI().toString());
+                photoSpace.setImage(photoElonMaskImageOne);
+                break;
+            }
         }
     }
 
@@ -169,6 +176,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoStarLinkImageTwo);
                 break;
             }
+            case "ElonMask": {
+                String elonMaskPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\elonmask\\2.jpg";
+                File photoElonMaskFileTwo = new File(elonMaskPhotoTwoPath);
+                Image photoElonMaskImageTwo = new Image(photoElonMaskFileTwo.toURI().toString());
+                photoSpace.setImage(photoElonMaskImageTwo);
+                break;
+            }
         }
     }
 
@@ -217,6 +231,13 @@ public class SpacexLessonController implements Initializable  {
                 File photoStarLinkFileThree = new File(startLinkPhotoThreePath);
                 Image photoStarLinkImageThree = new Image(photoStarLinkFileThree.toURI().toString());
                 photoSpace.setImage(photoStarLinkImageThree);
+                break;
+            }
+            case "ElonMask": {
+                String elonMaskPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\elonmask\\3.jpg";
+                File photoElonMaskFileThree = new File(elonMaskPhotoThreePath);
+                Image photoElonMaskImageThree = new Image(photoElonMaskFileThree.toURI().toString());
+                photoSpace.setImage(photoElonMaskImageThree);
                 break;
             }
         }
