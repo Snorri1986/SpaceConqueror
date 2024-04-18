@@ -265,4 +265,31 @@ public class SpacexLessonControllerTest extends ApplicationTest {
         assertNotNull(photoSpacexCosmodromsThreeFile);
         assertNotNull(photoSpacexCosmodromsThreeImage);
     }
+
+    @Test
+    public void testSpacexPeoplesPhotoOne() {
+        String spacexPeoplesPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\peoples\\1.jpg";
+        File photoSpacexPeoplesOneFile = new File(spacexPeoplesPhotoOnePath);
+        Image photoSpacexPeoplesOneImage = new Image(photoSpacexPeoplesOneFile.toURI().toString());
+        assertNotNull(photoSpacexPeoplesOneFile);
+        assertNotNull(photoSpacexPeoplesOneImage);
+    }
+
+    @Test
+    public void testSpacexPeoplesPhotoTwo() {
+        String spacexPeoplesPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\peoples\\2.jpg";
+        File photoSpacexPeoplesTwoFile = new File(spacexPeoplesPhotoTwoPath);
+        Image photoSpacexPeoplesTwoImage = new Image(photoSpacexPeoplesTwoFile.toURI().toString());
+        assertNotNull(photoSpacexPeoplesTwoFile);
+        assertNotNull(photoSpacexPeoplesTwoImage);
+    }
+
+    @Test
+    public void testSpacexPeoplesPhotoThree() {
+        String spacexPeoplesPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\peoples\\3.jpg";
+        File photoSpacexPeoplesThreeFile = new File(spacexPeoplesPhotoThreePath);
+        Image photoSpacexPeoplesThreeImage = new Image(photoSpacexPeoplesThreeFile.toURI().toString());
+        assertNotNull(photoSpacexPeoplesThreeFile);
+        assertNotNull(photoSpacexPeoplesThreeImage);
+    }
 }
