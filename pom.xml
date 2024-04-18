@@ -81,6 +81,15 @@
         </dependency>
     </dependencies>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>pvsstudio-maven-repo</id>
+            <url>https://files.pvs-studio.com/java/pvsstudio-maven-repository/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+
+
     <build>
         <plugins>
             <plugin>
@@ -127,6 +136,18 @@
                     <argLine>
                         --add-exports javafx.graphics/com.sun.javafx.application=ALL-UNNAMED
                     </argLine>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.pvsstudio</groupId>
+                <artifactId>pvsstudio-maven-plugin</artifactId>
+                <version>7.30.80678</version>
+                <configuration>
+                    <analyzer>
+                        <outputType>text</outputType>
+                        <outputFile>path/to/output.txt</outputFile>
+                        <analysisMode>GA,OWASP</analysisMode>
+                    </analyzer>
                 </configuration>
             </plugin>
         </plugins>
