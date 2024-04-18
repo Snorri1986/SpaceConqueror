@@ -133,6 +133,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoSpacexCosmodromsImageOne);
                 break;
             }
+            case "SpaceX Peoples": {
+                String spacexPeoplesPhotoOnePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\peoples\\1.jpg";
+                File photoSpacexPeoplesFileOne = new File(spacexPeoplesPhotoOnePath);
+                Image photoSpacexPeoplesImageOne = new Image(photoSpacexPeoplesFileOne.toURI().toString());
+                photoSpace.setImage(photoSpacexPeoplesImageOne);
+                break;
+            }
         }
     }
 
@@ -197,6 +204,13 @@ public class SpacexLessonController implements Initializable  {
                 photoSpace.setImage(photoSpacexCosmodromsImageTwo);
                 break;
             }
+            case "SpaceX Peoples": {
+                String spacexPeoplesPhotoTwoPath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\peoples\\2.jpg";
+                File photoSpacexPeoplesFileTwo = new File(spacexPeoplesPhotoTwoPath);
+                Image photoSpacexPeoplesImageTwo = new Image(photoSpacexPeoplesFileTwo.toURI().toString());
+                photoSpace.setImage(photoSpacexPeoplesImageTwo);
+                break;
+            }
         }
     }
 
@@ -259,6 +273,13 @@ public class SpacexLessonController implements Initializable  {
                 File photoSpacexCosmodromsFileThree = new File(spacexCosmodromsPhotoThreePath);
                 Image photoSpacexCosmodromsImageThree = new Image(photoSpacexCosmodromsFileThree.toURI().toString());
                 photoSpace.setImage(photoSpacexCosmodromsImageThree);
+                break;
+            }
+            case "SpaceX Peoples": {
+                String spacexPeoplesPhotoThreePath = "D:\\Applications\\SpaceConqueror\\src\\main\\resources\\org\\snorri1986\\spaceconqueror\\content\\photos\\spacex\\peoples\\3.jpg";
+                File photoSpacexPeoplesFileThree = new File(spacexPeoplesPhotoThreePath);
+                Image photoSpacexPeoplesImageThree = new Image(photoSpacexPeoplesFileThree.toURI().toString());
+                photoSpace.setImage(photoSpacexPeoplesImageThree);
                 break;
             }
         }
