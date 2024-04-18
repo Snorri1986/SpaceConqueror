@@ -66,7 +66,6 @@ public class SolarSystemLessonController implements Initializable {
         }
     }
 
-    //TODO: add unit test
     @FXML
     protected void closeStage() {
         Stage stage = (Stage) btnClose.getScene().getWindow();
