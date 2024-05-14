@@ -148,7 +148,6 @@
                         <outputType>text</outputType>
                         <outputFile>path/to/output.txt</outputFile>
                         <analysisMode>GA,OWASP</analysisMode>
-                        <incremental>true</incremental>
                         <verbose>true</verbose>
                     </analyzer>
                 </configuration>

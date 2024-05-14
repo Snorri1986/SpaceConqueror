@@ -1,3 +1,5 @@
+// pvs-studio exclude file
+// This file will be excluded from analysis
 package org.snorri1986.spaceconqueror.buttons;
 
 import javafx.application.Platform;

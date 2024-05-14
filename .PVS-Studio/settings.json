@@ -4,10 +4,12 @@
   "threads": 2,
   "output-file": "D:/Applications/SpaceConqueror/.PVS-Studio/temp.json",
   "output-type": "json",
-  "incremental": true,
+  "incremental": false,
   "force-rebuild": false,
   "disable-cache": false,
-  "exclude": [],
+  "exclude": [
+    "./src/test/java/org/snorri1986/spaceconqueror"
+  ],
   "analyze-only": [],
   "fail-on-warnings": false,
   "analysis-mode": [
