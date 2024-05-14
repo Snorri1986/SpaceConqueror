@@ -8,6 +8,7 @@
   "force-rebuild": false,
   "disable-cache": false,
   "exclude": [
+    "./src/test/java",
     "./src/test/java/org/snorri1986/spaceconqueror"
   ],
   "analyze-only": [],

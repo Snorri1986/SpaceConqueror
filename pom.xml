@@ -139,19 +139,6 @@
                     </argLine>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>com.pvsstudio</groupId>
-                <artifactId>pvsstudio-maven-plugin</artifactId>
-                <version>${pvs.studio.version}</version>
-                <configuration>
-                    <analyzer>
-                        <outputType>text</outputType>
-                        <outputFile>path/to/output.txt</outputFile>
-                        <analysisMode>GA,OWASP</analysisMode>
-                        <verbose>true</verbose>
-                    </analyzer>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 </project>
