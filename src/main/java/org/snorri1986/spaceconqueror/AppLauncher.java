@@ -1,16 +1,15 @@
 package org.snorri1986.spaceconqueror;
 
+import static org.apache.log4j.helpers.Loader.getResource;
+
+import java.io.IOException;
+import java.net.URL;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-
-import java.io.IOException;
-import java.net.URL;
-
-import static org.apache.log4j.helpers.Loader.getResource;
 
 public class AppLauncher extends Application {
 
