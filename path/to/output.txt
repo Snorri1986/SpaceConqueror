@@ -1,0 +1,1 @@
+Fail: V061 Unable to start the analysis on 'SpaceConqueror' module. By cause: 'Ambiguous package name detected. If you believe the code you analyzed is correct, please file an issue and reference https://github.com/INRIA/spoon/issues/4051. Error details: Found 2 non-empty packages with name 'org.snorri1986.spaceconqueror''. []

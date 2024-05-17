@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "warnings": [
+    {
+      "code": "V061",
+      "cwe": 0,
+      "level": 0,
+      "positions": [
+        {
+          "file": "",
+          "line": 1,
+          "endLine": 1,
+          "column": 1,
+          "endColumn": 1,
+          "navigation": {
+            "previousLine": 0,
+            "currentLine": 0,
+            "nextLine": 0,
+            "columns": 0
+          }
+        }
+      ],
+      "message": "Unable to start the analysis on \u0027SpaceConqueror\u0027 module. By cause: \u0027Ambiguous package name detected. If you believe the code you analyzed is correct, please file an issue and reference https://github.com/INRIA/spoon/issues/4051. Error details: Found 2 non-empty packages with name \u0027org.snorri1986.spaceconqueror\u0027\u0027.",
+      "projects": [],
+      "favorite": false,
+      "falseAlarm": false
+    }
+  ]
+}

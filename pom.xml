@@ -22,6 +22,7 @@
         <testfx.junit5.version>4.0.17</testfx.junit5.version>
         <testfx.core.version>4.0.17</testfx.core.version>
         <hamcrest.version>2.1</hamcrest.version>
+        <pvs.studio.version>7.30.80678</pvs.studio.version>
     </properties>
 
     <dependencies>
@@ -80,6 +81,15 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+     <pluginRepositories>
+        <pluginRepository>
+            <id>pvsstudio-maven-repo</id>
+            <url>https://files.pvs-studio.com/java/pvsstudio-maven-repository/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+
 
     <build>
         <plugins>
